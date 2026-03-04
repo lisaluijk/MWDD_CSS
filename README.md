@@ -87,3 +87,19 @@ Volgende week wil ik aan de volgende dingen gaan werken
 
 #### Start maken aan de opdracht
 - Ik wil volgende week de rubiks basis opzetten en hopelijk dus de vorm van de rubikskubus gemaakt hebben.
+
+
+### Maandag 4 Maart | checkout met: __
+- 9:30 - 1030 weekly nerd
+- 1045- 1145 workshop 3d transform
+
+- 1200 - mensen recruiten voor wiskunde workshop en alles opzetten enzo 
+12 30 - pauze
+1340 Starten aan de eerste cube
+14:30 mini breakdown omdat ik twee transforms had die elkaar aan het overschrijden waren wat ik niet doorhad
+1510 mini break
+15 30 eerste ccubus afmaken
+1600 check out
+
+### wat heb ik geleerd
+
