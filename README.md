@@ -89,7 +89,7 @@ Volgende week wil ik aan de volgende dingen gaan werken
 - Ik wil volgende week de rubiks basis opzetten en hopelijk dus de vorm van de rubikskubus gemaakt hebben.
 
 
-### Maandag 4 Maart | checkout met: __
+### Maandag 4 Maart | checkout met Eva
 - 9:30 - 1030 weekly nerd
 - 1045- 1145 workshop 3d transform
 
@@ -102,4 +102,16 @@ Volgende week wil ik aan de volgende dingen gaan werken
 1600 check out
 
 ### wat heb ik geleerd
+
+
+### Maandag 4 Maart | checkout met __
+930 - 1015 uitleg over specificity
+1030 bestanden opzetten
+1045 11-45workshop animeren
+1200 meeting voor werk
+1330 pauze
+1400 notulen meeting verwerken
+14:20 cubes gepositioneerd
+15:15 voortgangsgesprek met nils
+
 
