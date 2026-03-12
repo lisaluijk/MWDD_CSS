@@ -20,6 +20,9 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 
 ## Dagelijkse check-out
 
+<details>
+<summary>Dag 1</summary>
+
 ### Woensdag 18 feb | checkout met: Docent (soort van)
 
 #### Wat heb ik vandaag gedaan?
@@ -43,6 +46,11 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 - luisteren naar de uitleg van anderen
 - kickoff eindopdracht bijwonen
 
+</details>
+
+<details>
+<summary>Dag 2</summary>
+
 ### Donderdag 19 feb | checkout met: Jelle
 - **08:15–08:50** — Styling opzetten voor onze site  
 - **09:30–10:00** — Met groepje styling doornemen en mergen met onze main branch + werk van Senna daarbij mergen
@@ -63,6 +71,8 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 - Notities verzamelen en in obsidian verzamelen
 - html opzetten voor meesterschap
 - weekly checkout
+
+</details>
 
 ## Weekly check-out | week 1 
 Ik ben nog niet heel erg ver met de eindopdracht van dit vak omdat we nog niet heel veel tijd hebben gehad. Ik wil de rubikskubus opdracht gaan doen. Dit gaat een grote uitdaging worden maar hier ligt mijn intresse wel echt dus is denk ik voor mij een goede keuze. Ook vind ik het een hele interessante uitdaging.
@@ -104,7 +114,7 @@ Volgende week wil ik aan de volgende dingen gaan werken
 ### wat heb ik geleerd
 
 
-### Maandag 4 Maart | checkout met __
+### Dinsdag 5 Maart | checkout met __
 930 - 1015 uitleg over specificity
 1030 bestanden opzetten
 1045 11-45workshop animeren
@@ -114,4 +124,19 @@ Volgende week wil ik aan de volgende dingen gaan werken
 14:20 cubes gepositioneerd
 15:15 voortgangsgesprek met nils
 
+
+11 maart 
+930 -10 30kickoff uitleg over kleuren
+1045 1130 workshop custom property theme(?)
+
+1150 12 11 read me opschonen en bijwerken, begin gemaakt
+1230 1530 technishow techniekbeurs
+1530 read me helemaal opschonen
+
+
+12 maart
+930 -1040 sanne's meester class
+1040-11 daarvan bijkomen en oefenen met rubiks oplossen
+1100 afmaken met de custom properties colording
+1115 verder  met w
 

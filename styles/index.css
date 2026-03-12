@@ -9,12 +9,433 @@
     --color-rubiks-right: orange;
 
 
-    --size-full-cube: 30rem;
+
+    --size-full-cube: 20rem;
 
     --size-one-cube: calc(var(--size-full-cube) / 3);
-    --translate-one-cube: calc(var(--size-one-cube) / 2);
 
     --translate-one-side: calc(var(--size-one-cube) / 2);
+    --translate-one-cube: calc(var(--size-one-cube) / 2);
+    /* ^^^^ distance */
+
+    --translate-one-cube-left: translateX(calc(var(--translate-one-cube)* -1));
+    --translate-one-cube-right: translateX(var(--translate-one-cube));
+    --translate-one-cube-up: translateY(calc(var(--translate-one-cube) * -1));
+    --translate-one-cube-down: translateY(var(--translate-one-cube));
+    --translate-one-cube-front: translateZ(var(--translate-one-cube));
+    --translate-one-cube-back: translateZ(calc(var(--translate-one-cube) * -1));
+
+
+    /* front top right cube side definitions */
+    /* ftrF ftrBa ftrL ftrR ftrT ftrBo  */
+    /* ftr-sF-cF [cube]-[side]-[color] */
+
+
+
+
+    /* ===========================
+             MARK: Front
+   =========================== */
+    /* MARK: Left */
+    /* front top left cube side color definitions */
+    /* side = front */
+    --ftl-Sf-Cf: true;
+    --ftl-Sf-Cba: false;
+    --ftl-Sf-Ct: false;
+    --ftl-Sf-Cbo: false;
+    --ftl-Sf-Cl: false;
+    --ftl-Sf-Cr: false;
+
+    /* side = back */
+    --ftl-Sba-Cf: false;
+    --ftl-Sba-Cba: true;
+    --ftl-Sba-Ct: false;
+    --ftl-Sba-Cbo: false;
+    --ftl-Sba-Cl: false;
+    --ftl-Sba-Cr: false;
+
+    /* side = top */
+    --ftl-St-Cf: false;
+    --ftl-St-Cba: false;
+    --ftl-St-Ct: true;
+    --ftl-St-Cbo: false;
+    --ftl-St-Cl: false;
+    --ftl-St-Cr: false;
+
+    /* side = bottom */
+    --ftl-Sbo-Cf: false;
+    --ftl-Sbo-Cba: false;
+    --ftl-Sbo-Ct: false;
+    --ftl-Sbo-Cbo: true;
+    --ftl-Sbo-Cl: false;
+    --ftl-Sbo-Cr: false;
+
+    /* side = left */
+    --ftl-Sl-Cf: false;
+    --ftl-Sl-Cba: false;
+    --ftl-Sl-Ct: false;
+    --ftl-Sl-Cbo: false;
+    --ftl-Sl-Cl: true;
+    --ftl-Sl-Cr: false;
+
+    /* side = right */
+    --ftl-Sr-Cf: false;
+    --ftl-Sr-Cba: false;
+    --ftl-Sr-Ct: false;
+    --ftl-Sr-Cbo: false;
+    --ftl-Sr-Cl: false;
+    --ftl-Sr-Cr: true;
+
+    /* front bottom left cube side color definitions */
+    /* side = front */
+    --fbol-Sf-Cf: true;
+    --fbol-Sf-Cba: false;
+    --fbol-Sf-Ct: false;
+    --fbol-Sf-Cbo: false;
+    --fbol-Sf-Cl: false;
+    --fbol-Sf-Cr: false;
+
+    /* side = back */
+    --fbol-Sba-Cf: false;
+    --fbol-Sba-Cba: true;
+    --fbol-Sba-Ct: false;
+    --fbol-Sba-Cbo: false;
+    --fbol-Sba-Cl: false;
+    --fbol-Sba-Cr: false;
+
+    /* side = top */
+    --fbol-St-Cf: false;
+    --fbol-St-Cba: false;
+    --fbol-St-Ct: true;
+    --fbol-St-Cbo: false;
+    --fbol-St-Cl: false;
+    --fbol-St-Cr: false;
+
+    /* side = bottom */
+    --fbol-Sbo-Cf: false;
+    --fbol-Sbo-Cba: false;
+    --fbol-Sbo-Ct: false;
+    --fbol-Sbo-Cbo: true;
+    --fbol-Sbo-Cl: false;
+    --fbol-Sbo-Cr: false;
+
+    /* side = left */
+    --fbol-Sl-Cf: false;
+    --fbol-Sl-Cba: false;
+    --fbol-Sl-Ct: false;
+    --fbol-Sl-Cbo: false;
+    --fbol-Sl-Cl: true;
+    --fbol-Sl-Cr: false;
+
+    /* side = right */
+    --fbol-Sr-Cf: false;
+    --fbol-Sr-Cba: false;
+    --fbol-Sr-Ct: false;
+    --fbol-Sr-Cbo: false;
+    --fbol-Sr-Cl: false;
+    --fbol-Sr-Cr: true;
+    /* MARK: Right */
+    /* front top right cube side color definitions */
+    /* side = front */
+    --ftr-Sf-Cf: true;
+    --ftr-Sf-Cba: false;
+    --ftr-Sf-Ct: false;
+    --ftr-Sf-Cbo: false;
+    --ftr-Sf-Cl: false;
+    --ftr-Sf-Cr: false;
+
+    /* side = back */
+    --ftr-Sba-Cf: false;
+    --ftr-Sba-Cba: true;
+    --ftr-Sba-Ct: false;
+    --ftr-Sba-Cbo: false;
+    --ftr-Sba-Cl: false;
+    --ftr-Sba-Cr: false;
+
+    /* side = top */
+    --ftr-St-Cf: false;
+    --ftr-St-Cba: false;
+    --ftr-St-Ct: true;
+    --ftr-St-Cbo: false;
+    --ftr-St-Cl: false;
+    --ftr-St-Cr: false;
+
+    /* side = bottom */
+    --ftr-Sbo-Cf: false;
+    --ftr-Sbo-Cba: false;
+    --ftr-Sbo-Ct: false;
+    --ftr-Sbo-Cbo: true;
+    --ftr-Sbo-Cl: false;
+    --ftr-Sbo-Cr: false;
+
+    /* side = left */
+    --ftr-Sl-Cf: false;
+    --ftr-Sl-Cba: false;
+    --ftr-Sl-Ct: false;
+    --ftr-Sl-Cbo: false;
+    --ftr-Sl-Cl: true;
+    --ftr-Sl-Cr: false;
+
+    /* side = right */
+    --ftr-Sr-Cf: false;
+    --ftr-Sr-Cba: false;
+    --ftr-Sr-Ct: false;
+    --ftr-Sr-Cbo: false;
+    --ftr-Sr-Cl: false;
+    --ftr-Sr-Cr: true;
+
+    /*front bottom right cube side color definitions */
+    /* side = front */
+    --fbor-Sf-Cf: true;
+    --fbor-Sf-Cba: false;
+    --fbor-Sf-Ct: false;
+    --fbor-Sf-Cbo: false;
+    --fbor-Sf-Cl: false;
+    --fbor-Sf-Cr: false;
+
+    /* side = back */
+    --fbor-Sba-Cf: false;
+    --fbor-Sba-Cba: true;
+    --fbor-Sba-Ct: false;
+    --fbor-Sba-Cbo: false;
+    --fbor-Sba-Cl: false;
+    --fbor-Sba-Cr: false;
+
+    /* side = top */
+    --fbor-St-Cf: false;
+    --fbor-St-Cba: false;
+    --fbor-St-Ct: true;
+    --fbor-St-Cbo: false;
+    --fbor-St-Cl: false;
+    --fbor-St-Cr: false;
+
+    /* side = bottom */
+    --fbor-Sbo-Cf: false;
+    --fbor-Sbo-Cba: false;
+    --fbor-Sbo-Ct: false;
+    --fbor-Sbo-Cbo: true;
+    --fbor-Sbo-Cl: false;
+    --fbor-Sbo-Cr: false;
+
+    /* side = left */
+    --fbor-Sl-Cf: false;
+    --fbor-Sl-Cba: false;
+    --fbor-Sl-Ct: false;
+    --fbor-Sl-Cbo: false;
+    --fbor-Sl-Cl: true;
+    --fbor-Sl-Cr: false;
+
+    /* side = right */
+    --fbor-Sr-Cf: false;
+    --fbor-Sr-Cba: false;
+    --fbor-Sr-Ct: false;
+    --fbor-Sr-Cbo: false;
+    --fbor-Sr-Cl: false;
+    --fbor-Sr-Cr: true;
+
+
+    /* ===========================
+             MARK: Back
+   =========================== */
+    /* MARK: Left */
+    /* back top left cube side color definitions */
+    /* side = front */
+    --batl-Sf-Cf: true;
+    --batl-Sf-Cba: false;
+    --batl-Sf-Ct: false;
+    --batl-Sf-Cbo: false;
+    --batl-Sf-Cl: false;
+    --batl-Sf-Cr: false;
+
+    /* side = back */
+    --batl-Sba-Cf: false;
+    --batl-Sba-Cba: true;
+    --batl-Sba-Ct: false;
+    --batl-Sba-Cbo: false;
+    --batl-Sba-Cl: false;
+    --batl-Sba-Cr: false;
+
+    /* side = top */
+    --batl-St-Cf: false;
+    --batl-St-Cba: false;
+    --batl-St-Ct: true;
+    --batl-St-Cbo: false;
+    --batl-St-Cl: false;
+    --batl-St-Cr: false;
+
+    /* side = bottom */
+    --batl-Sbo-Cf: false;
+    --batl-Sbo-Cba: false;
+    --batl-Sbo-Ct: false;
+    --batl-Sbo-Cbo: true;
+    --batl-Sbo-Cl: false;
+    --batl-Sbo-Cr: false;
+
+    /* side = left */
+    --batl-Sl-Cf: false;
+    --batl-Sl-Cba: false;
+    --batl-Sl-Ct: false;
+    --batl-Sl-Cbo: false;
+    --batl-Sl-Cl: true;
+    --batl-Sl-Cr: false;
+
+    /* side = right */
+    --batl-Sr-Cf: false;
+    --batl-Sr-Cba: false;
+    --batl-Sr-Ct: false;
+    --batl-Sr-Cbo: false;
+    --batl-Sr-Cl: false;
+    --batl-Sr-Cr: true;
+
+    /* back bottom left cube side color definitions */
+    /* side = front */
+    --babol-Sf-Cf: true;
+    --babol-Sf-Cba: false;
+    --babol-Sf-Ct: false;
+    --babol-Sf-Cbo: false;
+    --babol-Sf-Cl: false;
+    --babol-Sf-Cr: false;
+
+    /* side = back */
+    --babol-Sba-Cf: false;
+    --babol-Sba-Cba: true;
+    --babol-Sba-Ct: false;
+    --babol-Sba-Cbo: false;
+    --babol-Sba-Cl: false;
+    --babol-Sba-Cr: false;
+
+    /* side = top */
+    --babol-St-Cf: false;
+    --babol-St-Cba: false;
+    --babol-St-Ct: true;
+    --babol-St-Cbo: false;
+    --babol-St-Cl: false;
+    --babol-St-Cr: false;
+
+    /* side = bottom */
+    --babol-Sbo-Cf: false;
+    --babol-Sbo-Cba: false;
+    --babol-Sbo-Ct: false;
+    --babol-Sbo-Cbo: true;
+    --babol-Sbo-Cl: false;
+    --babol-Sbo-Cr: false;
+
+    /* side = left */
+    --babol-Sl-Cf: false;
+    --babol-Sl-Cba: false;
+    --babol-Sl-Ct: false;
+    --babol-Sl-Cbo: false;
+    --babol-Sl-Cl: true;
+    --babol-Sl-Cr: false;
+
+    /* side = right */
+    --babol-Sr-Cf: false;
+    --babol-Sr-Cba: false;
+    --babol-Sr-Ct: false;
+    --babol-Sr-Cbo: false;
+    --babol-Sr-Cl: false;
+    --babol-Sr-Cr: true;
+
+
+    /* MARK: Right */
+    /* back top right cube side color definitions */
+    /* side = front */
+    --batr-Sf-Cf: true;
+    --batr-Sf-Cba: false;
+    --batr-Sf-Ct: false;
+    --batr-Sf-Cbo: false;
+    --batr-Sf-Cl: false;
+    --batr-Sf-Cr: false;
+
+    /* side = back */
+    --batr-Sba-Cf: false;
+    --batr-Sba-Cba: true;
+    --batr-Sba-Ct: false;
+    --batr-Sba-Cbo: false;
+    --batr-Sba-Cl: false;
+    --batr-Sba-Cr: false;
+
+    /* side = top */
+    --batr-St-Cf: false;
+    --batr-St-Cba: false;
+    --batr-St-Ct: true;
+    --batr-St-Cbo: false;
+    --batr-St-Cl: false;
+    --batr-St-Cr: false;
+
+    /* side = bottom */
+    --batr-Sbo-Cf: false;
+    --batr-Sbo-Cba: false;
+    --batr-Sbo-Ct: false;
+    --batr-Sbo-Cbo: true;
+    --batr-Sbo-Cl: false;
+    --batr-Sbo-Cr: false;
+
+    /* side = left */
+    --batr-Sl-Cf: false;
+    --batr-Sl-Cba: false;
+    --batr-Sl-Ct: false;
+    --batr-Sl-Cbo: false;
+    --batr-Sl-Cl: true;
+    --batr-Sl-Cr: false;
+
+    /* side = right */
+    --batr-Sr-Cf: false;
+    --batr-Sr-Cba: false;
+    --batr-Sr-Ct: false;
+    --batr-Sr-Cbo: false;
+    --batr-Sr-Cl: false;
+    --batr-Sr-Cr: true;
+
+    /* back bottom right cube side color definitions */
+    /* side = front */
+    --babor-Sf-Cf: true;
+    --babor-Sf-Cba: false;
+    --babor-Sf-Ct: false;
+    --babor-Sf-Cbo: false;
+    --babor-Sf-Cl: false;
+    --babor-Sf-Cr: false;
+
+    /* side = back */
+    --babor-Sba-Cf: false;
+    --babor-Sba-Cba: true;
+    --babor-Sba-Ct: false;
+    --babor-Sba-Cbo: false;
+    --babor-Sba-Cl: false;
+    --babor-Sba-Cr: false;
+
+    /* side = top */
+    --babor-St-Cf: false;
+    --babor-St-Cba: false;
+    --babor-St-Ct: true;
+    --babor-St-Cbo: false;
+    --babor-St-Cl: false;
+    --babor-St-Cr: false;
+
+    /* side = bottom */
+    --babor-Sbo-Cf: false;
+    --babor-Sbo-Cba: false;
+    --babor-Sbo-Ct: false;
+    --babor-Sbo-Cbo: true;
+    --babor-Sbo-Cl: false;
+    --babor-Sbo-Cr: false;
+
+    /* side = left */
+    --babor-Sl-Cf: false;
+    --babor-Sl-Cba: false;
+    --babor-Sl-Ct: false;
+    --babor-Sl-Cbo: false;
+    --babor-Sl-Cl: true;
+    --babor-Sl-Cr: false;
+
+    /* side = right */
+    --babor-Sr-Cf: false;
+    --babor-Sr-Cba: false;
+    --babor-Sr-Ct: false;
+    --babor-Sr-Cbo: false;
+    --babor-Sr-Cl: false;
+    --babor-Sr-Cr: true;
+
 
 
 }
@@ -44,6 +465,50 @@ main {
 
 }
 
+/* MARK: style */
+
+html:has([value="standaard"]:checked) {
+    --standaard: true;
+}
+
+html:has([value="pastel"]:checked) {
+    --pastel: true;
+}
+
+
+@container style(--pastel:true) {
+    body {
+        --color-rubiks-front: rgb(165, 236, 236);
+        --color-rubiks-back: rgb(146, 231, 146);
+        --color-rubiks-top: rgb(245, 229, 243);
+        --color-rubiks-bottom: rgb(237, 237, 172);
+        --color-rubiks-left: rgb(236, 188, 188);
+        --color-rubiks-right: rgb(230, 202, 150);
+    }
+}
+
+
+/* html:has([value="turnRight"]:checked) {
+    --rightTurn: true;
+}
+
+@container style(--rightTurn:true) {
+    body {
+
+
+        cube: front top right
+        --color-rubiks-front: red;
+    }
+} */
+
+/* front top right = 2
+front top bottom = 4 */
+
+/*  afkortingen front top right -  front = ftrF ftrBa ftrL ftrR ftrT ftrBo */
+
+
+
+
 /* MARK: cubes */
 
 cube {
@@ -61,44 +526,68 @@ cube>* {
     width: var(--size-one-cube);
     aspect-ratio: 1;
     background: hotpink;
-    /* margin: 0.2rem; */
     display: block;
 
     grid-area: 1/1;
 }
 
+
+/* MARK: placing cubes */
+
 /* front top left */
 cube:nth-of-type(1) {
-    transform: translateX(calc(var(--translate-one-cube)* -1)) translateY(calc(var(--translate-one-cube) * -1));
+    transform: var(--translate-one-cube-left) var(--translate-one-cube-up) var(--translate-one-cube-front);
 }
 
-
 /* front top right */
-
 cube:nth-of-type(2) {
-    transform: translateX(var(--translate-one-cube)) translateY(calc(var(--translate-one-cube) * -1));
+    transform: var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
 }
 
 /* front bottom left */
-
 cube:nth-of-type(3) {
-    transform: translateX(var(--translate-one-cube)) translateY(var(--translate-one-cube));
+    transform: var(--translate-one-cube-left) var(--translate-one-cube-down) var(--translate-one-cube-front);
 }
 
 /* front bottom right */
-
 cube:nth-of-type(4) {
-    transform: translateX(calc(var(--translate-one-cube)* -1)) translateY(var(--translate-one-cube));
+    transform: var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
 }
+
+/* back top left */
+cube:nth-of-type(5) {
+    transform: var(--translate-one-cube-left) var(--translate-one-cube-up) var(--translate-one-cube-back);
+}
+
+/* back top right */
+cube:nth-of-type(6) {
+    transform: var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
+}
+
+/* back bottom left */
+cube:nth-of-type(7) {
+    transform: var(--translate-one-cube-left) var(--translate-one-cube-down) var(--translate-one-cube-back);
+}
+
+/* back bottom right */
+cube:nth-of-type() {
+    transform: var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
+}
+
+
 
 
 /* MARK: sides */
 
+/* cube ~ * {
+    border: 1px solid black;
+} */
 
 
 front {
     background: var(--color-rubiks-front);
     transform: translateZ(var(--translate-one-side));
+    /* border: 1px solid black; */
 }
 
 back {
@@ -119,7 +608,7 @@ bottom {
 
 left {
     background: var(--color-rubiks-left);
-    transform: rotateY(90deg) translateZ(calc( var(--translate-one-side) * -1));
+    transform: rotateY(90deg) translateZ(calc(var(--translate-one-side) * -1));
 }
 
 right {
@@ -145,4 +634,6 @@ cube:hover {
     }
 }
 
-
+/* main {
+    transform: rotateX(75deg) rotateY(90deg);
+} */
