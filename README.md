@@ -137,6 +137,20 @@ Volgende week wil ik aan de volgende dingen gaan werken
 12 maart
 930 -1040 sanne's meester class
 1040-11 daarvan bijkomen en oefenen met rubiks oplossen
-1100 afmaken met de custom properties colording
-1115 verder  met w
+1100 1120 afmaken met de custom properties colording
+1130 verder  met w
+1140 met julius de randvoorwarden doornemen
+1150 veridepen in if() in css: ik kan het gebruiken maar het moet nog iets meer bezinken denk ik
+1200 verder met idee uitwerken (de verhsusselingsvoorwaarden)
+1230 wiskunde workshop
+1340 pauze
+1430 verder met de voorwaarden uitwerken enzo
+
+notes -> ik kwam erachter dat de container querie geld zolang aan de voorwaarde wordt gedaan en daarna reset maar dat kan ik denk ik oplossen met een tweede querie erachter aan.... hoop ik dan
+
+1530 i dont even remember
+
+1045 testen of ik data kan opslaan op de manier die ik in mijn hoofd heb en kijken of ik maybe kan kijken welke kleur ipv duideznd variables gebruiken
+
+
 

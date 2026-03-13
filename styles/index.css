@@ -26,11 +26,23 @@
     --translate-one-cube-back: translateZ(calc(var(--translate-one-cube) * -1));
 
 
-    /* front top right cube side definitions */
-    /* ftrF ftrBa ftrL ftrR ftrT ftrBo  */
-    /* ftr-sF-cF [cube]-[side]-[color] */
 
 
+
+
+    /* Uitleg afkortingen:
+        Format: [cube]-[side]-[color] 
+        Afkortingen:
+            Cube:   
+                    ftl = front top left
+                    babor = back bottom right
+            Side:   
+                    Sf = side front
+                    Sba = side back
+            Color: 
+                    Cf = color front
+                    Cbo = color bottom 
+            */
 
 
     /* ===========================
@@ -134,6 +146,7 @@
     --fbol-Sr-Cbo: false;
     --fbol-Sr-Cl: false;
     --fbol-Sr-Cr: true;
+    
     /* MARK: Right */
     /* front top right cube side color definitions */
     /* side = front */
@@ -444,7 +457,7 @@
 
 /* MARK: scene */
 
-main {
+main  rubiks {
     background: olive;
     display: grid;
 
@@ -486,26 +499,6 @@ html:has([value="pastel"]:checked) {
         --color-rubiks-right: rgb(230, 202, 150);
     }
 }
-
-
-/* html:has([value="turnRight"]:checked) {
-    --rightTurn: true;
-}
-
-@container style(--rightTurn:true) {
-    body {
-
-
-        cube: front top right
-        --color-rubiks-front: red;
-    }
-} */
-
-/* front top right = 2
-front top bottom = 4 */
-
-/*  afkortingen front top right -  front = ftrF ftrBa ftrL ftrR ftrT ftrBo */
-
 
 
 
@@ -637,3 +630,191 @@ cube:hover {
 /* main {
     transform: rotateX(75deg) rotateY(90deg);
 } */
+
+
+
+html:has([value="turnRight"]:checked) {
+    --rightTurn: true;
+}
+
+@container style(--rightTurn:true) {
+
+    body cube:nth-of-type(2) {
+
+        & front {
+
+            @container style(--fbor-Sbo-Cf: true) {
+                --ftr-Sf-Cf: true;
+                --ftr-Sf-Cba: false;
+                --ftr-Sf-Ct: false;
+                --ftr-Sf-Cbo: false;
+                --ftr-Sf-Cl: false;
+                --ftr-Sf-Cr: false;
+
+                background: var(--color-rubiks-front);
+            }
+
+            @container style(--fbor-Sbo-Cba: true) {
+                --ftr-Sf-Cf: false;
+                --ftr-Sf-Cba: true;
+                --ftr-Sf-Ct: false;
+                --ftr-Sf-Cbo: false;
+                --ftr-Sf-Cl: false;
+                --ftr-Sf-Cr: false;
+
+                background: var(--color-rubiks-back);
+
+            }
+
+            @container style(--fbor-Sbo-Ct: true) {
+                --ftr-Sf-Cf: false;
+                --ftr-Sf-Cba: false;
+                --ftr-Sf-Ct: true;
+                --ftr-Sf-Cbo: false;
+                --ftr-Sf-Cl: false;
+                --ftr-Sf-Cr: false;
+
+                background: var(--color-rubiks-top);
+
+            }
+
+            @container style(--fbor-Sbo-Cbo: true) {
+                --ftr-Sf-Cf: false;
+                --ftr-Sf-Cba: false;
+                --ftr-Sf-Ct: false;
+                --ftr-Sf-Cbo: true;
+                --ftr-Sf-Cl: false;
+                --ftr-Sf-Cr: false;
+
+                background: var(--color-rubiks-bottom);
+
+            }
+
+            @container style(--fbor-Sbo-Cl: true) {
+                --ftr-Sf-Cf: false;
+                --ftr-Sf-Cba: false;
+                --ftr-Sf-Ct: false;
+                --ftr-Sf-Cbo: false;
+                --ftr-Sf-Cl: true;
+                --ftr-Sf-Cr: false;
+
+                background: var(--color-rubiks-left);
+            }
+
+            @container style(--fbor-Sbo-Cr: true) {
+                --ftr-Sf-Cf: false;
+                --ftr-Sf-Cba: false;
+                --ftr-Sf-Ct: false;
+                --ftr-Sf-Cbo: false;
+                --ftr-Sf-Cl: false;
+                --ftr-Sf-Cr: true;
+
+                background: var(--color-rubiks-right);
+
+            }
+        }
+
+        & top {
+
+            /* Je kijkt naar het blokje eronder */
+            @container style(--fbor-Sf-Cf: true) {
+                --ftr-St-Cf: true;
+                --ftr-St-Cba: false;
+                --ftr-St-Ct: false;
+                --ftr-St-Cbo: false;
+                --ftr-St-Cl: false;
+                --ftr-St-Cr: false;
+
+                background: var(--color-rubiks-front);
+            }
+
+            @container style(--fbor-Sf-Cba: true) {
+                --ftr-St-Cf: false;
+                --ftr-St-Cba: true;
+                --ftr-St-Ct: false;
+                --ftr-St-Cbo: false;
+                --ftr-St-Cl: false;
+                --ftr-St-Cr: false;
+
+                background: var(--color-rubiks-back);
+
+            }
+
+            @container style(--fbor-Sf-Ct: true) {
+                --ftr-St-Cf: false;
+                --ftr-St-Cba: false;
+                --ftr-St-Ct: true;
+                --ftr-St-Cbo: false;
+                --ftr-St-Cl: false;
+                --ftr-St-Cr: false;
+
+                background: var(--color-rubiks-top);
+
+            }
+
+            @container style(--fbor-Sf-Cbo: true) {
+                --ftr-St-Cf: false;
+                --ftr-St-Cba: false;
+                --ftr-St-Ct: false;
+                --ftr-St-Cbo: true;
+                --ftr-St-Cl: false;
+                --ftr-St-Cr: false;
+
+                background: var(--color-rubiks-bottom);
+
+            }
+
+            @container style(--fbor-Sf-Cl: true) {
+                --ftr-St-Cf: false;
+                --ftr-St-Cba: false;
+                --ftr-St-Ct: false;
+                --ftr-St-Cbo: false;
+                --ftr-St-Cl: true;
+                --ftr-St-Cr: false;
+
+                background: var(--color-rubiks-left);
+            }
+
+            @container style(--fbor-Sf-Cr: true) {
+                --ftr--Cf: false;
+                --ftr--Cba: false;
+                --ftr--Ct: false;
+                --ftr--Cbo: false;
+                --ftr--Cl: false;
+                --ftr--Cr: true;
+
+                background: var(--color-rubiks-right);
+
+            }
+
+        }
+
+
+    }
+}
+
+
+
+
+/* 
+background if(style(--ftr-Sf-Cf:true): var(--color-rubiks-front);
+    style(--ftr-Sf-Cba:true): var(--color-rubiks-back);
+    style(--ftr-Sf-Ct:true): var(--color-rubiks-top);
+    style(--ftr-Sf-Cbo:true): var(--color-rubiks-bottom);
+    style(--ftr-Sf-Cl:true): var(--color-rubiks-left);
+    style(--ftr-Sf-Cr:true): var(--color-rubiks-right));
+
+background: var(--color-rubiks-front); */
+
+/*  --ftr-Sf-Cf: true;
+    --ftr-Sf-Cba: false;
+    --ftr-Sf-Ct: false;
+    --ftr-Sf-Cbo: false;
+    --ftr-Sf-Cl: false;
+    --ftr-Sf-Cr: false; */
+
+
+
+
+/* front top right = 2
+front top bottom = 4*/
