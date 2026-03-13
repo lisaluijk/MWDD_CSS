@@ -150,7 +150,15 @@ notes -> ik kwam erachter dat de container querie geld zolang aan de voorwaarde 
 
 1530 i dont even remember
 
+vrijdag 13 maart
 1045 testen of ik data kan opslaan op de manier die ik in mijn hoofd heb en kijken of ik maybe kan kijken welke kleur ipv duideznd variables gebruiken
+1115 pauze
+1145 1200 nog meer research naar container queries
+
+1330 browser tech
+1545 css
+
+
 
 
 

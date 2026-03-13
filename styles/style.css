@@ -3,7 +3,7 @@
 }
 
 * {
-    background: #FFF7E5;
+
     color: #d52122;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -11,6 +11,7 @@
 
 body {
     display: grid;
+     background: #FFF7E5;
 }
 
 
@@ -18,3 +19,4 @@ h1 {
     justify-self: center;
     text-transform: uppercase;
 }
+

@@ -146,7 +146,7 @@
     --fbol-Sr-Cbo: false;
     --fbol-Sr-Cl: false;
     --fbol-Sr-Cr: true;
-    
+
     /* MARK: Right */
     /* front top right cube side color definitions */
     /* side = front */
@@ -457,8 +457,13 @@
 
 /* MARK: scene */
 
-main  rubiks {
-    background: olive;
+main {
+    perspective: 30rem;
+
+}
+
+main rubiks {
+    /* background: olive; */
     display: grid;
 
 
@@ -469,7 +474,6 @@ main  rubiks {
     padding: 5rem;
 
 
-    perspective: 30rem;
     /* perspective-origin: top left; */
 
     transform-style: preserve-3d;
@@ -563,7 +567,7 @@ cube:nth-of-type(7) {
 }
 
 /* back bottom right */
-cube:nth-of-type() {
+cube:nth-of-type(8) {
     transform: var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
 }
 
@@ -609,10 +613,14 @@ right {
     transform: rotateY(90deg) translateZ(var(--translate-one-side));
 }
 
-cube:hover {
+/* cube:hover {
     animation: --rotate 4s infinite linear;
-}
+} */
 
+rubiks:hover {
+    animation: --rotate 6s infinite linear;
+
+}
 
 
 @keyframes --rotate {
@@ -623,7 +631,7 @@ cube:hover {
 
     100% {
         transform:
-            rotateX(360deg) rotateY(1turn);
+            rotateX(360deg) rotateY(2turn);
     }
 }
 
@@ -631,7 +639,7 @@ cube:hover {
     transform: rotateX(75deg) rotateY(90deg);
 } */
 
-
+/* MARK: change colors */
 
 html:has([value="turnRight"]:checked) {
     --rightTurn: true;
@@ -639,6 +647,8 @@ html:has([value="turnRight"]:checked) {
 
 @container style(--rightTurn:true) {
 
+
+    /* MARK: front top right -> front side */
     body cube:nth-of-type(2) {
 
         & front {
@@ -714,6 +724,8 @@ html:has([value="turnRight"]:checked) {
             }
         }
 
+
+        /* MARK: front top right -> top side */
         & top {
 
             /* Je kijkt naar het blokje eronder */
@@ -792,6 +804,42 @@ html:has([value="turnRight"]:checked) {
 
     }
 }
+
+
+
+
+/* MARK: testing if I can store data  */
+ @container style(--ftr-Sf-Cbo: true) {
+    body cube:nth-of-type(2) {
+
+        & front {
+            --ftr-Sf-Cbo: true;
+            background: var(--color-rubiks-bottom);
+        }
+
+    }
+}
+
+
+
+/* MARK: sneller en minder uitgebreide manier van uitrekenen welke kleur het moet zijn */
+/* cube:nth-of-type(1) front {
+
+    @container style(--color-rubiks-front) {
+        background-color: hotpink;
+    }
+} */
+
+cube:nth-of-type(4) front {
+    @container style(--color-rubiks-bottom) {
+        border: 1px solid green;
+
+    }
+}
+
+
+
+
 
 
 
