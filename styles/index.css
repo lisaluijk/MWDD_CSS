@@ -646,179 +646,243 @@ html:has([value="turnRight"]:checked) {
 }
 
 @container style(--rightTurn:true) {
+    /* MARK: front top right -> front side */
+    body {
+
+        /* @container style(--fbor-Sbo-Cf: true) {
+            --ftr-Sf-Cf: true;
+            --ftr-Sf-Cba: false;
+            --ftr-Sf-Ct: false;
+            --ftr-Sf-Cbo: false;
+            --ftr-Sf-Cl: false;
+            --ftr-Sf-Cr: false;
+
+            background: var(--color-rubiks-front);
+        }
+
+        @container style(--fbor-Sbo-Cba: true) {
+            --ftr-Sf-Cf: false;
+            --ftr-Sf-Cba: true;
+            --ftr-Sf-Ct: false;
+            --ftr-Sf-Cbo: false;
+            --ftr-Sf-Cl: false;
+            --ftr-Sf-Cr: false;
+
+            background: var(--color-rubiks-back);
+
+        }
+
+        @container style(--fbor-Sbo-Ct: true) {
+            --ftr-Sf-Cf: false;
+            --ftr-Sf-Cba: false;
+            --ftr-Sf-Ct: true;
+            --ftr-Sf-Cbo: false;
+            --ftr-Sf-Cl: false;
+            --ftr-Sf-Cr: false;
+
+            background: var(--color-rubiks-top);
+
+        } */
+
+        @container style(--fbor-Sbo-Cbo: true) {
+            --ftr-Sf-Cf: false;
+            --ftr-Sf-Cba: false;
+            --ftr-Sf-Ct: false;
+            --ftr-Sf-Cbo: true;
+            --ftr-Sf-Cl: false;
+            --ftr-Sf-Cr: false;
+
+            /* background: var(--color-rubiks-bottom); */
+
+        }
+
+        /* @container style(--fbor-Sbo-Cl: true) {
+            --ftr-Sf-Cf: false;
+            --ftr-Sf-Cba: false;
+            --ftr-Sf-Ct: false;
+            --ftr-Sf-Cbo: false;
+            --ftr-Sf-Cl: true;
+            --ftr-Sf-Cr: false;
+
+            background: var(--color-rubiks-left);
+        }
+
+        @container style(--fbor-Sbo-Cr: true) {
+            --ftr-Sf-Cf: false;
+            --ftr-Sf-Cba: false;
+            --ftr-Sf-Ct: false;
+            --ftr-Sf-Cbo: false;
+            --ftr-Sf-Cl: false;
+            --ftr-Sf-Cr: true;
+
+            background: var(--color-rubiks-right);
+
+        } */
+    }    
+}
+
+
+html:has([value="turnFront"]:checked) {
+    --turnFront: true;
+}
+
+@container style(--turnFront: true) {
 
 
     /* MARK: front top right -> front side */
-    body cube:nth-of-type(2) {
-
-        & front {
-
-            @container style(--fbor-Sbo-Cf: true) {
-                --ftr-Sf-Cf: true;
-                --ftr-Sf-Cba: false;
-                --ftr-Sf-Ct: false;
-                --ftr-Sf-Cbo: false;
-                --ftr-Sf-Cl: false;
-                --ftr-Sf-Cr: false;
-
-                background: var(--color-rubiks-front);
-            }
-
-            @container style(--fbor-Sbo-Cba: true) {
-                --ftr-Sf-Cf: false;
-                --ftr-Sf-Cba: true;
-                --ftr-Sf-Ct: false;
-                --ftr-Sf-Cbo: false;
-                --ftr-Sf-Cl: false;
-                --ftr-Sf-Cr: false;
-
-                background: var(--color-rubiks-back);
-
-            }
-
-            @container style(--fbor-Sbo-Ct: true) {
-                --ftr-Sf-Cf: false;
-                --ftr-Sf-Cba: false;
-                --ftr-Sf-Ct: true;
-                --ftr-Sf-Cbo: false;
-                --ftr-Sf-Cl: false;
-                --ftr-Sf-Cr: false;
-
-                background: var(--color-rubiks-top);
-
-            }
-
-            @container style(--fbor-Sbo-Cbo: true) {
-                --ftr-Sf-Cf: false;
-                --ftr-Sf-Cba: false;
-                --ftr-Sf-Ct: false;
-                --ftr-Sf-Cbo: true;
-                --ftr-Sf-Cl: false;
-                --ftr-Sf-Cr: false;
-
-                background: var(--color-rubiks-bottom);
-
-            }
-
-            @container style(--fbor-Sbo-Cl: true) {
-                --ftr-Sf-Cf: false;
-                --ftr-Sf-Cba: false;
-                --ftr-Sf-Ct: false;
-                --ftr-Sf-Cbo: false;
-                --ftr-Sf-Cl: true;
-                --ftr-Sf-Cr: false;
-
-                background: var(--color-rubiks-left);
-            }
-
-            @container style(--fbor-Sbo-Cr: true) {
-                --ftr-Sf-Cf: false;
-                --ftr-Sf-Cba: false;
-                --ftr-Sf-Ct: false;
-                --ftr-Sf-Cbo: false;
-                --ftr-Sf-Cl: false;
-                --ftr-Sf-Cr: true;
-
-                background: var(--color-rubiks-right);
-
-            }
-        }
+    rubiks {
+        /* border: 3px solid black; */
 
 
-        /* MARK: front top right -> top side */
-        & top {
+        /* @container style(--ftr-Sf-Cf: true) {
+            --fbor-Sf-Cf: true;
+            --fbor-Sf-Cba: false;
+            --fbor-Sf-Ct: false;
+            --fbor-Sf-Cbo: false;
+            --fbor-Sf-Cl: false;
+            --fbor-Sf-Cr: false;
 
-            /* Je kijkt naar het blokje eronder */
-            @container style(--fbor-Sf-Cf: true) {
-                --ftr-St-Cf: true;
-                --ftr-St-Cba: false;
-                --ftr-St-Ct: false;
-                --ftr-St-Cbo: false;
-                --ftr-St-Cl: false;
-                --ftr-St-Cr: false;
+            background: var(--color-rubiks-front);
+        } */
 
-                background: var(--color-rubiks-front);
-            }
+        /* @container style(--ftr-Sf-Cba: true) {
+            --fbor-Sf-Cf: false;
+            --fbor-Sf-Cba: true;
+            --fbor-Sf-Ct: false;
+            --fbor-Sf-Cbo: false;
+            --fbor-Sf-Cl: false;
+            --fbor-Sf-Cr: false;
 
-            @container style(--fbor-Sf-Cba: true) {
-                --ftr-St-Cf: false;
-                --ftr-St-Cba: true;
-                --ftr-St-Ct: false;
-                --ftr-St-Cbo: false;
-                --ftr-St-Cl: false;
-                --ftr-St-Cr: false;
-
-                background: var(--color-rubiks-back);
-
-            }
-
-            @container style(--fbor-Sf-Ct: true) {
-                --ftr-St-Cf: false;
-                --ftr-St-Cba: false;
-                --ftr-St-Ct: true;
-                --ftr-St-Cbo: false;
-                --ftr-St-Cl: false;
-                --ftr-St-Cr: false;
-
-                background: var(--color-rubiks-top);
-
-            }
-
-            @container style(--fbor-Sf-Cbo: true) {
-                --ftr-St-Cf: false;
-                --ftr-St-Cba: false;
-                --ftr-St-Ct: false;
-                --ftr-St-Cbo: true;
-                --ftr-St-Cl: false;
-                --ftr-St-Cr: false;
-
-                background: var(--color-rubiks-bottom);
-
-            }
-
-            @container style(--fbor-Sf-Cl: true) {
-                --ftr-St-Cf: false;
-                --ftr-St-Cba: false;
-                --ftr-St-Ct: false;
-                --ftr-St-Cbo: false;
-                --ftr-St-Cl: true;
-                --ftr-St-Cr: false;
-
-                background: var(--color-rubiks-left);
-            }
-
-            @container style(--fbor-Sf-Cr: true) {
-                --ftr--Cf: false;
-                --ftr--Cba: false;
-                --ftr--Ct: false;
-                --ftr--Cbo: false;
-                --ftr--Cl: false;
-                --ftr--Cr: true;
-
-                background: var(--color-rubiks-right);
-
-            }
+            background: var(--color-rubiks-back);
 
         }
 
+        @container style(--ftr-Sf-Ct: true) {
+            --fbor-Sf-Cf: false;
+            --fbor-Sf-Cba: false;
+            --fbor-Sf-Ct: true;
+            --fbor-Sf-Cbo: false;
+            --fbor-Sf-Cl: false;
+            --fbor-Sf-Cr: false;
 
+            background: var(--color-rubiks-top);
+
+        } */
+
+        @container style(--ftr-Sf-Cbo: true) {
+            --fbor-Sf-Cf: false;
+            --fbor-Sf-Cba: false;
+            --fbor-Sf-Ct: false;
+            --fbor-Sf-Cbo: true;
+            --fbor-Sf-Cl: false;
+            --fbor-Sf-Cr: false;
+            border: 1px solid black;
+
+            background: var(--color-rubiks-bottom);
+
+        }
+
+        /* @container style(--ftr-Sf-Cl: true) {
+            --fbor-Sf-Cf: false;
+            --fbor-Sf-Cba: false;
+            --fbor-Sf-Ct: false;
+            --fbor-Sf-Cbo: false;
+            --fbor-Sf-Cl: true;
+            --fbor-Sf-Cr: false;
+
+            background: var(--color-rubiks-left);
+        }
+
+        @container style(--ftr-Sf-Cr: true) {
+            --fbor-Sf-Cf: false;
+            --fbor-Sf-Cba: false;
+            --fbor-Sf-Ct: false;
+            --fbor-Sf-Cbo: false;
+            --fbor-Sf-Cl: false;
+            --fbor-Sf-Cr: true;
+
+            background: var(--color-rubiks-right);
+
+        } */
     }
+
 }
 
+/* @container style(--ftr-Sf-Cbo: true) {
+    rubiks {
+
+        --fbor-Sf-Cbo: true;
+    }
 
 
+} */
 
 /* MARK: testing if I can store data  */
- @container style(--ftr-Sf-Cbo: true) {
-    body cube:nth-of-type(2) {
+body cube:nth-of-type(2) {
+    @container style(--ftr-Sf-Cbo: true) {
 
         & front {
-            --ftr-Sf-Cbo: true;
+            background: var(--color-rubiks-bottom);
+        
+        }
+    }
+
+}
+
+body cube:nth-of-type(2) {
+    @container style(--ftr-Sf-Cf: true) {
+
+        & front {
+            background: var(--color-rubiks-front);
+        
+        }
+    }
+
+}
+
+/* body cube:nth-of-type(2) front {
+    background: if(style(--ftr-Sf-Cbo: true): var(--color-rubiks-bottom); else: purple);
+} */
+
+body cube:nth-of-type(4) front {
+    @container style(--fbor-Sf-Cbo: true) {
+       
+            background: var(--color-rubiks-bottom);
+        
+    }
+    /* background: if(style(--fbor-Sf-Cbo: true): var(--color-rubiks-bottom)); */
+}
+
+
+
+/* body cube:nth-of-type(4) {
+    @container style(--fbor-Sf-Cbo: true) {
+
+        & front { 
             background: var(--color-rubiks-bottom);
         }
+    } */
 
+     /* @container style(--fbor-Sf-Cf: true) {
+
+        & front { 
+            background: var(--color-rubiks-right);
+        }
+    } */
+
+/* } */
+
+/* body cube:nth-of-type(2) {
+    @container style(--ftr-Sf-Cf: true) {
+
+        & top {
+            --ftr-Sf-Cf: true;
+            background: var(--color-rubiks-front);
+        }
     }
-}
+} */
+
+
 
 
 
@@ -830,12 +894,12 @@ html:has([value="turnRight"]:checked) {
     }
 } */
 
-cube:nth-of-type(4) front {
+/* cube:nth-of-type(4) front {
     @container style(--color-rubiks-bottom) {
         border: 1px solid green;
 
     }
-}
+} */
 
 
 

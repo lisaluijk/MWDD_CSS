@@ -160,5 +160,86 @@ vrijdag 13 maart
 
 
 
+zaterdag 2030 tweede draai proberen
+
+Ik ben erachter gekomen dat wat ik had gehoopt met oplslaan van dat met twee media queries helaas niet werkt het is echt zolang iets geldt geldt het. ipv daarvan sla ik het op via een knop. De hoeveelheid knoppen bepaalt in dit geval het aantal mogelijke draaien hoewel het eig onbeperkt is als je drie draaine links doet wat ik er of bij zet of heel erg misschien kan automatiseren idk man ik ga nu verder 
+
+ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op cube 4
+
+Commented code:
+/* MARK: front top right -> top side */
+    & top {
+
+        /* Je kijkt naar het blokje eronder */
+        @container style(--fbor-Sf-Cf: true) {
+            --ftr-St-Cf: true;
+            --ftr-St-Cba: false;
+            --ftr-St-Ct: false;
+            --ftr-St-Cbo: false;
+            --ftr-St-Cl: false;
+            --ftr-St-Cr: false;
+
+            background: var(--color-rubiks-front);
+        }
+
+        @container style(--fbor-Sf-Cba: true) {
+            --ftr-St-Cf: false;
+            --ftr-St-Cba: true;
+            --ftr-St-Ct: false;
+            --ftr-St-Cbo: false;
+            --ftr-St-Cl: false;
+            --ftr-St-Cr: false;
+
+            background: var(--color-rubiks-back);
+
+        }
+
+        @container style(--fbor-Sf-Ct: true) {
+            --ftr-St-Cf: false;
+            --ftr-St-Cba: false;
+            --ftr-St-Ct: true;
+            --ftr-St-Cbo: false;
+            --ftr-St-Cl: false;
+            --ftr-St-Cr: false;
+
+            background: var(--color-rubiks-top);
+
+        }
+
+        @container style(--fbor-Sf-Cbo: true) {
+            --ftr-St-Cf: false;
+            --ftr-St-Cba: false;
+            --ftr-St-Ct: false;
+            --ftr-St-Cbo: true;
+            --ftr-St-Cl: false;
+            --ftr-St-Cr: false;
+
+            background: var(--color-rubiks-bottom);
+
+        }
+
+        @container style(--fbor-Sf-Cl: true) {
+            --ftr-St-Cf: false;
+            --ftr-St-Cba: false;
+            --ftr-St-Ct: false;
+            --ftr-St-Cbo: false;
+            --ftr-St-Cl: true;
+            --ftr-St-Cr: false;
+
+            background: var(--color-rubiks-left);
+        }
+
+        @container style(--fbor-Sf-Cr: true) {
+            --ftr--Cf: false;
+            --ftr--Cba: false;
+            --ftr--Ct: false;
+            --ftr--Cbo: false;
+            --ftr--Cl: false;
+            --ftr--Cr: true;
+
+            background: var(--color-rubiks-right);
+
+        }
+    }
 
 
