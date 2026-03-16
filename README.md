@@ -165,11 +165,26 @@ zaterdag 2030 -2130? tweede draai proberen
 0030
 dat werkt zo omdat ik de custom property die ik een nieuwe value geef gerbruik als condition. de oplossing is lege div'jes per keer dat ik wil draaien -> hetzelfde als het aantal buttons waarop ik  telkens de nieuwe values kan gaan opslaan.
 
-maandag 1015 nog een keer doornemen met dat opslaan in de inspector. Ligt er dus aan dat het kund info moet opvragen aan de parent dus daarom kan je niet dingen vragen enzo.
+maandag 
+1015 nog een keer doornemen met dat opslaan in de inspector. Ligt er dus aan dat het kund info moet opvragen aan de parent dus daarom kan je niet dingen vragen enzo.
+1100 erachter dat ik ook gewoon de kleur variables kan gebruiken wat media queries gaat schelen nu beginnen aan de eerste layer waarop ik alles kan gaan draaien
+1130 n0g meer stylequeries minderen en eerste volledige draai uitwerken
+1200 pauze
+1230 draai uitwerken
+1315 met sanne zitten
+1400 annimatie proberen-> inspo ophalen bij nienke
+1440 1500 staren naar het beetje code dat nu niet werkt
+1500 16600 kloten met teun en Mats
+1600 check out met mats
+1620 naar huis
+1730 1830 masterplan uitwerken -> wisselen tussne twee variables + made the animation 
+1945 tweede draai....
 
-grapje, ik kan het gewoo
+
+
 https://github.com/w3c/csswg-drafts/issues/6396
-https://github.com/w3c/csswg-drafts/issues/5624n op het blokje opslaan -> of nee wacht toch niet want de andere blokjes hebben die data ook nodig om erachter te komen welke kleur ze moeten worden dus het moet overkoepelend zijn want anders kunnen ze er niet bij
+https://github.com/w3c/csswg-drafts/issues/5624 grapje, ik kan het gewoon op het blokje opslaan -> of nee wacht toch niet want de andere blokjes hebben die data ook nodig om erachter te komen welke kleur ze moeten worden dus het moet overkoepelend zijn want anders kunnen ze er niet bij
+
 
 De reden hiervan is dat het kind aan de parent moet opvragen wat de waarde is. En dat lukt natuurlijk niet als alles op dezelfde layer zit
 
