@@ -379,29 +379,118 @@ rubiks:hover {
 
 
 /* Buttons */
-html:has([value="turnRightClockwise"]:checked) {
+#turn2 {
+    display: none;
+}
+
+html:has([value="1turnRightClockwise"]:checked) {
     --rightTurnClockWise: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
 }
 
-html:has([value="turnRightCounterwise"]:checked) {
+html:has([value="1turnRightCounterwise"]:checked) {
     --rightTurnClockCounter: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
 }
 
+html:has([value="1turnFrontClockwise"]:checked) {
+    --frontTurnClockWise: true;
 
-html:has([value="turnFront"]:checked) {
-    --turnFront: true;
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
 }
 
-html:has([value="turnLeft"]:checked) {
-    --turnLeft: true;
+html:has([value="1turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
 }
 
-html:has([value="turnTop"]:checked) {
-    --turnTop: true;
+html:has([value="1turnLeftClockwise"]:checked) {
+    --leftTurnClockWise: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
 }
 
-html:has([value="turnBottom"]:checked) {
-    --turnBottom: true;
+html:has([value="1turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
+}
+
+html:has([value="1turnTopClockwise"]:checked) {
+    --topTurnClockWise: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
+}
+
+html:has([value="1turnTopCounterwise"]:checked) {
+    --topTurnClockCounter: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
+}
+
+html:has([value="1turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
+}
+
+html:has([value="1turnBottomClockwise"]:checked) {
+    --bottomTurnClockCounter: true;
+
+    & #turn1 {
+        display: none;
+    }
+    & #turn2 {
+        display: grid;
+    }
 }
 
 
@@ -414,7 +503,6 @@ saving-layer1 {
 
     /* rechts met de klok mee */
     @container style(--rightTurnClockWise: true) {
-
 
         /* Front top right block */
         --ftr-Sf-C2: var(--fbor-Sbo-C);
@@ -437,7 +525,6 @@ saving-layer1 {
         --babor-Sr-C2: var(--batr-Sr-C);
 
     }
-
 
     /* rechts tegen de klok in */
     @container style(--rightTurnClockCounter: true) {
@@ -509,6 +596,79 @@ saving-layer1 {
         --babol-Sba-C: var(--fbol-Sbo-C);
         --babol-Sbo-C: var(--fbol-Sf-C);
         --babol-Sl-C: var(--fbol-Sl-C);
+    }
+
+    /* front met de klok mee */
+    @container style(--frontTurnClockWise: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--ftl-Sf-C);
+        --ftr-St-C2: var(--ftl-Sl-C);
+        --ftr-Sr-C2: var(--ftl-St-C);
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--ftr-Sf-C);
+        --fbor-Sbo-C2: var(--ftr-Sr-C);
+        --fbor-Sr-C2: var(--ftr-St-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--fbol-Sf-C);
+        --ftl-St-C2: var(--fbol-Sl-C);
+        --ftl-Sl-C2: var(--fbol-Sbo-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--fbor-Sf-C);
+        --fbol-Sbo-C2: var(--fbor-Sr-C);
+        --fbol-Sl-C2: var(--fbor-Sbo-C);
+
+    }
+
+    /* Top met de klok mee */
+     @container style(--topTurnClockWise: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--batr-Sr-C);
+        --ftr-St-C2: var(--batr-St-C);
+        --ftr-Sr-C2: var(--batr-Sba-C);
+
+        /* Back top right block */
+        --batr-Sba-C2: var(--batl-Sl-C);
+        --batr-St-C2: var(--batl-St-C);
+        --batr-Sr-C2: var(--batl-Sba-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--ftr-Sr-C);
+        --ftl-St-C2: var(--ftr-St-C);
+        --ftl-Sl-C2: var(--ftr-Sf-C);
+
+        /* back top left block */
+        --batl-Sba-C2: var(--ftl-Sl-C);
+        --batl-St-C2: var(--ftl-St-C);
+        --batl-Sl-C2: var(--ftl-Sf-C);
+    }
+
+    /* Bottom met de klok mee */
+     @container style(--bottomTurnClockWise: true) {
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--fbol-Sl-C);
+        --fbor-Sbo-C2: var(--fbol-Sbo-C);
+        --fbor-Sr-C2: var(--fbol-Sf-C);
+
+        /* Back bottom right block */
+        --babor-Sba-C2: var(--fbor-Sr-C);
+        --babor-Sbo-C2: var(--fbor-Sbo-C);
+        --babor-Sr-C2: var(--fbor-Sf-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--babol-Sl-C);
+        --fbol-Sbo-C2: var(--babol-Sbo-C);
+        --fbol-Sl-C2: var(--babol-Sba-C);
+
+        /* back bottom left block */
+        --babol-Sba-C2: var(--babor-Sr-C);
+        --babol-Sbo-C2: var(--babor-Sbo-C);
+        --babol-Sl-C2: var(--babor-Sba-C);
     }
 
 }
@@ -844,9 +1004,6 @@ body cube:nth-of-type(4) {
 } */
 
 
-
-
-
 /* MARK: sneller en minder uitgebreide manier van uitrekenen welke kleur het moet zijn */
 /* cube:nth-of-type(1) front {
 
@@ -861,10 +1018,6 @@ body cube:nth-of-type(4) {
 
     }
 } */
-
-
-
-
 
 
 

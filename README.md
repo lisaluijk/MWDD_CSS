@@ -178,7 +178,11 @@ maandag
 1600 check out met mats
 1620 naar huis
 1730 1830 masterplan uitwerken -> wisselen tussne twee variables + made the animation 
-1945 tweede draai....
+1945 tweede draai.... (werkt! semi mis een paar kantjes)
+2015 set up the dissapearing buttons -> first round done
+2040 think over my choices with some ice cream
+2100 eerste draai volledig uitwerken
+2130 testen
 
 
 
