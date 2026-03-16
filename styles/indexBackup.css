@@ -51,81 +51,200 @@
     /* MARK: Left */
     /* front top left cube side color definitions */
     /* side = front */
-    --ftl-Sf-C: front;
+    --ftl-Sf-Cf: true;
+    --ftl-Sf-Cba: false;
+    --ftl-Sf-Ct: false;
+    --ftl-Sf-Cbo: false;
+    --ftl-Sf-Cl: false;
+    --ftl-Sf-Cr: false;
 
     /* side = back */
-    --ftl-Sba-C: back;
+    --ftl-Sba-Cf: false;
+    --ftl-Sba-Cba: true;
+    --ftl-Sba-Ct: false;
+    --ftl-Sba-Cbo: false;
+    --ftl-Sba-Cl: false;
+    --ftl-Sba-Cr: false;
 
     /* side = top */
-    --ftl-St-C: top;
+    --ftl-St-Cf: false;
+    --ftl-St-Cba: false;
+    --ftl-St-Ct: true;
+    --ftl-St-Cbo: false;
+    --ftl-St-Cl: false;
+    --ftl-St-Cr: false;
 
     /* side = bottom */
-    --ftl-Sbo-C: bottom;
+    --ftl-Sbo-Cf: false;
+    --ftl-Sbo-Cba: false;
+    --ftl-Sbo-Ct: false;
+    --ftl-Sbo-Cbo: true;
+    --ftl-Sbo-Cl: false;
+    --ftl-Sbo-Cr: false;
 
     /* side = left */
-    --ftl-Sl-C: left;
+    --ftl-Sl-Cf: false;
+    --ftl-Sl-Cba: false;
+    --ftl-Sl-Ct: false;
+    --ftl-Sl-Cbo: false;
+    --ftl-Sl-Cl: true;
+    --ftl-Sl-Cr: false;
 
     /* side = right */
-    --ftl-Sr-C: right;
+    --ftl-Sr-Cf: false;
+    --ftl-Sr-Cba: false;
+    --ftl-Sr-Ct: false;
+    --ftl-Sr-Cbo: false;
+    --ftl-Sr-Cl: false;
+    --ftl-Sr-Cr: true;
 
     /* front bottom left cube side color definitions */
     /* side = front */
-    --fbol-Sf-C: front;
+    --fbol-Sf-Cf: true;
+    --fbol-Sf-Cba: false;
+    --fbol-Sf-Ct: false;
+    --fbol-Sf-Cbo: false;
+    --fbol-Sf-Cl: false;
+    --fbol-Sf-Cr: false;
 
     /* side = back */
-    --fbol-Sba-C: back;
+    --fbol-Sba-Cf: false;
+    --fbol-Sba-Cba: true;
+    --fbol-Sba-Ct: false;
+    --fbol-Sba-Cbo: false;
+    --fbol-Sba-Cl: false;
+    --fbol-Sba-Cr: false;
 
     /* side = top */
-    --fbol-St-C: top;
+    --fbol-St-Cf: false;
+    --fbol-St-Cba: false;
+    --fbol-St-Ct: true;
+    --fbol-St-Cbo: false;
+    --fbol-St-Cl: false;
+    --fbol-St-Cr: false;
 
     /* side = bottom */
-    --fbol-Sbo-C: bottom;
+    --fbol-Sbo-Cf: false;
+    --fbol-Sbo-Cba: false;
+    --fbol-Sbo-Ct: false;
+    --fbol-Sbo-Cbo: true;
+    --fbol-Sbo-Cl: false;
+    --fbol-Sbo-Cr: false;
 
     /* side = left */
-    --fbol-Sl-C: left;
+    --fbol-Sl-Cf: false;
+    --fbol-Sl-Cba: false;
+    --fbol-Sl-Ct: false;
+    --fbol-Sl-Cbo: false;
+    --fbol-Sl-Cl: true;
+    --fbol-Sl-Cr: false;
 
     /* side = right */
-    --fbol-Sr-C: right;
-
+    --fbol-Sr-Cf: false;
+    --fbol-Sr-Cba: false;
+    --fbol-Sr-Ct: false;
+    --fbol-Sr-Cbo: false;
+    --fbol-Sr-Cl: false;
+    --fbol-Sr-Cr: true;
 
     /* MARK: Right */
     /* front top right cube side color definitions */
     /* side = front */
-    --ftr-Sf-C: front;
+    --ftr-Sf-Cf: true;
+    --ftr-Sf-Cba: false;
+    --ftr-Sf-Ct: false;
+    --ftr-Sf-Cbo: false;
+    --ftr-Sf-Cl: false;
+    --ftr-Sf-Cr: false;
 
     /* side = back */
-    --ftr-Sba-C: back;
+    --ftr-Sba-Cf: false;
+    --ftr-Sba-Cba: true;
+    --ftr-Sba-Ct: false;
+    --ftr-Sba-Cbo: false;
+    --ftr-Sba-Cl: false;
+    --ftr-Sba-Cr: false;
 
     /* side = top */
-    --ftr-St-C: top;
+    --ftr-St-Cf: false;
+    --ftr-St-Cba: false;
+    --ftr-St-Ct: true;
+    --ftr-St-Cbo: false;
+    --ftr-St-Cl: false;
+    --ftr-St-Cr: false;
 
     /* side = bottom */
-    --ftr-Sbo-C: bottom;
+    --ftr-Sbo-Cf: false;
+    --ftr-Sbo-Cba: false;
+    --ftr-Sbo-Ct: false;
+    --ftr-Sbo-Cbo: true;
+    --ftr-Sbo-Cl: false;
+    --ftr-Sbo-Cr: false;
 
     /* side = left */
-    --ftr-Sl-C: left;
+    --ftr-Sl-Cf: false;
+    --ftr-Sl-Cba: false;
+    --ftr-Sl-Ct: false;
+    --ftr-Sl-Cbo: false;
+    --ftr-Sl-Cl: true;
+    --ftr-Sl-Cr: false;
 
     /* side = right */
-    --ftr-Sr-C: right;
+    --ftr-Sr-Cf: false;
+    --ftr-Sr-Cba: false;
+    --ftr-Sr-Ct: false;
+    --ftr-Sr-Cbo: false;
+    --ftr-Sr-Cl: false;
+    --ftr-Sr-Cr: true;
 
     /*front bottom right cube side color definitions */
     /* side = front */
-    --fbor-Sf-C: front;
+    --fbor-Sf-Cf: true;
+    --fbor-Sf-Cba: false;
+    --fbor-Sf-Ct: false;
+    --fbor-Sf-Cbo: false;
+    --fbor-Sf-Cl: false;
+    --fbor-Sf-Cr: false;
 
     /* side = back */
-    --fbor-Sba-C: back;
+    --fbor-Sba-Cf: false;
+    --fbor-Sba-Cba: true;
+    --fbor-Sba-Ct: false;
+    --fbor-Sba-Cbo: false;
+    --fbor-Sba-Cl: false;
+    --fbor-Sba-Cr: false;
 
     /* side = top */
-    --fbor-St-C: top;
+    --fbor-St-Cf: false;
+    --fbor-St-Cba: false;
+    --fbor-St-Ct: true;
+    --fbor-St-Cbo: false;
+    --fbor-St-Cl: false;
+    --fbor-St-Cr: false;
 
     /* side = bottom */
-    --fbor-Sbo-C: bottom;
+    --fbor-Sbo-Cf: false;
+    --fbor-Sbo-Cba: false;
+    --fbor-Sbo-Ct: false;
+    --fbor-Sbo-Cbo: true;
+    --fbor-Sbo-Cl: false;
+    --fbor-Sbo-Cr: false;
 
     /* side = left */
-    --fbor-Sl-C: left;
+    --fbor-Sl-Cf: false;
+    --fbor-Sl-Cba: false;
+    --fbor-Sl-Ct: false;
+    --fbor-Sl-Cbo: false;
+    --fbor-Sl-Cl: true;
+    --fbor-Sl-Cr: false;
 
     /* side = right */
-    --fbor-Sr-C: right;
+    --fbor-Sr-Cf: false;
+    --fbor-Sr-Cba: false;
+    --fbor-Sr-Ct: false;
+    --fbor-Sr-Cbo: false;
+    --fbor-Sr-Cl: false;
+    --fbor-Sr-Cr: true;
 
 
     /* ===========================
@@ -134,81 +253,203 @@
     /* MARK: Left */
     /* back top left cube side color definitions */
     /* side = front */
-    --batl-Sf-C: front;
+    --batl-Sf-Cf: true;
+    --batl-Sf-Cba: false;
+    --batl-Sf-Ct: false;
+    --batl-Sf-Cbo: false;
+    --batl-Sf-Cl: false;
+    --batl-Sf-Cr: false;
 
     /* side = back */
-    --batl-Sba-C: back;
+    --batl-Sba-Cf: false;
+    --batl-Sba-Cba: true;
+    --batl-Sba-Ct: false;
+    --batl-Sba-Cbo: false;
+    --batl-Sba-Cl: false;
+    --batl-Sba-Cr: false;
 
     /* side = top */
-    --batl-St-C: top;
+    --batl-St-Cf: false;
+    --batl-St-Cba: false;
+    --batl-St-Ct: true;
+    --batl-St-Cbo: false;
+    --batl-St-Cl: false;
+    --batl-St-Cr: false;
 
     /* side = bottom */
-    --batl-Sbo-C: bottom;
+    --batl-Sbo-Cf: false;
+    --batl-Sbo-Cba: false;
+    --batl-Sbo-Ct: false;
+    --batl-Sbo-Cbo: true;
+    --batl-Sbo-Cl: false;
+    --batl-Sbo-Cr: false;
 
     /* side = left */
-    --batl-Sl-C: left;
+    --batl-Sl-Cf: false;
+    --batl-Sl-Cba: false;
+    --batl-Sl-Ct: false;
+    --batl-Sl-Cbo: false;
+    --batl-Sl-Cl: true;
+    --batl-Sl-Cr: false;
 
     /* side = right */
-    --batl-Sr-C: right;
+    --batl-Sr-Cf: false;
+    --batl-Sr-Cba: false;
+    --batl-Sr-Ct: false;
+    --batl-Sr-Cbo: false;
+    --batl-Sr-Cl: false;
+    --batl-Sr-Cr: true;
 
     /* back bottom left cube side color definitions */
     /* side = front */
-    --babol-Sf-C: front;
+    --babol-Sf-Cf: true;
+    --babol-Sf-Cba: false;
+    --babol-Sf-Ct: false;
+    --babol-Sf-Cbo: false;
+    --babol-Sf-Cl: false;
+    --babol-Sf-Cr: false;
 
     /* side = back */
-    --babol-Sba-C: back;
+    --babol-Sba-Cf: false;
+    --babol-Sba-Cba: true;
+    --babol-Sba-Ct: false;
+    --babol-Sba-Cbo: false;
+    --babol-Sba-Cl: false;
+    --babol-Sba-Cr: false;
 
     /* side = top */
-    --babol-St-C: top;
+    --babol-St-Cf: false;
+    --babol-St-Cba: false;
+    --babol-St-Ct: true;
+    --babol-St-Cbo: false;
+    --babol-St-Cl: false;
+    --babol-St-Cr: false;
 
     /* side = bottom */
-    --babol-Sbo-C: bottom;
+    --babol-Sbo-Cf: false;
+    --babol-Sbo-Cba: false;
+    --babol-Sbo-Ct: false;
+    --babol-Sbo-Cbo: true;
+    --babol-Sbo-Cl: false;
+    --babol-Sbo-Cr: false;
 
     /* side = left */
-    --babol-Sl-C: left;
+    --babol-Sl-Cf: false;
+    --babol-Sl-Cba: false;
+    --babol-Sl-Ct: false;
+    --babol-Sl-Cbo: false;
+    --babol-Sl-Cl: true;
+    --babol-Sl-Cr: false;
 
     /* side = right */
-    --babol-Sr-C: right;
+    --babol-Sr-Cf: false;
+    --babol-Sr-Cba: false;
+    --babol-Sr-Ct: false;
+    --babol-Sr-Cbo: false;
+    --babol-Sr-Cl: false;
+    --babol-Sr-Cr: true;
 
 
     /* MARK: Right */
     /* back top right cube side color definitions */
     /* side = front */
-    --batr-Sf-C: front;
+    --batr-Sf-Cf: true;
+    --batr-Sf-Cba: false;
+    --batr-Sf-Ct: false;
+    --batr-Sf-Cbo: false;
+    --batr-Sf-Cl: false;
+    --batr-Sf-Cr: false;
 
     /* side = back */
-    --batr-Sba-C: back;
+    --batr-Sba-Cf: false;
+    --batr-Sba-Cba: true;
+    --batr-Sba-Ct: false;
+    --batr-Sba-Cbo: false;
+    --batr-Sba-Cl: false;
+    --batr-Sba-Cr: false;
 
     /* side = top */
-    --batr-St-C: top;
+    --batr-St-Cf: false;
+    --batr-St-Cba: false;
+    --batr-St-Ct: true;
+    --batr-St-Cbo: false;
+    --batr-St-Cl: false;
+    --batr-St-Cr: false;
 
     /* side = bottom */
-    --batr-Sbo-C: bottom;
+    --batr-Sbo-Cf: false;
+    --batr-Sbo-Cba: false;
+    --batr-Sbo-Ct: false;
+    --batr-Sbo-Cbo: true;
+    --batr-Sbo-Cl: false;
+    --batr-Sbo-Cr: false;
 
     /* side = left */
-    --batr-Sl-C: left;
+    --batr-Sl-Cf: false;
+    --batr-Sl-Cba: false;
+    --batr-Sl-Ct: false;
+    --batr-Sl-Cbo: false;
+    --batr-Sl-Cl: true;
+    --batr-Sl-Cr: false;
 
     /* side = right */
-    --batr-Sr-C: right;
+    --batr-Sr-Cf: false;
+    --batr-Sr-Cba: false;
+    --batr-Sr-Ct: false;
+    --batr-Sr-Cbo: false;
+    --batr-Sr-Cl: false;
+    --batr-Sr-Cr: true;
 
     /* back bottom right cube side color definitions */
     /* side = front */
-    --babor-Sf-C: front;
+    --babor-Sf-Cf: true;
+    --babor-Sf-Cba: false;
+    --babor-Sf-Ct: false;
+    --babor-Sf-Cbo: false;
+    --babor-Sf-Cl: false;
+    --babor-Sf-Cr: false;
 
     /* side = back */
-    --babor-Sba-C: back;
+    --babor-Sba-Cf: false;
+    --babor-Sba-Cba: true;
+    --babor-Sba-Ct: false;
+    --babor-Sba-Cbo: false;
+    --babor-Sba-Cl: false;
+    --babor-Sba-Cr: false;
 
     /* side = top */
-    --babor-St-C: top;
+    --babor-St-Cf: false;
+    --babor-St-Cba: false;
+    --babor-St-Ct: true;
+    --babor-St-Cbo: false;
+    --babor-St-Cl: false;
+    --babor-St-Cr: false;
 
     /* side = bottom */
-    --babor-Sbo-C: bottom;
+    --babor-Sbo-Cf: false;
+    --babor-Sbo-Cba: false;
+    --babor-Sbo-Ct: false;
+    --babor-Sbo-Cbo: true;
+    --babor-Sbo-Cl: false;
+    --babor-Sbo-Cr: false;
 
     /* side = left */
-    --babor-Sl-Cf: left;
+    --babor-Sl-Cf: false;
+    --babor-Sl-Cba: false;
+    --babor-Sl-Ct: false;
+    --babor-Sl-Cbo: false;
+    --babor-Sl-Cl: true;
+    --babor-Sl-Cr: false;
 
     /* side = right */
-    --babor-Sr-C: right;
+    --babor-Sr-Cf: false;
+    --babor-Sr-Cba: false;
+    --babor-Sr-Ct: false;
+    --babor-Sr-Cbo: false;
+    --babor-Sr-Cl: false;
+    --babor-Sr-Cr: true;
+
+
 
 }
 
@@ -405,7 +646,6 @@ html:has([value="turnRight"]:checked) {
 }
 
 @container style(--rightTurn:true) {
-
     /* MARK: front top right -> front side */
     body {
 
@@ -444,15 +684,17 @@ html:has([value="turnRight"]:checked) {
 
         } */
 
-        @container style(--fbor-Sbo-C: bottom) {
-            --ftr-Sf-C: bottom;
-            /* background: var(--color-rubiks-bottom);*/
+        @container style(--fbor-Sbo-Cbo: true) {
+            --ftr-Sf-Cf: false;
+            --ftr-Sf-Cba: false;
+            --ftr-Sf-Ct: false;
+            --ftr-Sf-Cbo: true;
+            --ftr-Sf-Cl: false;
+            --ftr-Sf-Cr: false;
+
+            /* background: var(--color-rubiks-bottom); */
+
         }
-
-
-
-        /* --ftr-Sf-C: var(var(--fbor-Sbo-C));
-        background: var(--ftr-Sf-C); */
 
         /* @container style(--fbor-Sbo-Cl: true) {
             --ftr-Sf-Cf: false;
@@ -476,7 +718,7 @@ html:has([value="turnRight"]:checked) {
             background: var(--color-rubiks-right);
 
         } */
-    }
+    }    
 }
 
 
@@ -527,9 +769,13 @@ html:has([value="turnFront"]:checked) {
 
         } */
 
-        @container style(--ftr-Sf-C: bottom) {
-            --fbor-Sf-C: var(--ftr-Sf-C);
-
+        @container style(--ftr-Sf-Cbo: true) {
+            --fbor-Sf-Cf: false;
+            --fbor-Sf-Cba: false;
+            --fbor-Sf-Ct: false;
+            --fbor-Sf-Cbo: true;
+            --fbor-Sf-Cl: false;
+            --fbor-Sf-Cr: false;
             /* border: 1px solid black; */
 
             /* background: var(--color-rubiks-bottom); */
@@ -573,22 +819,22 @@ html:has([value="turnFront"]:checked) {
 
 /* MARK: testing if I can store data  */
 body cube:nth-of-type(2) {
-    @container style(--ftr-Sf-C: bottom) {
+    @container style(--ftr-Sf-Cbo: true) {
 
         & front {
             background: var(--color-rubiks-bottom);
-
+        
         }
     }
 
 }
 
 body cube:nth-of-type(2) {
-    @container style(--ftr-Sf-C: front) {
+    @container style(--ftr-Sf-Cf: true) {
 
         & front {
             background: var(--color-rubiks-front);
-
+        
         }
     }
 
@@ -598,20 +844,15 @@ body cube:nth-of-type(2) {
     background: if(style(--ftr-Sf-Cbo: true): var(--color-rubiks-bottom); else: purple);
 } */
 
-body cube:nth-of-type(4) {
-    @container style(--fbor-Sf-C: bottom) {
-
-        & front {
-
+body cube:nth-of-type(4) front {
+    @container style(--fbor-Sf-Cbo: true) {
+       
             background: var(--color-rubiks-bottom);
-
-
-        }
-
-        /* background: if(style(--fbor-Sf-Cbo: true): var(--color-rubiks-bottom)); */
+        
     }
-
+    /* background: if(style(--fbor-Sf-Cbo: true): var(--color-rubiks-bottom)); */
 }
+
 
 
 /* body cube:nth-of-type(4) {
@@ -622,7 +863,7 @@ body cube:nth-of-type(4) {
         }
     } */
 
-/* @container style(--fbor-Sf-Cf: true) {
+     /* @container style(--fbor-Sf-Cf: true) {
 
         & front { 
             background: var(--color-rubiks-right);

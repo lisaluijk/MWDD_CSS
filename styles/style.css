@@ -20,3 +20,7 @@ h1 {
     text-transform: uppercase;
 }
 
+.stylingButtons {
+    display: grid;
+    grid-template-columns: 8rem 8fr;
+}
