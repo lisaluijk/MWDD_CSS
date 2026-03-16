@@ -385,112 +385,52 @@ rubiks:hover {
 
 html:has([value="1turnRightClockwise"]:checked) {
     --rightTurnClockWise: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnRightCounterwise"]:checked) {
     --rightTurnClockCounter: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnFrontClockwise"]:checked) {
     --frontTurnClockWise: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnFrontCounterwise"]:checked) {
     --frontTurnClockCounter: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnLeftClockwise"]:checked) {
     --leftTurnClockWise: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnLeftCounterwise"]:checked) {
     --leftTurnClockCounter: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnTopClockwise"]:checked) {
     --topTurnClockWise: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnTopCounterwise"]:checked) {
     --topTurnClockCounter: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnBottomClockwise"]:checked) {
     --bottomTurnClockWise: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 html:has([value="1turnBottomClockwise"]:checked) {
     --bottomTurnClockCounter: true;
-
-    & #turn1 {
-        display: none;
-    }
-    & #turn2 {
-        display: grid;
-    }
+    --turn1: true;
 }
 
 
@@ -524,6 +464,22 @@ saving-layer1 {
         --babor-Sbo-C2: var(--batr-Sba-C);
         --babor-Sr-C2: var(--batr-Sr-C);
 
+        /* rest */
+        --ftl-Sf-C2: var(--ftl-Sf-C);
+        --ftl-St-C2: var(--ftl-St-C);
+        --ftl-Sl-C2: var(--ftl-Sl-C);
+
+        --fbol-Sf-C2: var(--fbol-Sf-C);
+        --fbol-Sbo-C2: var(--fbol-Sbo-C);
+        --fbol-Sl-C2: var(--fbol-Sl-C);
+
+        --batl-Sba-C2: var(--batl-Sba-C);
+        --batl-St-C2: var(--batl-St-C);
+        --batl-Sl-C2: var(--batl-Sl-C);
+
+        --babol-Sba-C2: var(--babol-Sba-C);
+        --babol-Sbo-C2: var(--babol-Sbo-C);
+        --babol-Sl-C2: var(--babol-Sl-C);
     }
 
     /* rechts tegen de klok in */
@@ -548,6 +504,8 @@ saving-layer1 {
         --babor-Sba-C: var(--fbor-Sbo-C);
         --babor-Sbo-C: var(--fbor-Sf-C);
         --babor-Sr-C: var(--fbor-Sr-C);
+
+
     }
 
     /* links tegen de klok in */
@@ -578,24 +536,41 @@ saving-layer1 {
     @container style(--leftTurnClockWise: true) {
 
         /* Front top right block */
-        --ftl-Sf-C: var(--batl-St-C);
-        --ftl-St-C: var(--batl-Sba-C);
-        --ftl-Sl-C: var(--batl-Sl-C);
+        --ftl-Sf-C2: var(--batl-St-C);
+        --ftl-St-C2: var(--batl-Sba-C);
+        --ftl-Sl-C2: var(--batl-Sl-C);
 
         /* Front bottom right block */
-        --fbol-Sf-C: var(--ftl-St-C);
-        --fbol-Sbo-C: var(--ftl-Sf-C);
-        --fbol-Sl-C: var(--ftl-Sl-C);
+        --fbol-Sf-C2: var(--ftl-St-C);
+        --fbol-Sbo-C2: var(--ftl-Sf-C);
+        --fbol-Sl-C2: var(--ftl-Sl-C);
 
         /* Back top right block */
-        --batl-Sba-C: var(--babol-Sbo-C);
-        --batl-St-C: var(--babol-Sba-C);
-        --batl-Sl-C: var(--babol-Sl-C);
+        --batl-Sba-C2: var(--babol-Sbo-C);
+        --batl-St-C2: var(--babol-Sba-C);
+        --batl-Sl-C2: var(--babol-Sl-C);
 
         /* Back bottom right block */
-        --babol-Sba-C: var(--fbol-Sbo-C);
-        --babol-Sbo-C: var(--fbol-Sf-C);
-        --babol-Sl-C: var(--fbol-Sl-C);
+        --babol-Sba-C2: var(--fbol-Sbo-C);
+        --babol-Sbo-C2: var(--fbol-Sf-C);
+        --babol-Sl-C2: var(--fbol-Sl-C);
+
+        /* rest */
+        --ftr-Sf-C2: var(--ftr-Sf-C);
+        --ftr-St-C2: var(--ftr-St-C);
+        --ftr-Sr-C2: var(--ftr-Sr-C);
+
+        --fbor-Sf-C2: var(--fbor-Sf-C);
+        --fbor-Sbo-C2: var(--fbor-Sbo-C);
+        --fbor-Sr-C2: var(--fbor-Sr-C);
+
+        --batr-Sba-C2: var(--batr-Sba-C);
+        --batr-St-C2: var(--batr-St-C);
+        --batr-Sr-C2: var(--batr-Sr-C);
+
+        --babor-Sba-C2: var(--babor-Sba-C);
+        --babor-Sbo-C2: var(--babor-Sbo-C);
+        --babor-Sr-C2: var(--babor-Sr-C);
     }
 
     /* front met de klok mee */
@@ -621,10 +596,27 @@ saving-layer1 {
         --fbol-Sbo-C2: var(--fbor-Sr-C);
         --fbol-Sl-C2: var(--fbor-Sbo-C);
 
+        /* rest */
+        --batr-Sba-C2: var(--batr-Sba-C);
+        --batr-St-C2: var(--batr-St-C);
+        --batr-Sr-C2: var(--batr-Sr-C);
+
+        --babor-Sba-C2: var(--babor-Sba-C);
+        --babor-Sbo-C2: var(--babor-Sbo-C);
+        --babor-Sr-C2: var(--babor-Sr-C);
+
+        --batl-Sba-C2: var(--batl-Sba-C);
+        --batl-St-C2: var(--batl-St-C);
+        --batl-Sl-C2: var(--batl-Sl-C);
+
+        --babol-Sba-C2: var(--babol-Sba-C);
+        --babol-Sbo-C2: var(--babol-Sbo-C);
+        --babol-Sl-C2: var(--babol-Sl-C);
+
     }
 
     /* Top met de klok mee */
-     @container style(--topTurnClockWise: true) {
+    @container style(--topTurnClockWise: true) {
 
         /* Front top right block */
         --ftr-Sf-C2: var(--batr-Sr-C);
@@ -645,10 +637,27 @@ saving-layer1 {
         --batl-Sba-C2: var(--ftl-Sl-C);
         --batl-St-C2: var(--ftl-St-C);
         --batl-Sl-C2: var(--ftl-Sf-C);
+
+        /* rest */
+        --babor-Sba-C2: var(--babor-Sba-C);
+        --babor-Sbo-C2: var(--babor-Sbo-C);
+        --babor-Sr-C2: var(--babor-Sr-C);
+
+        --fbor-Sf-C2: var(--fbor-Sf-C);
+        --fbor-Sbo-C2: var(--fbor-Sbo-C);
+        --fbor-Sr-C2: var(--fbor-Sr-C);
+
+        --babol-Sba-C2: var(--babol-Sba-C);
+        --babol-Sbo-C2: var(--babol-Sbo-C);
+        --babol-Sl-C2: var(--babol-Sl-C);
+
+        --fbol-Sf-C2: var(--fbol-Sf-C);
+        --fbol-Sbo-C2: var(--fbol-Sbo-C);
+        --fbol-Sl-C2: var(--fbol-Sl-C);
     }
 
     /* Bottom met de klok mee */
-     @container style(--bottomTurnClockWise: true) {
+    @container style(--bottomTurnClockWise: true) {
 
         /* Front bottom right block */
         --fbor-Sf-C2: var(--fbol-Sl-C);
@@ -669,6 +678,23 @@ saving-layer1 {
         --babol-Sba-C2: var(--babor-Sr-C);
         --babol-Sbo-C2: var(--babor-Sbo-C);
         --babol-Sl-C2: var(--babor-Sba-C);
+
+        /* rest */
+        --batr-Sba-C2: var(--batr-Sba-C);
+        --batr-St-C2: var(--batr-St-C);
+        --batr-Sr-C2: var(--batr-Sr-C);
+
+        --ftr-Sf-C2: var(--ftr-Sf-C);
+        --ftr-St-C2: var(--ftr-St-C);
+        --ftr-Sr-C2: var(--ftr-Sr-C);
+
+        --batl-Sba-C2: var(--batl-Sba-C);
+        --batl-St-C2: var(--batl-St-C);
+        --batl-Sl-C2: var(--batl-Sl-C);
+
+        --ftl-Sf-C2: var(--ftl-Sf-C);
+        --ftl-St-C2: var(--ftl-St-C);
+        --ftl-Sl-C2: var(--ftl-Sl-C);
     }
 
 }
@@ -689,11 +715,34 @@ cube:nth-of-type(8) {
     animation: --rotateBaBoR 2s 1 linear;
 } */
 
-@container style(--rightTurnClockWise: true) {
 
-    /* front top right */
+
+@container style(--turn1: true) {
+
+    #turn1 {
+        display: none;
+    }
+
+    #turn2 {
+        display: grid;
+    }
+
+    body cube:nth-of-type(1) {
+
+        & front {
+            background: var(--ftl-Sf-C2);
+        }
+
+        & top {
+            background: var(--ftl-St-C2);
+        }
+
+        & left {
+            background: var(--ftl-Sl-C2);
+        }
+    }
+
     body cube:nth-of-type(2) {
-        animation: --rotateFTR 2s 1 linear;
 
         & front {
             background: var(--ftr-Sf-C2);
@@ -706,12 +755,24 @@ cube:nth-of-type(8) {
         & right {
             background: var(--ftr-Sr-C2);
         }
-
     }
 
-    /* front bottom right */
+    body cube:nth-of-type(3) {
+
+        & front {
+            background: var(--fbol-Sf-C2);
+        }
+
+        & bottom {
+            background: var(--fbol-Sbo-C2);
+        }
+
+        & left {
+            background: var(--fbol-Sl-C2);
+        }
+    }
+
     body cube:nth-of-type(4) {
-        animation: --rotateFBoR 2s 1 linear;
 
         & front {
             background: var(--fbor-Sf-C2);
@@ -724,13 +785,24 @@ cube:nth-of-type(8) {
         & right {
             background: var(--fbor-Sr-C2);
         }
-
     }
 
-    /* back top right */
-    body cube:nth-of-type(6) {
-        animation: --rotateBaTR 2s 1 linear;
+    body cube:nth-of-type(5) {
 
+        & back {
+            background: var(--batl-Sba-C2);
+        }
+
+        & top {
+            background: var(--batl-St-C2);
+        }
+
+        & left {
+            background: var(--batl-Sl-C2);
+        }
+    }
+
+    body cube:nth-of-type(6) {
 
         & back {
             background: var(--batr-Sba-C2);
@@ -743,129 +815,217 @@ cube:nth-of-type(8) {
         & right {
             background: var(--batr-Sr-C2);
         }
-
     }
 
-
-    /* back bottom right */
-    body cube:nth-of-type(8) {
-        animation: --rotateBaBoR 2s 1 linear;
-
+    body cube:nth-of-type(7) {
 
         & back {
-            background: var(--babor-Sba-C2);
+            background: var(--babol-Sba-C2);
         }
 
         & bottom {
-            background: var(--babor-Sbo-C2);
+            background: var(--babol-Sbo-C2);
         }
 
-        & right {
-            background: var(--babor-Sr-C2);
+        & left {
+            background: var(--babol-Sl-C2);
         }
 
+        body cube:nth-of-type(8) {
+
+            & back {
+                background: var(--babor-Sba-C2);
+            }
+
+            & bottom {
+                background: var(--babor-Sbo-C2);
+            }
+
+            & right {
+                background: var(--babor-Sr-C2);
+            }
+        }
     }
-}
 
-saving-layer2 {
 
-    /* front met de klok mee */
+
+    @container style(--rightTurnClockWise: true) {
+
+        /* front top right */
+        body cube:nth-of-type(2) {
+            animation: --rotateFTR 2s 1 linear;
+
+            & front {
+                background: var(--ftr-Sf-C2);
+            }
+
+            & top {
+                background: var(--ftr-St-C2);
+            }
+
+            & right {
+                background: var(--ftr-Sr-C2);
+            }
+
+        }
+
+        /* front bottom right */
+        body cube:nth-of-type(4) {
+            animation: --rotateFBoR 2s 1 linear;
+
+            & front {
+                background: var(--fbor-Sf-C2);
+            }
+
+            & bottom {
+                background: var(--fbor-Sbo-C2);
+            }
+
+            & right {
+                background: var(--fbor-Sr-C2);
+            }
+
+        }
+
+        /* back top right */
+        body cube:nth-of-type(6) {
+            animation: --rotateBaTR 2s 1 linear;
+
+
+            & back {
+                background: var(--batr-Sba-C2);
+            }
+
+            & top {
+                background: var(--batr-St-C2);
+            }
+
+            & right {
+                background: var(--batr-Sr-C2);
+            }
+
+        }
+
+
+        /* back bottom right */
+        body cube:nth-of-type(8) {
+            animation: --rotateBaBoR 2s 1 linear;
+
+
+            & back {
+                background: var(--babor-Sba-C2);
+            }
+
+            & bottom {
+                background: var(--babor-Sbo-C2);
+            }
+
+            & right {
+                background: var(--babor-Sr-C2);
+            }
+
+        }
+    }
+
+    saving-layer2 {
+
+        /* front met de klok mee */
+        @container style(--turnFront: true) {
+
+            /* Front top right block */
+            --ftr-Sf-C: var(--ftl-Sf-C2);
+            --ftr-St-C: var(--ftl-Sl-C2);
+            --ftr-Sr-C: var(--ftl-St-C2);
+
+            /* Front bottom right block */
+            --fbor-Sf-C: var(--ftr-Sf-C2);
+            --fbor-Sbo-C: var(--ftr-Sr-C2);
+            --fbor-Sr-C: var(--ftr-St-C2);
+
+            /* Front top left block */
+            --ftl-Sf-C: var(--fbol-Sf-C2);
+            --ftl-St-C: var(--fbol-Sl-C2);
+            --ftl-Sl-C: var(--fbol-Sbo-C2);
+
+            /* Front bottom left block */
+            --fbol-Sf-C: var(--fbor-Sf-C2);
+            --fbol-Sbo-C: var(--fbor-Sr-C2);
+            --fbol-Sl-C: var(--fbor-Sbo-C2);
+
+        }
+    }
+
     @container style(--turnFront: true) {
 
-        /* Front top right block */
-        --ftr-Sf-C: var(--ftl-Sf-C2);
-        --ftr-St-C: var(--ftl-Sl-C2);
-        --ftr-Sr-C: var(--ftl-St-C2);
+        /* front top right */
+        body cube:nth-of-type(2) {
+            & front {
+                background: var(--ftr-Sf-C);
+            }
 
-        /* Front bottom right block */
-        --fbor-Sf-C: var(--ftr-Sf-C2);
-        --fbor-Sbo-C: var(--ftr-Sr-C2);
-        --fbor-Sr-C: var(--ftr-St-C2);
+            & top {
+                background: var(--ftr-St-C);
+            }
 
-        /* Front top left block */
-        --ftl-Sf-C: var(--fbol-Sf-C2);
-        --ftl-St-C: var(--fbol-Sl-C2);
-        --ftl-Sl-C: var(--fbol-Sbo-C2);
+            & right {
+                background: var(--ftr-Sr-C);
+            }
 
-        /* Front bottom left block */
-        --fbol-Sf-C: var(--fbor-Sf-C2);
-        --fbol-Sbo-C: var(--fbor-Sr-C2);
-        --fbol-Sl-C: var(--fbor-Sbo-C2);
-
-    }
-}
-
-@container style(--turnFront: true) {
-
-    /* front top right */
-    body cube:nth-of-type(2) {
-        & front {
-            background: var(--ftr-Sf-C);
         }
 
-        & top {
-            background: var(--ftr-St-C);
+        /* front bottom right */
+        body cube:nth-of-type(4) {
+            & front {
+                background: var(--fbor-Sf-C);
+            }
+
+            & bottom {
+                background: var(--fbor-Sbo-C);
+            }
+
+            & right {
+                background: var(--fbor-Sr-C);
+            }
+
         }
 
-        & right {
-            background: var(--ftr-Sr-C);
+        /* front top left */
+        body cube:nth-of-type(1) {
+
+            & front {
+                background: var(--ftl-Sf-C);
+            }
+
+            & top {
+                background: var(--ftl-St-C);
+            }
+
+            & left {
+                background: var(--ftl-Sl-C);
+            }
+
         }
 
-    }
 
-    /* front bottom right */
-    body cube:nth-of-type(4) {
-        & front {
-            background: var(--fbor-Sf-C);
+        /* front bottom left */
+        body cube:nth-of-type(3) {
+
+            & front {
+                background: var(--fbol-Sf-C);
+            }
+
+            & bottom {
+                background: var(--fbol-Sbo-C);
+            }
+
+            & left {
+                background: var(--fbol-Sl-C);
+            }
+
         }
-
-        & bottom {
-            background: var(--fbor-Sbo-C);
-        }
-
-        & right {
-            background: var(--fbor-Sr-C);
-        }
-
-    }
-
-    /* front top left */
-    body cube:nth-of-type(1) {
-
-        & front {
-            background: var(--ftl-Sf-C);
-        }
-
-        & top {
-            background: var(--ftl-St-C);
-        }
-
-        & left {
-            background: var(--ftl-Sl-C);
-        }
-
     }
 
-
-    /* front bottom left */
-    body cube:nth-of-type(3) {
-
-        & front {
-            background: var(--fbol-Sf-C);
-        }
-
-        & bottom {
-            background: var(--fbol-Sbo-C);
-        }
-
-        & left {
-            background: var(--fbol-Sl-C);
-        }
-
-    }
-}
-
-/* cube:nth-last-of-type(2)
+    /* cube:nth-last-of-type(2)
 cube:nth-last-of-type(4)
 cube:nth-last-of-type(6)
 cube:nth-last-of-type(8) */
@@ -873,51 +1033,51 @@ cube:nth-last-of-type(8) */
 
 
 
-/* animation */
-@keyframes --rotateFTR {
-    0% {
-        transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
+    /* animation */
+    @keyframes --rotateFTR {
+        0% {
+            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
+        }
+
+        100% {
+            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
+        }
     }
 
-    100% {
-        transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
-    }
-}
+    @keyframes --rotateFBoR {
+        0% {
+            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
+        }
 
-@keyframes --rotateFBoR {
-    0% {
-        transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
-    }
-
-    100% {
-        transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
-    }
-}
-
-
-@keyframes --rotateBaTR {
-    0% {
-        transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
+        100% {
+            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
+        }
     }
 
-    100% {
-        transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
+
+    @keyframes --rotateBaTR {
+        0% {
+            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
+        }
+
+        100% {
+            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
+        }
     }
-}
 
-@keyframes --rotateBaBoR {
-    0% {
-        transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
+    @keyframes --rotateBaBoR {
+        0% {
+            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
+        }
+
+        100% {
+            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
+        }
     }
 
-    100% {
-        transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
-    }
-}
 
 
-
-/* @container style(--ftr-Sf-Cbo: true) {
+    /* @container style(--ftr-Sf-Cbo: true) {
     rubiks {
 
         --fbor-Sf-Cbo: true;
@@ -926,15 +1086,15 @@ cube:nth-last-of-type(8) */
 
 } */
 
-/* body cube:nth-of-type(2) {
+    /* body cube:nth-of-type(2) {
     & front {
         background: var(--ftr-Sf-C);
 
     }
 } */
 
-/* MARK: testing if I can store data  */
-/* body cube:nth-of-type(2) {
+    /* MARK: testing if I can store data  */
+    /* body cube:nth-of-type(2) {
     @container style(--ftr-Sf-C: var(--color-rubiks-bottom)) {
 
         & front {
@@ -945,34 +1105,35 @@ cube:nth-last-of-type(8) */
 
 } */
 
-body cube:nth-of-type(2) {
-    @container style(--ftr-Sf-C: front) {
+    body cube:nth-of-type(2) {
+        @container style(--ftr-Sf-C: front) {
 
-        & front {
-            background: var(--color-rubiks-front);
+            & front {
+                background: var(--color-rubiks-front);
 
+            }
         }
+
     }
 
-}
-
-/* body cube:nth-of-type(2) front {
+    /* body cube:nth-of-type(2) front {
     background: if(style(--ftr-Sf-Cbo: true): var(--color-rubiks-bottom); else: purple);
 } */
 
-body cube:nth-of-type(4) {
-    @container style(--fbor-Sf-C: bottom) {
+    body cube:nth-of-type(4) {
+        @container style(--fbor-Sf-C: bottom) {
 
-        & front {
+            & front {
 
-            background: var(--color-rubiks-bottom);
+                background: var(--color-rubiks-bottom);
 
 
+            }
+
+            /* background: if(style(--fbor-Sf-Cbo: true): var(--color-rubiks-bottom)); */
         }
 
-        /* background: if(style(--fbor-Sf-Cbo: true): var(--color-rubiks-bottom)); */
     }
-
 }
 
 

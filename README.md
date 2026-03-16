@@ -182,7 +182,10 @@ maandag
 2015 set up the dissapearing buttons -> first round done
 2040 think over my choices with some ice cream
 2100 eerste draai volledig uitwerken
-2130 testen
+2130 overige kleuren toepassen
+2220-2240 bugs eruit halen (ik snap bottom turn niet helemaal wat er fout gaat)
+
+
 
 
 
