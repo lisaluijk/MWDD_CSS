@@ -353,7 +353,7 @@ right {
 } */
 
 rubiks:hover {
-    animation: --rotate 6s infinite linear;
+    animation: --rotate 10s infinite linear;
 
 }
 
@@ -607,7 +607,103 @@ cube:nth-of-type(8) {
     }
 }
 
+saving-layer2 {
 
+    /* front met de klok mee */
+    @container style(--turnFront: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--ftl-Sf-C2);
+        --ftr-St-C: var(--ftl-Sl-C2);
+        --ftr-Sr-C: var(--ftl-St-C2);
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--ftr-Sf-C2);
+        --fbor-Sbo-C: var(--ftr-Sr-C2);
+        --fbor-Sr-C: var(--ftr-St-C2);
+
+        /* Front top left block */
+        --ftl-Sf-C: var(--fbol-Sf-C2);
+        --ftl-St-C: var(--fbol-Sl-C2);
+        --ftl-Sl-C: var(--fbol-Sbo-C2);
+
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--fbor-Sf-C2);
+        --fbol-Sbo-C: var(--fbor-Sr-C2);
+        --fbol-Sl-C: var(--fbor-Sbo-C2);
+
+    }
+}
+
+@container style(--turnFront: true) {
+
+    /* front top right */
+    body cube:nth-of-type(2) {
+        & front {
+            background: var(--ftr-Sf-C);
+        }
+
+        & top {
+            background: var(--ftr-St-C);
+        }
+
+        & right {
+            background: var(--ftr-Sr-C);
+        }
+
+    }
+
+    /* front bottom right */
+    body cube:nth-of-type(4) {
+        & front {
+            background: var(--fbor-Sf-C);
+        }
+
+        & bottom {
+            background: var(--fbor-Sbo-C);
+        }
+
+        & right {
+            background: var(--fbor-Sr-C);
+        }
+
+    }
+
+    /* front top left */
+    body cube:nth-of-type(1) {
+
+        & front {
+            background: var(--ftl-Sf-C);
+        }
+
+        & top {
+            background: var(--ftl-St-C);
+        }
+
+        & left {
+            background: var(--ftl-Sl-C);
+        }
+
+    }
+
+
+    /* front bottom left */
+    body cube:nth-of-type(3) {
+
+        & front {
+            background: var(--fbol-Sf-C);
+        }
+
+        & bottom {
+            background: var(--fbol-Sbo-C);
+        }
+
+        & left {
+            background: var(--fbol-Sl-C);
+        }
+
+    }
+}
 
 /* cube:nth-last-of-type(2)
 cube:nth-last-of-type(4)
