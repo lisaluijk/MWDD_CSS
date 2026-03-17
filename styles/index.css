@@ -365,7 +365,7 @@ rubiks:hover {
 
     100% {
         transform:
-            rotateX(360deg) rotateY(2turn);
+            rotateX(-360deg) rotateY(-2turn);
     }
 }
 
@@ -847,7 +847,7 @@ cube:nth-of-type(8) {
         }
     }
 
-
+    /* MARK: animation */
 
     @container style(--rightTurnClockWise: true) {
 
@@ -1031,7 +1031,7 @@ cube:nth-last-of-type(6)
 cube:nth-last-of-type(8) */
 
 
-
+    /* MARK: keyframes */
 
     /* animation */
     @keyframes --rotateFTR {
