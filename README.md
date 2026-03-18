@@ -319,7 +319,9 @@ woensdag 18 maart checkout et joost
 1600-1615 checkout met joost
 
 1720 verder met de animaties (alles gemaakt behalve bottom besloten dat ik een animatie op de x y en z as doe en die dan aanwijs op de blokjes)
-1730 dat uitwerken^
+1730 dat uitwerken^ -> grapje dat werkt toch niet dus moet ze wel allemaal uitwerken hihi
+1745 animations af nu nog een keer code opschonen...
+
 
 
 

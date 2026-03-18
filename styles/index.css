@@ -261,7 +261,6 @@ html:has([value="pastel"]:checked) {
 
 /* front top left */
 cube:nth-of-type(1) {
-    /* transform: var(--translate-one-cube-left) var(--translate-one-cube-up) var(--translate-one-cube-front); */
     --translate-x: var(--translate-one-cube-left);
     --translate-y: var(--translate-one-cube-up);
     --translate-z: var(--translate-one-cube-front);
@@ -272,7 +271,6 @@ cube:nth-of-type(1) {
 
 /* front top right */
 cube:nth-of-type(2) {
-    /* transform: var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front); */
     --translate-x: var(--translate-one-cube-right);
     --translate-y: var(--translate-one-cube-up);
     --translate-z: var(--translate-one-cube-front);
@@ -283,7 +281,6 @@ cube:nth-of-type(2) {
 
 /* front bottom left */
 cube:nth-of-type(3) {
-    /* transform: var(--translate-one-cube-left) var(--translate-one-cube-down) var(--translate-one-cube-front); */
     --translate-x: var(--translate-one-cube-left);
     --translate-y: var(--translate-one-cube-down);
     --translate-z: var(--translate-one-cube-front);
@@ -294,7 +291,6 @@ cube:nth-of-type(3) {
 
 /* front bottom right */
 cube:nth-of-type(4) {
-    /* transform: var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front); */
     --translate-x: var(--translate-one-cube-right);
     --translate-y: var(--translate-one-cube-down);
     --translate-z: var(--translate-one-cube-front);
@@ -305,7 +301,6 @@ cube:nth-of-type(4) {
 
 /* back top left */
 cube:nth-of-type(5) {
-    /* transform: var(--translate-one-cube-left) var(--translate-one-cube-up) var(--translate-one-cube-back); */
     --translate-x: var(--translate-one-cube-left);
     --translate-y: var(--translate-one-cube-up);
     --translate-z: var(--translate-one-cube-back);
@@ -316,7 +311,6 @@ cube:nth-of-type(5) {
 
 /* back top right */
 cube:nth-of-type(6) {
-    /* transform: var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back); */
     --translate-x: var(--translate-one-cube-right);
     --translate-y: var(--translate-one-cube-up);
     --translate-z: var(--translate-one-cube-back);
@@ -327,7 +321,6 @@ cube:nth-of-type(6) {
 
 /* back bottom left */
 cube:nth-of-type(7) {
-    /* transform: var(--translate-one-cube-left) var(--translate-one-cube-down) var(--translate-one-cube-back); */
     --translate-x: var(--translate-one-cube-left);
     --translate-y: var(--translate-one-cube-down);
     --translate-z: var(--translate-one-cube-back);
@@ -338,7 +331,6 @@ cube:nth-of-type(7) {
 
 /* back bottom right */
 cube:nth-of-type(8) {
-    /* transform: var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back); */
     --translate-x: var(--translate-one-cube-right);
     --translate-y: var(--translate-one-cube-down);
     --translate-z: var(--translate-one-cube-back);
@@ -877,7 +869,7 @@ saving-layer1 {
 
     body {
         & cube:nth-of-type(2), cube:nth-of-type(4), cube:nth-of-type(6), cube:nth-of-type(8) {
-            animation: --draai-rechts var(--animation-duration) 1 var(--animation-easing);
+            animation: --turn-rechts var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -890,7 +882,7 @@ saving-layer1 {
 
     body {
         & cube:nth-of-type(1), cube:nth-of-type(3), cube:nth-of-type(5), cube:nth-of-type(7) {
-            animation: --draai-links var(--animation-duration) 1 var(--animation-easing);
+            animation: --turn-links var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -903,7 +895,20 @@ saving-layer1 {
 
     body {
         & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(5), cube:nth-of-type(6) {
-            animation: --draai-top var(--animation-duration) 1 var(--animation-easing);
+            animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--bottomTurnClockWise: true) {
+
+    body {
+        & cube:nth-of-type(3), cube:nth-of-type(4), cube:nth-of-type(7), cube:nth-of-type(8) {
+            animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -916,7 +921,7 @@ saving-layer1 {
 
     body {
         & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(3), cube:nth-of-type(4) {
-            animation: --draai-front var(--animation-duration) 1 var(--animation-easing);
+            animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -925,42 +930,8 @@ saving-layer1 {
     }
 }
 
-saving-layer2 {
 
-    /* front met de klok mee */
-    @container style(--turnFront: true) {
-
-        /* Front top right block */
-        --ftr-Sf-C: var(--ftl-Sf-C2);
-        --ftr-St-C: var(--ftl-Sl-C2);
-        --ftr-Sr-C: var(--ftl-St-C2);
-
-        /* Front bottom right block */
-        --fbor-Sf-C: var(--ftr-Sf-C2);
-        --fbor-Sbo-C: var(--ftr-Sr-C2);
-        --fbor-Sr-C: var(--ftr-St-C2);
-
-        /* Front top left block */
-        --ftl-Sf-C: var(--fbol-Sf-C2);
-        --ftl-St-C: var(--fbol-Sl-C2);
-        --ftl-Sl-C: var(--fbol-Sbo-C2);
-
-        /* Front bottom left block */
-        --fbol-Sf-C: var(--fbor-Sf-C2);
-        --fbol-Sbo-C: var(--fbor-Sr-C2);
-        --fbol-Sl-C: var(--fbor-Sbo-C2);
-
-    }
-}
-
-
-
-/* cube:nth-last-of-type(2)
-cube:nth-last-of-type(4)
-cube:nth-last-of-type(6)
-cube:nth-last-of-type(8) */
-
-@keyframes --draai-rechts {
+@keyframes --turn-rechts {
     0% {
         --rotate-x: 0deg;
     }
@@ -970,7 +941,7 @@ cube:nth-last-of-type(8) */
     }
 }
 
-@keyframes --draai-links {
+@keyframes --turn-links {
     0% {
         --rotate-x: 0deg;
     }
@@ -980,7 +951,7 @@ cube:nth-last-of-type(8) */
     }
 }
 
-@keyframes --draai-top {
+@keyframes --turn-top {
     0% {
         --rotate-y: 0deg;
     }
@@ -990,7 +961,17 @@ cube:nth-last-of-type(8) */
     }
 }
 
-@keyframes --draai-front {
+@keyframes --turn-bottom {
+    0% {
+        --rotate-y: 0deg;
+    }
+
+    100% {
+        --rotate-y: 90deg;
+    }
+}
+
+@keyframes --turn-front {
     0% {
         --rotate-z: 0deg;
     }
@@ -1037,6 +1018,10 @@ cube:nth-last-of-type(8) */
         }
 
     }
+
+
+
+    /* vanaf hier kan het weg denk ik */
 
     /* front bottom right */
     body cube:nth-of-type(4) {
@@ -1090,178 +1075,35 @@ cube:nth-last-of-type(8) */
     }
 }
 
-/* MARK: keyframes */
 
-/* animation */
-/* @keyframes --rotateFTR {
-        0% {
-            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
-        }
-
-        100% {
-            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-front);
-        }
-    }
-
-    @keyframes --rotateFBoR {
-        0% {
-            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
-        }
-
-        100% {
-            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-front);
-        }
-    }
+/* ik denk niet nodig dit */
 
 
-    @keyframes --rotateBaTR {
-        0% {
-            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
-        }
+saving-layer2 {
 
-        100% {
-            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-up) var(--translate-one-cube-back);
-        }
-    }
+    /* front met de klok mee */
+    @container style(--turnFront: true) {
 
-    @keyframes --rotateBaBoR {
-        0% {
-            transform: rotateX(0deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
-        }
+        /* Front top right block */
+        --ftr-Sf-C: var(--ftl-Sf-C2);
+        --ftr-St-C: var(--ftl-Sl-C2);
+        --ftr-Sr-C: var(--ftl-St-C2);
 
-        100% {
-            transform: rotateX(90deg) var(--translate-one-cube-right) var(--translate-one-cube-down) var(--translate-one-cube-back);
-        }
-    }*/
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--ftr-Sf-C2);
+        --fbor-Sbo-C: var(--ftr-Sr-C2);
+        --fbor-Sr-C: var(--ftr-St-C2);
 
+        /* Front top left block */
+        --ftl-Sf-C: var(--fbol-Sf-C2);
+        --ftl-St-C: var(--fbol-Sl-C2);
+        --ftl-Sl-C: var(--fbol-Sbo-C2);
 
-
-
-/* @container style(--ftr-Sf-Cbo: true) {
-    rubiks {
-
-        --fbor-Sf-Cbo: true;
-    }
-
-
-} */
-
-/* body cube:nth-of-type(2) {
-    & front {
-        background: var(--ftr-Sf-C);
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--fbor-Sf-C2);
+        --fbol-Sbo-C: var(--fbor-Sr-C2);
+        --fbol-Sl-C: var(--fbor-Sbo-C2);
 
     }
-} */
+}
 
-/* MARK: testing if I can store data  */
-/* body cube:nth-of-type(2) {
-    @container style(--ftr-Sf-C: var(--color-rubiks-bottom)) {
-
-        & front {
-            background: var(--ftr-Sf-C);
-
-        }
-    }
-
-} */
-
-/* body cube:nth-of-type(2) {
-        @container style(--ftr-Sf-C: front) {
-
-            & front {
-                background: var(--color-rubiks-front);
-
-            }
-        }
-
-    } */
-
-/* body cube:nth-of-type(2) front {
-    background: if(style(--ftr-Sf-Cbo: true): var(--color-rubiks-bottom); else: purple);
-} */
-
-/* body cube:nth-of-type(4) {
-        @container style(--fbor-Sf-C: bottom) {
-
-            & front {
-
-                background: var(--color-rubiks-bottom);
-
-
-            }
-
-            background: if(style(--fbor-Sf-Cbo: true): var(--color-rubiks-bottom));
-        }
-
-    }
-} */
-
-
-/* body cube:nth-of-type(4) {
-    @container style(--fbor-Sf-Cbo: true) {
-
-        & front { 
-            background: var(--color-rubiks-bottom);
-        }
-    } */
-
-/* @container style(--fbor-Sf-Cf: true) {
-
-        & front { 
-            background: var(--color-rubiks-right);
-        }
-    } */
-
-/* } */
-
-/* body cube:nth-of-type(2) {
-    @container style(--ftr-Sf-Cf: true) {
-
-        & top {
-            --ftr-Sf-Cf: true;
-            background: var(--color-rubiks-front);
-        }
-    }
-} */
-
-
-/* MARK: sneller en minder uitgebreide manier van uitrekenen welke kleur het moet zijn */
-/* cube:nth-of-type(1) front {
-
-    @container style(--color-rubiks-front) {
-        background-color: hotpink;
-    }
-} */
-
-/* cube:nth-of-type(4) front {
-    @container style(--color-rubiks-bottom) {
-        border: 1px solid green;
-
-    }
-} */
-
-
-
-
-/* 
-background if(style(--ftr-Sf-Cf:true): var(--color-rubiks-front);
-    style(--ftr-Sf-Cba:true): var(--color-rubiks-back);
-    style(--ftr-Sf-Ct:true): var(--color-rubiks-top);
-    style(--ftr-Sf-Cbo:true): var(--color-rubiks-bottom);
-    style(--ftr-Sf-Cl:true): var(--color-rubiks-left);
-    style(--ftr-Sf-Cr:true): var(--color-rubiks-right));
-
-background: var(--color-rubiks-front); */
-
-/*  --ftr-Sf-Cf: true;
-    --ftr-Sf-Cba: false;
-    --ftr-Sf-Ct: false;
-    --ftr-Sf-Cbo: false;
-    --ftr-Sf-Cl: false;
-    --ftr-Sf-Cr: false; */
-
-
-
-
-/* front top right = 2
-front top bottom = 4*/
