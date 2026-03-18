@@ -429,6 +429,7 @@ rubiks:hover {
     0% {
         --rotate-x: 0deg;
     }
+
     100% {
         --rotate-x: 90deg;
     }
@@ -438,6 +439,7 @@ rubiks:hover {
     0% {
         --rotate-x: 0deg;
     }
+
     100% {
         --rotate-x: -90deg;
     }
@@ -447,6 +449,7 @@ rubiks:hover {
     0% {
         --rotate-y: 0deg;
     }
+
     100% {
         --rotate-y: -90deg;
     }
@@ -456,6 +459,7 @@ rubiks:hover {
     0% {
         --rotate-y: 0deg;
     }
+
     100% {
         --rotate-y: 90deg;
     }
@@ -465,6 +469,7 @@ rubiks:hover {
     0% {
         --rotate-z: 0deg;
     }
+
     100% {
         --rotate-z: 90deg;
     }
@@ -590,6 +595,39 @@ html:has([value="2turnBottomClockwise"]:checked) {
 /* Update variables */
 saving-layer1 {
 
+     /* Update all variables  */
+    --ftl-Sf-C2: var(--ftl-Sf-C);
+    --ftl-St-C2: var(--ftl-St-C);
+    --ftl-Sl-C2: var(--ftl-Sl-C);
+
+    --ftr-Sf-C2: var(--ftr-Sf-C);
+    --ftr-St-C2: var(--ftr-St-C);
+    --ftr-Sr-C2: var(--ftr-Sr-C);
+
+    --fbol-Sf-C2: var(--fbol-Sf-C);
+    --fbol-Sbo-C2: var(--fbol-Sbo-C);
+    --fbol-Sl-C2: var(--fbol-Sl-C);
+
+    --fbor-Sf-C2: var(--fbor-Sf-C);
+    --fbor-Sbo-C2: var(--fbor-Sbo-C);
+    --fbor-Sr-C2: var(--fbor-Sr-C);
+
+    --batl-Sba-C2: var(--batl-Sba-C);
+    --batl-St-C2: var(--batl-St-C);
+    --batl-Sl-C2: var(--batl-Sl-C);
+
+    --batr-Sba-C2: var(--batr-Sba-C);
+    --batr-St-C2: var(--batr-St-C);
+    --batr-Sr-C2: var(--batr-Sr-C);
+
+    --babol-Sba-C2: var(--babol-Sba-C);
+    --babol-Sbo-C2: var(--babol-Sbo-C);
+    --babol-Sl-C2: var(--babol-Sl-C);
+
+    --babor-Sba-C2: var(--babor-Sba-C);
+    --babor-Sbo-C2: var(--babor-Sbo-C);
+    --babor-Sr-C2: var(--babor-Sr-C);
+
     /* rechts met de klok mee */
     @container style(--rightTurnClockWise: true) {
 
@@ -612,23 +650,6 @@ saving-layer1 {
         --babor-Sba-C2: var(--batr-St-C);
         --babor-Sbo-C2: var(--batr-Sba-C);
         --babor-Sr-C2: var(--batr-Sr-C);
-
-        /* rest */
-        --ftl-Sf-C2: var(--ftl-Sf-C);
-        --ftl-St-C2: var(--ftl-St-C);
-        --ftl-Sl-C2: var(--ftl-Sl-C);
-
-        --fbol-Sf-C2: var(--fbol-Sf-C);
-        --fbol-Sbo-C2: var(--fbol-Sbo-C);
-        --fbol-Sl-C2: var(--fbol-Sl-C);
-
-        --batl-Sba-C2: var(--batl-Sba-C);
-        --batl-St-C2: var(--batl-St-C);
-        --batl-Sl-C2: var(--batl-Sl-C);
-
-        --babol-Sba-C2: var(--babol-Sba-C);
-        --babol-Sbo-C2: var(--babol-Sbo-C);
-        --babol-Sl-C2: var(--babol-Sl-C);
     }
 
     /* rechts tegen de klok in */
@@ -702,23 +723,6 @@ saving-layer1 {
         --babol-Sba-C2: var(--fbol-Sbo-C);
         --babol-Sbo-C2: var(--fbol-Sf-C);
         --babol-Sl-C2: var(--fbol-Sl-C);
-
-        /* rest */
-        --ftr-Sf-C2: var(--ftr-Sf-C);
-        --ftr-St-C2: var(--ftr-St-C);
-        --ftr-Sr-C2: var(--ftr-Sr-C);
-
-        --fbor-Sf-C2: var(--fbor-Sf-C);
-        --fbor-Sbo-C2: var(--fbor-Sbo-C);
-        --fbor-Sr-C2: var(--fbor-Sr-C);
-
-        --batr-Sba-C2: var(--batr-Sba-C);
-        --batr-St-C2: var(--batr-St-C);
-        --batr-Sr-C2: var(--batr-Sr-C);
-
-        --babor-Sba-C2: var(--babor-Sba-C);
-        --babor-Sbo-C2: var(--babor-Sbo-C);
-        --babor-Sr-C2: var(--babor-Sr-C);
     }
 
     /* MARK: front met de klok mee */
@@ -743,24 +747,6 @@ saving-layer1 {
         --fbol-Sf-C2: var(--fbor-Sf-C);
         --fbol-Sbo-C2: var(--fbor-Sr-C);
         --fbol-Sl-C2: var(--fbor-Sbo-C);
-
-        /* rest */
-        --batr-Sba-C2: var(--batr-Sba-C);
-        --batr-St-C2: var(--batr-St-C);
-        --batr-Sr-C2: var(--batr-Sr-C);
-
-        --babor-Sba-C2: var(--babor-Sba-C);
-        --babor-Sbo-C2: var(--babor-Sbo-C);
-        --babor-Sr-C2: var(--babor-Sr-C);
-
-        --batl-Sba-C2: var(--batl-Sba-C);
-        --batl-St-C2: var(--batl-St-C);
-        --batl-Sl-C2: var(--batl-Sl-C);
-
-        --babol-Sba-C2: var(--babol-Sba-C);
-        --babol-Sbo-C2: var(--babol-Sbo-C);
-        --babol-Sl-C2: var(--babol-Sl-C);
-
     }
 
     /* MARK: Top met de klok mee */
@@ -785,23 +771,6 @@ saving-layer1 {
         --batl-Sba-C2: var(--ftl-Sl-C);
         --batl-St-C2: var(--ftl-St-C);
         --batl-Sl-C2: var(--ftl-Sf-C);
-
-        /* rest */
-        --babor-Sba-C2: var(--babor-Sba-C);
-        --babor-Sbo-C2: var(--babor-Sbo-C);
-        --babor-Sr-C2: var(--babor-Sr-C);
-
-        --fbor-Sf-C2: var(--fbor-Sf-C);
-        --fbor-Sbo-C2: var(--fbor-Sbo-C);
-        --fbor-Sr-C2: var(--fbor-Sr-C);
-
-        --babol-Sba-C2: var(--babol-Sba-C);
-        --babol-Sbo-C2: var(--babol-Sbo-C);
-        --babol-Sl-C2: var(--babol-Sl-C);
-
-        --fbol-Sf-C2: var(--fbol-Sf-C);
-        --fbol-Sbo-C2: var(--fbol-Sbo-C);
-        --fbol-Sl-C2: var(--fbol-Sl-C);
     }
 
     /* MARK: Bottom met de klok mee */
@@ -826,23 +795,6 @@ saving-layer1 {
         --babol-Sba-C2: var(--babor-Sr-C);
         --babol-Sbo-C2: var(--babor-Sbo-C);
         --babol-Sl-C2: var(--babor-Sba-C);
-
-        /* rest */
-        --batr-Sba-C2: var(--batr-Sba-C);
-        --batr-St-C2: var(--batr-St-C);
-        --batr-Sr-C2: var(--batr-Sr-C);
-
-        --ftr-Sf-C2: var(--ftr-Sf-C);
-        --ftr-St-C2: var(--ftr-St-C);
-        --ftr-Sr-C2: var(--ftr-Sr-C);
-
-        --batl-Sba-C2: var(--batl-Sba-C);
-        --batl-St-C2: var(--batl-St-C);
-        --batl-Sl-C2: var(--batl-Sl-C);
-
-        --ftl-Sf-C2: var(--ftl-Sf-C);
-        --ftl-St-C2: var(--ftl-St-C);
-        --ftl-Sl-C2: var(--ftl-Sl-C);
     }
 }
 
@@ -983,7 +935,11 @@ saving-layer1 {
 @container style(--rightTurnClockWise: true) {
 
     body {
-        & cube:nth-of-type(2), cube:nth-of-type(4), cube:nth-of-type(6), cube:nth-of-type(8) {
+
+        & cube:nth-of-type(2),
+        cube:nth-of-type(4),
+        cube:nth-of-type(6),
+        cube:nth-of-type(8) {
             animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -996,7 +952,11 @@ saving-layer1 {
 @container style(--leftTurnClockWise: true) {
 
     body {
-        & cube:nth-of-type(1), cube:nth-of-type(3), cube:nth-of-type(5), cube:nth-of-type(7) {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(3),
+        cube:nth-of-type(5),
+        cube:nth-of-type(7) {
             animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1009,7 +969,11 @@ saving-layer1 {
 @container style(--topTurnClockWise: true) {
 
     body {
-        & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(5), cube:nth-of-type(6) {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(5),
+        cube:nth-of-type(6) {
             animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1022,7 +986,11 @@ saving-layer1 {
 @container style(--bottomTurnClockWise: true) {
 
     body {
-        & cube:nth-of-type(3), cube:nth-of-type(4), cube:nth-of-type(7), cube:nth-of-type(8) {
+
+        & cube:nth-of-type(3),
+        cube:nth-of-type(4),
+        cube:nth-of-type(7),
+        cube:nth-of-type(8) {
             animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1035,7 +1003,11 @@ saving-layer1 {
 @container style(--frontTurnClockWise: true) {
 
     body {
-        & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(3), cube:nth-of-type(4) {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(3),
+        cube:nth-of-type(4) {
             animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1048,6 +1020,39 @@ saving-layer1 {
 
 /* MARK: TURN 2 */
 saving-layer2 {
+
+    /* Update all variables  */
+    --ftl-Sf-C: var(--ftl-Sf-C2);
+    --ftl-St-C: var(--ftl-St-C2);
+    --ftl-Sl-C: var(--ftl-Sl-C2);
+
+    --ftr-Sf-C: var(--ftr-Sf-C2);
+    --ftr-St-C: var(--ftr-St-C2);
+    --ftr-Sr-C: var(--ftr-Sr-C2);
+
+    --fbol-Sf-C: var(--fbol-Sf-C2);
+    --fbol-Sbo-C: var(--fbol-Sbo-C2);
+    --fbol-Sl-C: var(--fbol-Sl-C2);
+
+    --fbor-Sf-C: var(--fbor-Sf-C2);
+    --fbor-Sbo-C: var(--fbor-Sbo-C2);
+    --fbor-Sr-C: var(--fbor-Sr-C2);
+
+    --batl-Sba-C: var(--batl-Sba-C2);
+    --batl-St-C: var(--batl-St-C2);
+    --batl-Sl-C: var(--batl-Sl-C2);
+
+    --batr-Sba-C: var(--batr-Sba-C2);
+    --batr-St-C: var(--batr-St-C2);
+    --batr-Sr-C: var(--batr-Sr-C2);
+
+    --babol-Sba-C: var(--babol-Sba-C2);
+    --babol-Sbo-C: var(--babol-Sbo-C2);
+    --babol-Sl-C: var(--babol-Sl-C2);
+
+    --babor-Sba-C: var(--babor-Sba-C2);
+    --babor-Sbo-C: var(--babor-Sbo-C2);
+    --babor-Sr-C: var(--babor-Sr-C2);
 
     /* rechts met de klok mee */
     @container style(--rightTurnClockWise2: true) {
@@ -1071,23 +1076,6 @@ saving-layer2 {
         --babor-Sba-C: var(--batr-St-C2);
         --babor-Sbo-C: var(--batr-Sba-C2);
         --babor-Sr-C: var(--batr-Sr-C2);
-
-        /* rest */
-        --ftl-Sf-C: var(--ftl-Sf-C2);
-        --ftl-St-C: var(--ftl-St-C2);
-        --ftl-Sl-C: var(--ftl-Sl-C2);
-
-        --fbol-Sf-C: var(--fbol-Sf-C2);
-        --fbol-Sbo-C: var(--fbol-Sbo-C2);
-        --fbol-Sl-C: var(--fbol-Sl-C2);
-
-        --batl-Sba-C: var(--batl-Sba-C2);
-        --batl-St-C: var(--batl-St-C2);
-        --batl-Sl-C: var(--batl-Sl-C2);
-
-        --babol-Sba-C: var(--babol-Sba-C2);
-        --babol-Sbo-C: var(--babol-Sbo-C2);
-        --babol-Sl-C: var(--babol-Sl-C2);
     }
 
     /* rechts tegen de klok in */
@@ -1162,22 +1150,6 @@ saving-layer2 {
         --babol-Sbo-C: var(--fbol-Sf-C2);
         --babol-Sl-C: var(--fbol-Sl-C2);
 
-        /* rest */
-        --ftr-Sf-C: var(--ftr-Sf-C2);
-        --ftr-St-C: var(--ftr-St-C2);
-        --ftr-Sr-C: var(--ftr-Sr-C2);
-
-        --fbor-Sf-C: var(--fbor-Sf-C2);
-        --fbor-Sbo-C: var(--fbor-Sbo-C2);
-        --fbor-Sr-C: var(--fbor-Sr-C2);
-
-        --batr-Sba-C: var(--batr-Sba-C2);
-        --batr-St-C: var(--batr-St-C2);
-        --batr-Sr-C: var(--batr-Sr-C2);
-
-        --babor-Sba-C: var(--babor-Sba-C2);
-        --babor-Sbo-C: var(--babor-Sbo-C2);
-        --babor-Sr-C: var(--babor-Sr-C2);
     }
 
     /* MARK: front met de klok mee */
@@ -1202,24 +1174,6 @@ saving-layer2 {
         --fbol-Sf-C: var(--fbor-Sf-C2);
         --fbol-Sbo-C: var(--fbor-Sr-C2);
         --fbol-Sl-C: var(--fbor-Sbo-C2);
-
-        /* rest */
-        --batr-Sba-C: var(--batr-Sba-C2);
-        --batr-St-C: var(--batr-St-C2);
-        --batr-Sr-C: var(--batr-Sr-C2);
-
-        --babor-Sba-C: var(--babor-Sba-C2);
-        --babor-Sbo-C: var(--babor-Sbo-C2);
-        --babor-Sr-C: var(--babor-Sr-C2);
-
-        --batl-Sba-C: var(--batl-Sba-C2);
-        --batl-St-C: var(--batl-St-C2);
-        --batl-Sl-C: var(--batl-Sl-C2);
-
-        --babol-Sba-C: var(--babol-Sba-C2);
-        --babol-Sbo-C: var(--babol-Sbo-C2);
-        --babol-Sl-C: var(--babol-Sl-C2);
-
     }
 
     /* MARK: Top met de klok mee */
@@ -1244,23 +1198,6 @@ saving-layer2 {
         --batl-Sba-C: var(--ftl-Sl-C2);
         --batl-St-C: var(--ftl-St-C2);
         --batl-Sl-C: var(--ftl-Sf-C2);
-
-        /* rest */
-        --babor-Sba-C: var(--babor-Sba-C2);
-        --babor-Sbo-C: var(--babor-Sbo-C2);
-        --babor-Sr-C: var(--babor-Sr-C2);
-
-        --fbor-Sf-C: var(--fbor-Sf-C2);
-        --fbor-Sbo-C: var(--fbor-Sbo-C2);
-        --fbor-Sr-C: var(--fbor-Sr-C2);
-
-        --babol-Sba-C: var(--babol-Sba-C2);
-        --babol-Sbo-C: var(--babol-Sbo-C2);
-        --babol-Sl-C: var(--babol-Sl-C2);
-
-        --fbol-Sf-C: var(--fbol-Sf-C2);
-        --fbol-Sbo-C: var(--fbol-Sbo-C2);
-        --fbol-Sl-C: var(--fbol-Sl-C2);
     }
 
     /* MARK: Bottom met de klok mee */
@@ -1285,23 +1222,6 @@ saving-layer2 {
         --babol-Sba-C: var(--babor-Sr-C2);
         --babol-Sbo-C: var(--babor-Sbo-C2);
         --babol-Sl-C: var(--babor-Sba-C2);
-
-        /* rest */
-        --batr-Sba-C: var(--batr-Sba-C2);
-        --batr-St-C: var(--batr-St-C2);
-        --batr-Sr-C: var(--batr-Sr-C2);
-
-        --ftr-Sf-C: var(--ftr-Sf-C2);
-        --ftr-St-C: var(--ftr-St-C2);
-        --ftr-Sr-C: var(--ftr-Sr-C2);
-
-        --batl-Sba-C: var(--batl-Sba-C2);
-        --batl-St-C: var(--batl-St-C2);
-        --batl-Sl-C2: var(--batl-Sl-C2);
-
-        --ftl-Sf-C: var(--ftl-Sf-C2);
-        --ftl-St-C: var(--ftl-St-C2);
-        --ftl-Sl-C: var(--ftl-Sl-C2);
     }
 }
 
@@ -1442,7 +1362,11 @@ saving-layer2 {
 @container style(--rightTurnClockWise2: true) {
 
     body {
-        & cube:nth-of-type(2), cube:nth-of-type(4), cube:nth-of-type(6), cube:nth-of-type(8) {
+
+        & cube:nth-of-type(2),
+        cube:nth-of-type(4),
+        cube:nth-of-type(6),
+        cube:nth-of-type(8) {
             animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1455,7 +1379,11 @@ saving-layer2 {
 @container style(--leftTurnClockWise2: true) {
 
     body {
-        & cube:nth-of-type(1), cube:nth-of-type(3), cube:nth-of-type(5), cube:nth-of-type(7) {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(3),
+        cube:nth-of-type(5),
+        cube:nth-of-type(7) {
             animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1468,7 +1396,11 @@ saving-layer2 {
 @container style(--topTurnClockWise2: true) {
 
     body {
-        & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(5), cube:nth-of-type(6) {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(5),
+        cube:nth-of-type(6) {
             animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1481,7 +1413,11 @@ saving-layer2 {
 @container style(--bottomTurnClockWise2: true) {
 
     body {
-        & cube:nth-of-type(3), cube:nth-of-type(4), cube:nth-of-type(7), cube:nth-of-type(8) {
+
+        & cube:nth-of-type(3),
+        cube:nth-of-type(4),
+        cube:nth-of-type(7),
+        cube:nth-of-type(8) {
             animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
@@ -1494,7 +1430,11 @@ saving-layer2 {
 @container style(--frontTurnClockWise2: true) {
 
     body {
-        & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(3), cube:nth-of-type(4) {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(3),
+        cube:nth-of-type(4) {
             animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
 
             &>* {

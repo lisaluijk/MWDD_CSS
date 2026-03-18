@@ -329,7 +329,8 @@ dat werkt maar is wel beetje rommelig dus ik denk dat ik het voor nu zo laat hih
 2300 beginnen aan tweede draai
 2330 -> color swap werkt voor tweede draai nu animatie oke dat was echt tee minuten letterijk omg ik ben zo blij
 
-
+2340 denk code nog iets inkorten door de rest allemaal aan het begin om te zetten i hop
+2350 ^dat heeft gewerkt!
 
 
 
