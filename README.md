@@ -321,6 +321,11 @@ woensdag 18 maart checkout et joost
 1720 verder met de animaties (alles gemaakt behalve bottom besloten dat ik een animatie op de x y en z as doe en die dan aanwijs op de blokjes)
 1730 dat uitwerken^ -> grapje dat werkt toch niet dus moet ze wel allemaal uitwerken hihi
 1745 animations af nu nog een keer code opschonen...
+1755 1810 stylesheets opbreken in meerdere stylesheets
+
+dat werkt maar is wel beetje rommelig dus ik denk dat ik het voor nu zo laat hihi ga nu ff pauze en dan zo eten en vanavond verder en dan gaan we de tweede draai doen omg
+
+22 45 
 
 
 

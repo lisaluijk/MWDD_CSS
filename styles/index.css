@@ -350,7 +350,6 @@ cube {
 }
 
 /* MARK: sides */
-
 cube>* {
     width: var(--size-one-cube);
     aspect-ratio: 1;
@@ -390,7 +389,6 @@ right {
 }
 
 /* MARK: Hover animation */
-
 rubiks:hover {
     animation: --rotate 10s infinite linear;
 
@@ -407,6 +405,72 @@ rubiks:hover {
             rotateX(-360deg) rotateY(-2turn);
     }
 }
+
+/* MARK: turn animations */
+@property --rotate-x {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@property --rotate-y {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@property --rotate-z {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes --turn-right {
+    0% {
+        --rotate-x: 0deg;
+    }
+    100% {
+        --rotate-x: 90deg;
+    }
+}
+
+@keyframes --turn-left {
+    0% {
+        --rotate-x: 0deg;
+    }
+    100% {
+        --rotate-x: -90deg;
+    }
+}
+
+@keyframes --turn-top {
+    0% {
+        --rotate-y: 0deg;
+    }
+    100% {
+        --rotate-y: -90deg;
+    }
+}
+
+@keyframes --turn-bottom {
+    0% {
+        --rotate-y: 0deg;
+    }
+    100% {
+        --rotate-y: 90deg;
+    }
+}
+
+@keyframes --turn-front {
+    0% {
+        --rotate-z: 0deg;
+    }
+    100% {
+        --rotate-z: 90deg;
+    }
+}
+
+
 
 
 /* MARK: LOGIC */
@@ -844,8 +908,6 @@ saving-layer1 {
         & left {
             background: var(--babol-Sl-C2);
         }
-
-
     }
 
     body cube:nth-of-type(8) {
@@ -864,12 +926,12 @@ saving-layer1 {
     }
 }
 
-/* MARK: animation */
+/* MARK: invoke animation */
 @container style(--rightTurnClockWise: true) {
 
     body {
         & cube:nth-of-type(2), cube:nth-of-type(4), cube:nth-of-type(6), cube:nth-of-type(8) {
-            animation: --turn-rechts var(--animation-duration) 1 var(--animation-easing);
+            animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -882,7 +944,7 @@ saving-layer1 {
 
     body {
         & cube:nth-of-type(1), cube:nth-of-type(3), cube:nth-of-type(5), cube:nth-of-type(7) {
-            animation: --turn-links var(--animation-duration) 1 var(--animation-easing);
+            animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -927,183 +989,6 @@ saving-layer1 {
                 transition: background-color 0s var(--animation-duration)
             }
         }
-    }
-}
-
-
-@keyframes --turn-rechts {
-    0% {
-        --rotate-x: 0deg;
-    }
-
-    100% {
-        --rotate-x: 90deg;
-    }
-}
-
-@keyframes --turn-links {
-    0% {
-        --rotate-x: 0deg;
-    }
-
-    100% {
-        --rotate-x: -90deg;
-    }
-}
-
-@keyframes --turn-top {
-    0% {
-        --rotate-y: 0deg;
-    }
-
-    100% {
-        --rotate-y: -90deg;
-    }
-}
-
-@keyframes --turn-bottom {
-    0% {
-        --rotate-y: 0deg;
-    }
-
-    100% {
-        --rotate-y: 90deg;
-    }
-}
-
-@keyframes --turn-front {
-    0% {
-        --rotate-z: 0deg;
-    }
-
-    100% {
-        --rotate-z: 90deg;
-    }
-}
-
-@property --rotate-x {
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 0deg;
-}
-
-@property --rotate-y {
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 0deg;
-}
-
-@property --rotate-z {
-    syntax: "<angle>";
-    inherits: false;
-    initial-value: 0deg;
-}
-
-
-
-@container style(--turnFront: truess) {
-
-    /* front top right */
-    body cube:nth-of-type(2) {
-        & front {
-            background: var(--ftr-Sf-C);
-        }
-
-        & top {
-            background: var(--ftr-St-C);
-        }
-
-        & right {
-            background: var(--ftr-Sr-C);
-        }
-
-    }
-
-
-
-    /* vanaf hier kan het weg denk ik */
-
-    /* front bottom right */
-    body cube:nth-of-type(4) {
-        & front {
-            background: var(--fbor-Sf-C);
-        }
-
-        & bottom {
-            background: var(--fbor-Sbo-C);
-        }
-
-        & right {
-            background: var(--fbor-Sr-C);
-        }
-
-    }
-
-    /* front top left */
-    body cube:nth-of-type(1) {
-
-        & front {
-            background: var(--ftl-Sf-C);
-        }
-
-        & top {
-            background: var(--ftl-St-C);
-        }
-
-        & left {
-            background: var(--ftl-Sl-C);
-        }
-
-    }
-
-
-    /* front bottom left */
-    body cube:nth-of-type(3) {
-
-        & front {
-            background: var(--fbol-Sf-C);
-        }
-
-        & bottom {
-            background: var(--fbol-Sbo-C);
-        }
-
-        & left {
-            background: var(--fbol-Sl-C);
-        }
-
-    }
-}
-
-
-/* ik denk niet nodig dit */
-
-
-saving-layer2 {
-
-    /* front met de klok mee */
-    @container style(--turnFront: true) {
-
-        /* Front top right block */
-        --ftr-Sf-C: var(--ftl-Sf-C2);
-        --ftr-St-C: var(--ftl-Sl-C2);
-        --ftr-Sr-C: var(--ftl-St-C2);
-
-        /* Front bottom right block */
-        --fbor-Sf-C: var(--ftr-Sf-C2);
-        --fbor-Sbo-C: var(--ftr-Sr-C2);
-        --fbor-Sr-C: var(--ftr-St-C2);
-
-        /* Front top left block */
-        --ftl-Sf-C: var(--fbol-Sf-C2);
-        --ftl-St-C: var(--fbol-Sl-C2);
-        --ftl-Sl-C: var(--fbol-Sbo-C2);
-
-        /* Front bottom left block */
-        --fbol-Sf-C: var(--fbor-Sf-C2);
-        --fbol-Sbo-C: var(--fbor-Sr-C2);
-        --fbol-Sl-C: var(--fbor-Sbo-C2);
-
     }
 }
 
