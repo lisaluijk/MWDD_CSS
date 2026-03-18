@@ -857,6 +857,8 @@ cube:nth-of-type(8) {
 
             & front {
                 background: var(--ftr-Sf-C2);
+                /* MARK: TRANSITION DIE DE ANIMATIE LAAT WERKEN!!! */
+                transition: background-color 0s 2s
             }
 
             & top {

@@ -52,6 +52,8 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 <summary>Dag 2</summary>
 
 ### Donderdag 19 feb | checkout met: Jelle
+
+#### Wat heb ik vandaag gedaan?
 - **08:15–08:50** — Styling opzetten voor onze site  
 - **09:30–10:00** — Met groepje styling doornemen en mergen met onze main branch + werk van Senna daarbij mergen
 -**10:00-12:00** — Luisteren naar uitleg van anderen en mijn eigen uitleg geven
@@ -78,7 +80,7 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 Ik ben nog niet heel erg ver met de eindopdracht van dit vak omdat we nog niet heel veel tijd hebben gehad. Ik wil de rubikskubus opdracht gaan doen. Dit gaat een grote uitdaging worden maar hier ligt mijn intresse wel echt dus is denk ik voor mij een goede keuze. Ook vind ik het een hele interessante uitdaging.
 
 ### Leerdoel 1 – CSS-animaties & micro-animaties
-Hier heb ik nog niet veel mee gedaan helaas. Ik heb geprobeerd dit een beetje toe te passen in de website die we hadden gemaakt om :has() uit te leggen. Maar we hadden nihet veel tijd en hier lag de prioriteit ook niet.
+Hier heb ik nog niet veel mee gedaan helaas. Ik heb geprobeerd dit een beetje toe te passen in de website die we hadden gemaakt om :has() uit te leggen. Maar we hadden niet veel tijd en hier lag de prioriteit ook niet.
 
 ### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
 Ik probeer elke week sowieso een paar nieuwe shortcuts aan te leren, en dit wil ik opkrikken naar minimaal 1 per dag. Ik heb er nu al enkele geleerd.
@@ -99,71 +101,154 @@ Volgende week wil ik aan de volgende dingen gaan werken
 - Ik wil volgende week de rubiks basis opzetten en hopelijk dus de vorm van de rubikskubus gemaakt hebben.
 
 
-### Maandag 4 Maart | checkout met Eva
-- 9:30 - 1030 weekly nerd
-- 1045- 1145 workshop 3d transform
+<details>
+<summary>Dag 3</summary>
 
-- 1200 - mensen recruiten voor wiskunde workshop en alles opzetten enzo 
-12 30 - pauze
-1340 Starten aan de eerste cube
-14:30 mini breakdown omdat ik twee transforms had die elkaar aan het overschrijden waren wat ik niet doorhad
-1510 mini break
-15 30 eerste ccubus afmaken
-1600 check out
+### Woensdag 4 Maart | checkout met Eva
+<summary>Dag 2</summary>
 
-### wat heb ik geleerd
+#### Wat heb ik vandaag gedaan?
+- **09:30–10:30** — Weekly Nerd  
+- **10:45–11:45** — Workshop 3D transform  
+- **11:45–12:30** — Mensen gerecruit voor wiskunde-workshop 
+- **12:30–13:40** — Pauze  
+- **13:40–14:30** — Gestart aan de eerste cube -> sides gepositioneerd
+- **14:30–15:10** — Mini breakdown omdat ik er niet achterkwam waarom mijn code niet werkte -> Je kan transforms niet "stacken"
+- **15:10–15:30** — Mini pauze  
+- **15:30–16:00** — Eerste kubus afgerond  
+- **16:00–16:15** — Check-out  
+
+#### wat heb ik geleerd
+- perspective
+- preserve 3d
+- nadenken over 3d in css
+- nadenken over wat voor een mechanisme ik ga toepassen
+
+</details>
+
+<details>
+<summary>Dag 4</summary>
+
+### Donderdag 5 Maart | checkout met Teun
+
+#### Wat heb ik vandaag gedaan?
+- **09:30–10:15** — Uitleg over specificity  
+- **10:30–10:45** — Bestanden opgezet  
+- **10:45–11:45** — Workshop animeren  
+- **12:00–13:30** — Meeting voor werk  
+- **13:30–14:00** — Pauze  
+- **14:00–14:20** — Notulen van meeting verwerkt  
+- **14:20–15:15** — Cubes gepositioneerd  -> front van de rubikscubus gemaakt
+- **15:15–16:00** — Voortgangsgesprek met Nils  
+- **16:00–16:15** — Checkout 
+
+#### Wat heb ik vandaag geleerd?
+- Dat als ik custom properties in een animatie gebruik ik eerst moet definieren wat het zijn zodat de tussenstappen in de states berekend kunnen worden. 
+- Keyframeskennis weer opgefrist
+
+</details>
+
+## Weekly check-out | week 2 
+Ik ben blij dat ik nu de basis van een kubus heb opgezet. Ik moet wel echt snel op een idee komen op hoe ik hem ga laten draaien. Nils had het over een approach waarbij je naar kleuren kijkt ipv de blokjes opnieuw positioneert. Dit vind ik interessant en ik ga over dit concept nadenken. Deze opdracht wordt een uitdaging maar ik ga super blij zijn als het me lukt.
+
+### Leerdoel 1 – CSS-animaties & micro-animaties
+Ik ga volgende week denk ik beginnen aan de animatie dus dan ook verder met dit leerdoel.
+
+### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Ik denk van te voren al goed na over de structuur die ik ga gebruiken. Ik denk zeker met een opdracht als dit dat dat erg belangrijk is om het overzicht te bewaren.  Zeker met veel css code straks moet ik kunnen vinden wat ik zoek. 
+
+### Leerdoel 3 – Itereren binnen het ontwerpproces
+Ik heb nog totaal niet bezig gehouden met styling en wil eerst het principe werkend hebben voordat ik daaraan begin. Wel heb ik al wat ideetjes over verschillende themings voor de cube zoals:
+- Zwart wit
+- Verschillende kleurthemas
+- Maar ook hele verschillende vibes.
+
+### Wat wil ik volgende week doen
+De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 
 
-### Dinsdag 5 Maart | checkout met __
-930 - 1015 uitleg over specificity
-1030 bestanden opzetten
-1045 11-45workshop animeren
-1200 meeting voor werk
-1330 pauze
-1400 notulen meeting verwerken
-14:20 cubes gepositioneerd
-15:15 voortgangsgesprek met nils
+<details>
+<summary>Dag 5</summary>
+
+### Woensdag 11 Maart | checkout met mezelf/mijn moeder 
+
+#### Wat heb ik vandaag gedaan?
+
+- **09:30–10:30** — Kick-off en uitleg over kleuren  
+- **10:45–11:30** — Workshop custom properties / theming / container style queries
+- **11:50–12:10** — README wat opgeschoond en wat bijgewerkt
+- **12:30–17:30** — Techniekbeurs (Technishow)  
+- **tijdens techniekbeurs** - Tijdens de techniekbeurs heb ik nagedacht over hoe ik mijn draaingen ga maken, ik denk dat container style queries hier wel een de oplossing voor kunnen zijn als ik mijn draaien wil baseren op kleuren ipv blokjes posities
+
+#### Wat heb ik vandaag geleerd?
+- container style queries
+- Veel dingen over technische machines en het proces
+- Geleerd over fresen en veel informatie over het bedrijf [haidenhain](https://www.heidenhain.nl/) (zij leveren ook meet software voor computerchips!)
+
+</summary>
 
 
-11 maart 
-930 -10 30kickoff uitleg over kleuren
-1045 1130 workshop custom property theme(?)
+<details>
+<summary>Dag 6</summary>
 
-1150 12 11 read me opschonen en bijwerken, begin gemaakt
-1230 1530 technishow techniekbeurs
-1530 read me helemaal opschonen
+### Donderdag 12 Maart | checkout met Mitchell 
 
+#### Wat heb ik vandaag gedaan?
+- **09:30–10:40** — Masterclass van Sanne (uitleg over zijn codepens)
+- **10:40–11:00** — Bijkomen van de masterclass van Sanne en oefenen met Rubik’s cube oplossen
+- **11:00–11:20** — Custom properties (kleuren) afgerond  
+- **11:30–11:40** — Begonnen aan de volgende stap -> style queries schrijven die de kleuren van de blokjes updaten 
+- **11:40–11:50** — Randvoorwaarden doorgenomen met Julius  
+- **11:50–12:00** — Verdiept in `if()` in CSS  
+- **12:00–12:30** — Nagedacht over hoe mijn idee vorm zal krijgen als ik het volledig met stylequeries doe
+- **12:30–13:40** — Wiskunde workshop  
+- **13:40–14:30** — Pauze  
+- **14:30–15:30** — Verder gewerkt aan voorwaarden uitwerken voor kleurenhussel
+- **15:30–16:00** — Geoefend met oplossen rubikskubus
+- **16:00–16:15** — Checkout
 
-12 maart
-930 -1040 sanne's meester class
-1040-11 daarvan bijkomen en oefenen met rubiks oplossen
-1100 1120 afmaken met de custom properties colording
-1130 verder  met w
-1140 met julius de randvoorwarden doornemen
-1150 veridepen in if() in css: ik kan het gebruiken maar het moet nog iets meer bezinken denk ik
-1200 verder met idee uitwerken (de verhsusselingsvoorwaarden)
-1230 wiskunde workshop
-1340 pauze
-1430 verder met de voorwaarden uitwerken enzo
+#### Wat heb ik geleerd?
+- Een container querie geld zolang er aan de voorwaarde wordt gedaan en daarna reset het weer. Ik hoop dat ik het kan oplossen door er een tweede container querie achteraan te schrijven die de waarde opnieuw laat gelden.
+- Door met Mitchell te praten kwam ik erachter dat ik eignelijk eerst nog wat concepten moet checken of het werkt voordat ik het gelijk ga toepassen op mijn kubus.
 
-notes -> ik kwam erachter dat de container querie geld zolang aan de voorwaarde wordt gedaan en daarna reset maar dat kan ik denk ik oplossen met een tweede querie erachter aan.... hoop ik dan
-
-1530 i dont even remember
-
-vrijdag 13 maart
-1045 testen of ik data kan opslaan op de manier die ik in mijn hoofd heb en kijken of ik maybe kan kijken welke kleur ipv duideznd variables gebruiken
-1115 pauze
-1145 1200 nog meer research naar container queries
-
-1330 browser tech
-1545 css
+</details>
 
 
+<details>
+<summary>Dag 7?(vrijdag)</summary>
 
-zaterdag 2030 -2130? tweede draai proberen
-2330 draai werkt maar alleen als je het op verschillende elementen op slaat
-0030
-dat werkt zo omdat ik de custom property die ik een nieuwe value geef gerbruik als condition. de oplossing is lege div'jes per keer dat ik wil draaien -> hetzelfde als het aantal buttons waarop ik  telkens de nieuwe values kan gaan opslaan.
+### Vrijdag 13 Maart | checkout met Mezelf -> geen officiele css dag
+
+#### Wat heb ik vandaag gedaan?
+- **10:45–11:15** — Testen of data opgeslagen kan worden op de manier die ik in mijn hoofd heb en nadenken over de variabelen voor kleur   
+- **11:15–11:45** — Pauze  
+- **11:45–12:00** — Research naar container style queries  
+
+#### Wat heb ik geleerd?
+- De manier die ik had bedacht om een tweede container style querie achter de eerste te gebruiken om de data op te slaan werkt niet
+- Ik kan de kleur variables veel korter maken door de custom properties gewoon de kleur mee te geven ipv kleur-front op true te zetten
+- Bron toevoegen container style queries
+
+
+</details>
+
+<details>
+<summary>Dag 8?(Weekend)</summary>
+
+### Zaterdag 14 Maart | checkout met Mezelf -> geen officiele css dag
+
+#### Wat heb ik vandaag gedaan?
+
+- **20:30–22:30** — Tweede draai uitgewerkt
+- **23:30–00:30** — Onderzocht waarom de container style querie werkt zoald die werkt
+
+#### Wat heb ik geleerd?
+- Het is me gelukt het concept van de tweede draai uit te werken echter moet ik de custom properties dan op slaan op een andeer html element
+- Dit werkt op deze manier omdat als je de custom properites uit dezelfde parent gebruikt als querie, hij het niet meer aan de parent kan opvragen (ik weet niet zo goed hoe ik dit moet opschrijven maar begrijp het concept een soort van)
+- De oplossing die ik nu heb is lege div'jes per rotatie -> hetzelfde als het aantal buttons waarop ik telkens de nieuwe values kan gaan opslaan. Dus ik moet een soort van saving layers gaan aanmaken.
+
+</details>
+
 
 maandag 
 1015 nog een keer doornemen met dat opslaan in de inspector. Ligt er dus aan dat het kund info moet opvragen aan de parent dus daarom kan je niet dingen vragen enzo.
@@ -214,6 +299,11 @@ ik denk toch maar op hoger level opslaan en dan 3 of 4 layers maken waarbij als 
 Ik ben erachter gekomen dat wat ik had gehoopt met oplslaan van dat met twee media queries helaas niet werkt het is echt zolang iets geldt geldt het. ipv daarvan sla ik het op via een knop. De hoeveelheid knoppen bepaalt in dit geval het aantal mogelijke draaien hoewel het eig onbeperkt is als je drie draaine links doet wat ik er of bij zet of heel erg misschien kan automatiseren idk man ik ga nu verder 
 
 ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op cube 4
+
+woensdag 18 maart 
+930 945 check in 
+1000 - 1120 read me opschonen tot aan vorige weeek -> we moeten nog maandag en vorige week de week checkout ding review
+
 
 Commented code:
 /* MARK: front top right -> top side */
