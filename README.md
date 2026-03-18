@@ -303,7 +303,13 @@ ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op
 woensdag 18 maart 
 930 945 check in 
 1000 - 1120 read me opschonen tot aan vorige weeek -> we moeten nog maandag en vorige week de week checkout ding review
-1120 - github checken
+1120 - github checken en met nienke stylesheet ref fixen
+1130 - Pauze 
+1230 - animatie fixen met transition en properties aanmaken voor de animaties
+1245 codepen van nienke doornemen en nienke vragen of ik het goed snap 
+1300 stickers uitzoeken van Nils
+1310 idee van nienke toepassen op die van mij
+1340 vragen aan Sanne waarom hij zo laggy is
 
 
 Commented code:
