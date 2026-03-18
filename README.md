@@ -300,7 +300,7 @@ Ik ben erachter gekomen dat wat ik had gehoopt met oplslaan van dat met twee med
 
 ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op cube 4
 
-woensdag 18 maart 
+woensdag 18 maart checkout et joost
 930 945 check in 
 1000 - 1120 read me opschonen tot aan vorige weeek -> we moeten nog maandag en vorige week de week checkout ding review
 1120 - github checken en met nienke stylesheet ref fixen
@@ -311,7 +311,16 @@ woensdag 18 maart
 1310 idee van nienke toepassen op die van mij
 1340-1415 vragen aan Nils waarom hij zo laggy is (op de laptop van Nils werkt het wel)
 1425 concept toepassen op alle blokjes -> animatie rechts werkt nu!
-1445 branch mergen...
+1445 -1500branch mergen
+1510 css cleanen (1280 loines)
+    1535 probleem bottomturn gefixt!!
+1545 tot hier gecleaned en links animatie concept werkt!!!
+1545 nils talk
+1600-1615 checkout met joost
+
+1720 verder met de animaties (alles gemaakt behalve bottom besloten dat ik een animatie op de x y en z as doe en die dan aanwijs op de blokjes)
+1730 dat uitwerken^
+
 
 
 Commented code:
