@@ -303,6 +303,7 @@ ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op
 woensdag 18 maart 
 930 945 check in 
 1000 - 1120 read me opschonen tot aan vorige weeek -> we moeten nog maandag en vorige week de week checkout ding review
+1120 - github checken
 
 
 Commented code:
