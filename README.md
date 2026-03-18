@@ -325,7 +325,13 @@ woensdag 18 maart checkout et joost
 
 dat werkt maar is wel beetje rommelig dus ik denk dat ik het voor nu zo laat hihi ga nu ff pauze en dan zo eten en vanavond verder en dan gaan we de tweede draai doen omg
 
-22 45 
+22 45 code laatste keer cleanen
+2300 beginnen aan tweede draai
+2330 -> color swap werkt voor tweede draai nu animatie oke dat was echt tee minuten letterijk omg ik ben zo blij
+
+
+
+
 
 
 

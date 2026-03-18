@@ -480,6 +480,7 @@ rubiks:hover {
     display: none;
 }
 
+/* Turn 1 */
 html:has([value="1turnRightClockwise"]:checked) {
     --rightTurnClockWise: true;
     --turn1: true;
@@ -530,14 +531,66 @@ html:has([value="1turnBottomClockwise"]:checked) {
     --turn1: true;
 }
 
+/* ---------------- */
+/* MARK: turn 2 */
+html:has([value="2turnRightClockwise"]:checked) {
+    --rightTurnClockWise2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnFrontClockwise"]:checked) {
+    --frontTurnClockWise2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnLeftClockwise"]:checked) {
+    --leftTurnClockWise2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnTopClockwise"]:checked) {
+    --topTurnClockWise2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnTopCounterwise"]:checked) {
+    --topTurnClockCounter2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise2: true;
+    --turn2: true;
+}
+
+html:has([value="2turnBottomClockwise"]:checked) {
+    --bottomTurnClockCounter2: true;
+    --turn2: true;
+}
+
 
 /* MARK: Color-changing */
 
-/* eerste draai */
+/* MARK: turn 1 */
 /* Update variables */
 saving-layer1 {
 
-    /* MARK: rechts met de klok mee */
+    /* rechts met de klok mee */
     @container style(--rightTurnClockWise: true) {
 
         /* Front top right block */
@@ -992,3 +1045,461 @@ saving-layer1 {
     }
 }
 
+
+/* MARK: TURN 2 */
+saving-layer2 {
+
+    /* rechts met de klok mee */
+    @container style(--rightTurnClockWise2: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--fbor-Sbo-C2);
+        --ftr-St-C: var(--fbor-Sf-C2);
+        --ftr-Sr-C: var(--fbor-Sr-C2);
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--babor-Sbo-C2);
+        --fbor-Sbo-C: var(--babor-Sba-C2);
+        --fbor-Sr-C: var(--babor-Sr-C2);
+
+        /* Back top right block */
+        --batr-Sba-C: var(--ftr-St-C2);
+        --batr-St-C: var(--ftr-Sf-C2);
+        --batr-Sr-C: var(--ftr-Sr-C2);
+
+        /* Back bottom right block */
+        --babor-Sba-C: var(--batr-St-C2);
+        --babor-Sbo-C: var(--batr-Sba-C2);
+        --babor-Sr-C: var(--batr-Sr-C2);
+
+        /* rest */
+        --ftl-Sf-C: var(--ftl-Sf-C2);
+        --ftl-St-C: var(--ftl-St-C2);
+        --ftl-Sl-C: var(--ftl-Sl-C2);
+
+        --fbol-Sf-C: var(--fbol-Sf-C2);
+        --fbol-Sbo-C: var(--fbol-Sbo-C2);
+        --fbol-Sl-C: var(--fbol-Sl-C2);
+
+        --batl-Sba-C: var(--batl-Sba-C2);
+        --batl-St-C: var(--batl-St-C2);
+        --batl-Sl-C: var(--batl-Sl-C2);
+
+        --babol-Sba-C: var(--babol-Sba-C2);
+        --babol-Sbo-C: var(--babol-Sbo-C2);
+        --babol-Sl-C: var(--babol-Sl-C2);
+    }
+
+    /* rechts tegen de klok in */
+    @container style(--rightTurnClockCounter2: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--batr-St-C2);
+        --ftr-St-C: var(--batr-Sba-C2);
+        --ftr-Sr-C: var(--batr-Sr-C2);
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--ftr-St-C2);
+        --fbor-Sbo-C: var(--ftr-Sf-C2);
+        --fbor-Sr-C: var(--ftr-Sr-C2);
+
+        /* Back top right block */
+        --batr-Sba-C: var(--babor-Sbo-C2);
+        --batr-St-C: var(--babor-Sba-C2);
+        --batr-Sr-C: var(--babor-Sr-C2);
+
+        /* Back bottom right block */
+        --babor-Sba-C: var(--fbor-Sbo-C2);
+        --babor-Sbo-C: var(--fbor-Sf-C2);
+        --babor-Sr-C: var(--fbor-Sr-C2);
+
+    }
+
+    /* MARK: links tegen de klok in */
+    @container style(--turnLeft: true) {
+
+        /* Front top right block */
+        --ltr-Sf-C: var(--fbol-Sbo-C2);
+        --ftl-St-C: var(--fbol-Sf-C2);
+        --ftl-Sl-C: var(--fbol-Sl-C2);
+
+        /* Front bottom right block */
+        --fbol-Sf-C: var(--babol-Sbo-C2);
+        --fbol-Sbo-C: var(--babol-Sba-C2);
+        --fbol-Sl-C: var(--babol-Sl-C2);
+
+        /* Back top right block */
+        --batl-Sba-C: var(--ftl-St-C2);
+        --batl-St-C: var(--ftl-Sf-C2);
+        --batl-Sl-C: var(--ftl-Sl-C2);
+
+        /* Back bottom right block */
+        --babol-Sba-C: var(--batl-St-C2);
+        --babol-Sbo-C: var(--batl-Sba-C2);
+        --babol-Sl-C: var(--batl-Sl-C2);
+    }
+
+    /* MARK: links met de klok mee */
+    @container style(--leftTurnClockWise2: true) {
+
+        /* Front top right block */
+        --ftl-Sf-C: var(--batl-St-C2);
+        --ftl-St-C: var(--batl-Sba-C2);
+        --ftl-Sl-C: var(--batl-Sl-C2);
+
+        /* Front bottom right block */
+        --fbol-Sf-C: var(--ftl-St-C2);
+        --fbol-Sbo-C: var(--ftl-Sf-C2);
+        --fbol-Sl-C: var(--ftl-Sl-C2);
+
+        /* Back top right block */
+        --batl-Sba-C: var(--babol-Sbo-C2);
+        --batl-St-C: var(--babol-Sba-C2);
+        --batl-Sl-C: var(--babol-Sl-C2);
+
+        /* Back bottom right block */
+        --babol-Sba-C: var(--fbol-Sbo-C2);
+        --babol-Sbo-C: var(--fbol-Sf-C2);
+        --babol-Sl-C: var(--fbol-Sl-C2);
+
+        /* rest */
+        --ftr-Sf-C: var(--ftr-Sf-C2);
+        --ftr-St-C: var(--ftr-St-C2);
+        --ftr-Sr-C: var(--ftr-Sr-C2);
+
+        --fbor-Sf-C: var(--fbor-Sf-C2);
+        --fbor-Sbo-C: var(--fbor-Sbo-C2);
+        --fbor-Sr-C: var(--fbor-Sr-C2);
+
+        --batr-Sba-C: var(--batr-Sba-C2);
+        --batr-St-C: var(--batr-St-C2);
+        --batr-Sr-C: var(--batr-Sr-C2);
+
+        --babor-Sba-C: var(--babor-Sba-C2);
+        --babor-Sbo-C: var(--babor-Sbo-C2);
+        --babor-Sr-C: var(--babor-Sr-C2);
+    }
+
+    /* MARK: front met de klok mee */
+    @container style(--frontTurnClockWise2: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--ftl-Sf-C2);
+        --ftr-St-C: var(--ftl-Sl-C2);
+        --ftr-Sr-C: var(--ftl-St-C2);
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--ftr-Sf-C2);
+        --fbor-Sbo-C: var(--ftr-Sr-C2);
+        --fbor-Sr-C: var(--ftr-St-C2);
+
+        /* Front top left block */
+        --ftl-Sf-C: var(--fbol-Sf-C2);
+        --ftl-St-C: var(--fbol-Sl-C2);
+        --ftl-Sl-C: var(--fbol-Sbo-C2);
+
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--fbor-Sf-C2);
+        --fbol-Sbo-C: var(--fbor-Sr-C2);
+        --fbol-Sl-C: var(--fbor-Sbo-C2);
+
+        /* rest */
+        --batr-Sba-C: var(--batr-Sba-C2);
+        --batr-St-C: var(--batr-St-C2);
+        --batr-Sr-C: var(--batr-Sr-C2);
+
+        --babor-Sba-C: var(--babor-Sba-C2);
+        --babor-Sbo-C: var(--babor-Sbo-C2);
+        --babor-Sr-C: var(--babor-Sr-C2);
+
+        --batl-Sba-C: var(--batl-Sba-C2);
+        --batl-St-C: var(--batl-St-C2);
+        --batl-Sl-C: var(--batl-Sl-C2);
+
+        --babol-Sba-C: var(--babol-Sba-C2);
+        --babol-Sbo-C: var(--babol-Sbo-C2);
+        --babol-Sl-C: var(--babol-Sl-C2);
+
+    }
+
+    /* MARK: Top met de klok mee */
+    @container style(--topTurnClockWise2: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--batr-Sr-C2);
+        --ftr-St-C: var(--batr-St-C2);
+        --ftr-Sr-C: var(--batr-Sba-C2);
+
+        /* Back top right block */
+        --batr-Sba-C: var(--batl-Sl-C2);
+        --batr-St-C: var(--batl-St-C2);
+        --batr-Sr-C: var(--batl-Sba-C2);
+
+        /* Front top left block */
+        --ftl-Sf-C: var(--ftr-Sr-C2);
+        --ftl-St-C: var(--ftr-St-C2);
+        --ftl-Sl-C: var(--ftr-Sf-C2);
+
+        /* back top left block */
+        --batl-Sba-C: var(--ftl-Sl-C2);
+        --batl-St-C: var(--ftl-St-C2);
+        --batl-Sl-C: var(--ftl-Sf-C2);
+
+        /* rest */
+        --babor-Sba-C: var(--babor-Sba-C2);
+        --babor-Sbo-C: var(--babor-Sbo-C2);
+        --babor-Sr-C: var(--babor-Sr-C2);
+
+        --fbor-Sf-C: var(--fbor-Sf-C2);
+        --fbor-Sbo-C: var(--fbor-Sbo-C2);
+        --fbor-Sr-C: var(--fbor-Sr-C2);
+
+        --babol-Sba-C: var(--babol-Sba-C2);
+        --babol-Sbo-C: var(--babol-Sbo-C2);
+        --babol-Sl-C: var(--babol-Sl-C2);
+
+        --fbol-Sf-C: var(--fbol-Sf-C2);
+        --fbol-Sbo-C: var(--fbol-Sbo-C2);
+        --fbol-Sl-C: var(--fbol-Sl-C2);
+    }
+
+    /* MARK: Bottom met de klok mee */
+    @container style(--bottomTurnClockWise2: true) {
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--fbol-Sl-C2);
+        --fbor-Sbo-C: var(--fbol-Sbo-C2);
+        --fbor-Sr-C: var(--fbol-Sf-C2);
+
+        /* Back bottom right block */
+        --babor-Sba-C: var(--fbor-Sr-C2);
+        --babor-Sbo-C: var(--fbor-Sbo-C2);
+        --babor-Sr-C: var(--fbor-Sf-C2);
+
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--babol-Sl-C2);
+        --fbol-Sbo-C: var(--babol-Sbo-C2);
+        --fbol-Sl-C: var(--babol-Sba-C2);
+
+        /* back bottom left block */
+        --babol-Sba-C: var(--babor-Sr-C2);
+        --babol-Sbo-C: var(--babor-Sbo-C2);
+        --babol-Sl-C: var(--babor-Sba-C2);
+
+        /* rest */
+        --batr-Sba-C: var(--batr-Sba-C2);
+        --batr-St-C: var(--batr-St-C2);
+        --batr-Sr-C: var(--batr-Sr-C2);
+
+        --ftr-Sf-C: var(--ftr-Sf-C2);
+        --ftr-St-C: var(--ftr-St-C2);
+        --ftr-Sr-C: var(--ftr-Sr-C2);
+
+        --batl-Sba-C: var(--batl-Sba-C2);
+        --batl-St-C: var(--batl-St-C2);
+        --batl-Sl-C2: var(--batl-Sl-C2);
+
+        --ftl-Sf-C: var(--ftl-Sf-C2);
+        --ftl-St-C: var(--ftl-St-C2);
+        --ftl-Sl-C: var(--ftl-Sl-C2);
+    }
+}
+
+/* update scene */
+@container style(--turn2: true) {
+
+    /* #turn1 {
+        display: none;
+    }
+
+    #turn2 {
+        display: grid;
+    } */
+
+    /* reset all of the colors */
+    body cube:nth-of-type(1) {
+
+        & front {
+            background: var(--ftl-Sf-C);
+        }
+
+        & top {
+            background: var(--ftl-St-C);
+        }
+
+        & left {
+            background: var(--ftl-Sl-C);
+        }
+    }
+
+    body cube:nth-of-type(2) {
+
+        & front {
+            background: var(--ftr-Sf-C);
+        }
+
+        & top {
+            background: var(--ftr-St-C);
+        }
+
+        & right {
+            background: var(--ftr-Sr-C);
+        }
+    }
+
+    body cube:nth-of-type(3) {
+
+        & front {
+            background: var(--fbol-Sf-C);
+        }
+
+        & bottom {
+            background: var(--fbol-Sbo-C);
+        }
+
+        & left {
+            background: var(--fbol-Sl-C);
+        }
+    }
+
+    body cube:nth-of-type(4) {
+
+        & front {
+            background: var(--fbor-Sf-C);
+        }
+
+        & bottom {
+            background: var(--fbor-Sbo-C);
+        }
+
+        & right {
+            background: var(--fbor-Sr-C);
+        }
+    }
+
+    body cube:nth-of-type(5) {
+
+        & back {
+            background: var(--batl-Sba-C);
+        }
+
+        & top {
+            background: var(--batl-St-C);
+        }
+
+        & left {
+            background: var(--batl-Sl-C);
+        }
+    }
+
+    body cube:nth-of-type(6) {
+
+        & back {
+            background: var(--batr-Sba-C);
+        }
+
+        & top {
+            background: var(--batr-St-C);
+        }
+
+        & right {
+            background: var(--batr-Sr-C);
+        }
+    }
+
+    body cube:nth-of-type(7) {
+
+        & back {
+            background: var(--babol-Sba-C);
+        }
+
+        & bottom {
+            background: var(--babol-Sbo-C);
+        }
+
+        & left {
+            background: var(--babol-Sl-C);
+        }
+    }
+
+    body cube:nth-of-type(8) {
+
+        & back {
+            background: var(--babor-Sba-C);
+        }
+
+        & bottom {
+            background: var(--babor-Sbo-C);
+        }
+
+        & right {
+            background: var(--babor-Sr-C);
+        }
+    }
+}
+
+/* MARK: invoke animation */
+@container style(--rightTurnClockWise2: true) {
+
+    body {
+        & cube:nth-of-type(2), cube:nth-of-type(4), cube:nth-of-type(6), cube:nth-of-type(8) {
+            animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--leftTurnClockWise2: true) {
+
+    body {
+        & cube:nth-of-type(1), cube:nth-of-type(3), cube:nth-of-type(5), cube:nth-of-type(7) {
+            animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--topTurnClockWise2: true) {
+
+    body {
+        & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(5), cube:nth-of-type(6) {
+            animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--bottomTurnClockWise2: true) {
+
+    body {
+        & cube:nth-of-type(3), cube:nth-of-type(4), cube:nth-of-type(7), cube:nth-of-type(8) {
+            animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--frontTurnClockWise2: true) {
+
+    body {
+        & cube:nth-of-type(1), cube:nth-of-type(2), cube:nth-of-type(3), cube:nth-of-type(4) {
+            animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
