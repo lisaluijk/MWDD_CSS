@@ -309,7 +309,9 @@ woensdag 18 maart
 1245 codepen van nienke doornemen en nienke vragen of ik het goed snap 
 1300 stickers uitzoeken van Nils
 1310 idee van nienke toepassen op die van mij
-1340 vragen aan Sanne waarom hij zo laggy is
+1340-1415 vragen aan Nils waarom hij zo laggy is (op de laptop van Nils werkt het wel)
+1425 concept toepassen op alle blokjes -> animatie rechts werkt nu!
+1445 branch mergen...
 
 
 Commented code:
