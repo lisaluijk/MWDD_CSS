@@ -248,6 +248,25 @@ De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 - Dit werkt op deze manier omdat als je de custom properites uit dezelfde parent gebruikt als querie, hij het niet meer aan de parent kan opvragen (ik weet niet zo goed hoe ik dit moet opschrijven maar begrijp het concept een soort van)
 - De oplossing die ik nu heb is lege div'jes per rotatie -> hetzelfde als het aantal buttons waarop ik telkens de nieuwe values kan gaan opslaan. Dus ik moet een soort van saving layers gaan aanmaken.
 
+
+#### Notes research
+
+Bronnen
+- [Container style queries - deepdive](https://css-tricks.com/digging-deeper-into-container-style-queries/)
+- [Container style queries - deeperdive](https://css-tricks.com/poking-at-the-css-if-function-a-little-more-conditional-color-theming/)
+- [Contain - W3C](https://www.w3.org/TR/css-contain-3/)
+- [Container style queries issues - notes van developer](https://css.oddbird.net/rwd/style/explainer/)
+- [Container style queries issues - syntax](https://github.com/w3c/csswg-drafts/issues/6396)
+- [Container style queries issues - custom properties vs variables](https://github.com/w3c/csswg-drafts/issues/5624)
+- [Container style queries issues - container features queries](https://github.com/w3c/csswg-drafts/issues/5989)
+- [Container style queries issues - style query syntax](https://github.com/w3c/csswg-drafts/issues/7068)
+- [toggling between values](https://drafts.csswg.org/css-values-5/#funcdef-toggle)
+
+Thought process
+- Kan ik de waardes op het blokje zelf opslaan? -> nee want de andere blokjes moeten ook bij die waares kunnen komen dus het moet in een overkoepelende parent
+- Op hogere levels opslaan is het antwoord 
+
+
 </details>
 
 ## Weekly check-out | week 3 
@@ -296,32 +315,6 @@ In een rap tempo de code opschonen en zo efficient mogelijk krijgen zodat ik hem
 
 </details>
 
-https://github.com/w3c/csswg-drafts/issues/6396
-https://github.com/w3c/csswg-drafts/issues/5624 grapje, ik kan het gewoon op het blokje opslaan -> of nee wacht toch niet want de andere blokjes hebben die data ook nodig om erachter te komen welke kleur ze moeten worden dus het moet overkoepelend zijn want anders kunnen ze er niet bij
-
-
-De reden hiervan is dat het kind aan de parent moet opvragen wat de waarde is. En dat lukt natuurlijk niet als alles op dezelfde layer zit
-
-interessant: https://css-tricks.com/digging-deeper-into-container-style-queries/
-https://css.oddbird.net/rwd/style/explainer/
-https://css-tricks.com/poking-at-the-css-if-function-a-little-more-conditional-color-theming/
-https://www.w3.org/TR/css-contain-3/
-https://github.com/w3c/csswg-drafts/issues/6396
-https://github.com/w3c/csswg-drafts/issues/5624
-https://github.com/w3c/csswg-drafts/issues/5989
-https://github.com/w3c/csswg-drafts/issues/7068
-
-https://drafts.csswg.org/css-values-5/#funcdef-toggle
-
-VOLGENS MIJ HET MEEST RELEVANT : https://github.com/w3c/csswg-drafts/issues/5624
-
-
-ik denk toch maar op hoger level opslaan en dan 3 of 4 layers maken waarbij als je bij de4e komt je ipv 1 turn met de klok mee doet er drie terug doet zodat we niet oneindig hoeven te wekren maar wel een oneindige cube maken :)
-
-Ik ben erachter gekomen dat wat ik had gehoopt met oplslaan van dat met twee media queries helaas niet werkt het is echt zolang iets geldt geldt het. ipv daarvan sla ik het op via een knop. De hoeveelheid knoppen bepaalt in dit geval het aantal mogelijke draaien hoewel het eig onbeperkt is als je drie draaine links doet wat ik er of bij zet of heel erg misschien kan automatiseren idk man ik ga nu verder 
-
-ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op cube 4
-
 <details>
 <summary>Dag 10</summary>
 
@@ -361,7 +354,12 @@ ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op
 </details>
 
 19 maart
-1015 read me opsschonen
+1015 - read me opsschonen
+1115
+
+
+
+
 
 
 
