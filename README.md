@@ -186,7 +186,7 @@ De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 - Veel dingen over technische machines en het proces
 - Geleerd over fresen en veel informatie over het bedrijf [haidenhain](https://www.heidenhain.nl/) (zij leveren ook meet software voor computerchips!)
 
-</summary>
+</details>
 
 
 <details>
@@ -356,6 +356,14 @@ In een rap tempo de code opschonen en zo efficient mogelijk krijgen zodat ik hem
 19 maart
 1015 - read me opsschonen
 1115-1135 - sources toevoegen
+1145 randvoorwaarden nog een keer doornemen
+1200 controleren of alles goed op github staat
+1205 tegen de klok in draaien eerste laag
+1240 1250 tegen de kklok in tweede draai
+pauze
+1340 animatie tegen de klok in voor beide draaiingen
+
+
 
 
 ## Bronnenlijst

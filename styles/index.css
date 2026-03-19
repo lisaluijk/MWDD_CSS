@@ -336,8 +336,8 @@ html:has([value="picasso"]:checked) {
 
 @container style(--picasso: true) {
     body {
-    --size-one-cube: calc(var(--size-full-cube) / 8);
-    
+        --size-one-cube: calc(var(--size-full-cube) / 8);
+
         & cube>* {
             border: 0.2rem solid black;
             border-radius: 0.3rem;
@@ -352,8 +352,8 @@ html:has([value="proportions"]:checked) {
 
 @container style(--proportions: true) {
     body {
-    --size-one-cube: calc(var(--size-full-cube) / 2);
-    
+        --size-one-cube: calc(var(--size-full-cube) / 2);
+
         & cube>* {
             border: 0.2rem solid black;
             border-radius: 0.3rem;
@@ -622,6 +622,16 @@ rubiks:hover {
     }
 }
 
+@keyframes --turn-back {
+    0% {
+        --rotate-z: 0deg;
+    }
+
+    100% {
+        --rotate-z: -90deg;
+    }
+}
+
 
 
 
@@ -678,7 +688,7 @@ html:has([value="1turnBottomClockwise"]:checked) {
     --turn1: true;
 }
 
-html:has([value="1turnBottomClockwise"]:checked) {
+html:has([value="1turnBottomCounterwise"]:checked) {
     --bottomTurnClockCounter: true;
     --turn1: true;
 }
@@ -730,7 +740,7 @@ html:has([value="2turnBottomClockwise"]:checked) {
     --turn2: true;
 }
 
-html:has([value="2turnBottomClockwise"]:checked) {
+html:has([value="2turnBottomCounterwise"]:checked) {
     --bottomTurnClockCounter2: true;
     --turn2: true;
 }
@@ -804,73 +814,72 @@ saving-layer1 {
     @container style(--rightTurnClockCounter: true) {
 
         /* Front top right block */
-        --ftr-Sf-C: var(--batr-St-C);
-        --ftr-St-C: var(--batr-Sba-C);
-        --ftr-Sr-C: var(--batr-Sr-C);
+        --ftr-Sf-C2: var(--batr-St-C);
+        --ftr-St-C2: var(--batr-Sba-C);
+        --ftr-Sr-C2: var(--batr-Sr-C);
 
         /* Front bottom right block */
-        --fbor-Sf-C: var(--ftr-St-C);
-        --fbor-Sbo-C: var(--ftr-Sf-C);
-        --fbor-Sr-C: var(--ftr-Sr-C);
+        --fbor-Sf-C2: var(--ftr-St-C);
+        --fbor-Sbo-C2: var(--ftr-Sf-C);
+        --fbor-Sr-C2: var(--ftr-Sr-C);
 
         /* Back top right block */
-        --batr-Sba-C: var(--babor-Sbo-C);
-        --batr-St-C: var(--babor-Sba-C);
-        --batr-Sr-C: var(--babor-Sr-C);
+        --batr-Sba-C2: var(--babor-Sbo-C);
+        --batr-St-C2: var(--babor-Sba-C);
+        --batr-Sr-C2: var(--babor-Sr-C);
 
         /* Back bottom right block */
-        --babor-Sba-C: var(--fbor-Sbo-C);
-        --babor-Sbo-C: var(--fbor-Sf-C);
-        --babor-Sr-C: var(--fbor-Sr-C);
-
-    }
-
-    /* MARK: links tegen de klok in */
-    @container style(--turnLeft: true) {
-
-        /* Front top right block */
-        --ltr-Sf-C: var(--fbol-Sbo-C);
-        --ftl-St-C: var(--fbol-Sf-C);
-        --ftl-Sl-C: var(--fbol-Sl-C);
-
-        /* Front bottom right block */
-        --fbol-Sf-C: var(--babol-Sbo-C);
-        --fbol-Sbo-C: var(--babol-Sba-C);
-        --fbol-Sl-C: var(--babol-Sl-C);
-
-        /* Back top right block */
-        --batl-Sba-C: var(--ftl-St-C);
-        --batl-St-C: var(--ftl-Sf-C);
-        --batl-Sl-C: var(--ftl-Sl-C);
-
-        /* Back bottom right block */
-        --babol-Sba-C: var(--batl-St-C);
-        --babol-Sbo-C: var(--batl-Sba-C);
-        --babol-Sl-C: var(--batl-Sl-C);
+        --babor-Sba-C2: var(--fbor-Sbo-C);
+        --babor-Sbo-C2: var(--fbor-Sf-C);
+        --babor-Sr-C2: var(--fbor-Sr-C);
     }
 
     /* MARK: links met de klok mee */
     @container style(--leftTurnClockWise: true) {
 
-        /* Front top right block */
+        /* Front top left block */
         --ftl-Sf-C2: var(--batl-St-C);
         --ftl-St-C2: var(--batl-Sba-C);
         --ftl-Sl-C2: var(--batl-Sl-C);
 
-        /* Front bottom right block */
+        /* Front bottom left block */
         --fbol-Sf-C2: var(--ftl-St-C);
         --fbol-Sbo-C2: var(--ftl-Sf-C);
         --fbol-Sl-C2: var(--ftl-Sl-C);
 
-        /* Back top right block */
+        /* Back top left block */
         --batl-Sba-C2: var(--babol-Sbo-C);
         --batl-St-C2: var(--babol-Sba-C);
         --batl-Sl-C2: var(--babol-Sl-C);
 
-        /* Back bottom right block */
+        /* Back bottom left block */
         --babol-Sba-C2: var(--fbol-Sbo-C);
         --babol-Sbo-C2: var(--fbol-Sf-C);
         --babol-Sl-C2: var(--fbol-Sl-C);
+    }
+
+    /* MARK: links tegen de klok in */
+    @container style(--leftTurnClockCounter: true) {
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--fbol-Sbo-C);
+        --ftl-St-C2: var(--fbol-Sf-C);
+        --ftl-Sl-C2: var(--fbol-Sl-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--babol-Sbo-C);
+        --fbol-Sbo-C2: var(--babol-Sba-C);
+        --fbol-Sl-C2: var(--babol-Sl-C);
+
+        /* Back top left block */
+        --batl-Sba-C2: var(--ftl-St-C);
+        --batl-St-C2: var(--ftl-Sf-C);
+        --batl-Sl-C2: var(--ftl-Sl-C);
+
+        /* Back bottom left block */
+        --babol-Sba-C2: var(--batl-St-C);
+        --babol-Sbo-C2: var(--batl-Sba-C);
+        --babol-Sl-C2: var(--batl-Sl-C);
     }
 
     /* MARK: front met de klok mee */
@@ -897,6 +906,30 @@ saving-layer1 {
         --fbol-Sl-C2: var(--fbor-Sbo-C);
     }
 
+    /* MARK: front tegen de klok in */
+    @container style(--frontTurnClockCounter: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--fbor-Sf-C);
+        --ftr-St-C2: var(--fbor-Sr-C);
+        --ftr-Sr-C2: var(--fbor-Sbo-C);
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--fbol-Sf-C);
+        --fbor-Sbo-C2: var(--fbol-Sl-C);
+        --fbor-Sr-C2: var(--fbol-Sbo-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--ftr-Sf-C);
+        --ftl-St-C2: var(--ftr-Sr-C);
+        --ftl-Sl-C2: var(--ftr-St-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--ftl-Sf-C);
+        --fbol-Sbo-C2: var(--ftl-Sl-C);
+        --fbol-Sl-C2: var(--ftl-St-C);
+    }
+
     /* MARK: Top met de klok mee */
     @container style(--topTurnClockWise: true) {
 
@@ -921,6 +954,30 @@ saving-layer1 {
         --batl-Sl-C2: var(--ftl-Sf-C);
     }
 
+    /* MARK: top tegen de klok in */
+    @container style(--topTurnClockCounter: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--ftl-Sl-C);
+        --ftr-St-C2: var(--ftl-St-C);
+        --ftr-Sr-C2: var(--ftl-Sf-C);
+
+        /* Back top right block */
+        --batr-Sba-C2: var(--ftr-Sr-C);
+        --batr-St-C2: var(--ftr-St-C);
+        --batr-Sr-C2: var(--ftr-Sf-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--batl-Sl-C);
+        --ftl-St-C2: var(--batl-St-C);
+        --ftl-Sl-C2: var(--batl-Sba-C);
+
+        /* back top left block */
+        --batl-Sba-C2: var(--batr-Sr-C);
+        --batl-St-C2: var(--batr-St-C);
+        --batl-Sl-C2: var(--batr-Sba-C);
+    }
+
     /* MARK: Bottom met de klok mee */
     @container style(--bottomTurnClockWise: true) {
 
@@ -943,6 +1000,30 @@ saving-layer1 {
         --babol-Sba-C2: var(--babor-Sr-C);
         --babol-Sbo-C2: var(--babor-Sbo-C);
         --babol-Sl-C2: var(--babor-Sba-C);
+    }
+
+    /* MARK: Bottom tegen de klok in */
+    @container style(--bottomTurnClockCounter: true) {
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--babor-Sr-C);
+        --fbor-Sbo-C2: var(--babor-Sbo-C);
+        --fbor-Sr-C2: var(--babor-Sba-C);
+
+        /* Back bottom right block */
+        --babor-Sba-C2: var(--babol-Sl-C);
+        --babor-Sbo-C2: var(--babol-Sbo-C);
+        --babor-Sr-C2: var(--babol-Sba-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--babor-Sr-C);
+        --fbol-Sbo-C2: var(--babor-Sbo-C);
+        --fbol-Sl-C2: var(--babor-Sf-C);
+
+        /* back bottom left block */
+        --babol-Sba-C2: var(--fbol-Sl-C);
+        --babol-Sbo-C2: var(--fbol-Sbo-C);
+        --babol-Sl-C2: var(--fbol-Sf-C);
     }
 }
 
@@ -1081,9 +1162,11 @@ saving-layer1 {
 
 /* MARK: invoke animation */
 /* Source: delay for the colors using transition -> Nienke */
-@container style(--rightTurnClockWise: true) {
 
+/* right*/
+@container style(--rightTurnClockWise: true) {
     body {
+
         & cube:nth-of-type(2),
         cube:nth-of-type(4),
         cube:nth-of-type(6),
@@ -1097,8 +1180,24 @@ saving-layer1 {
     }
 }
 
-@container style(--leftTurnClockWise: true) {
+@container style(--rightTurnClockCounter: true) {
+    body {
 
+        & cube:nth-of-type(2),
+        cube:nth-of-type(4),
+        cube:nth-of-type(6),
+        cube:nth-of-type(8) {
+            animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* left */
+@container style(--leftTurnClockWise: true) {
     body {
 
         & cube:nth-of-type(1),
@@ -1114,10 +1213,26 @@ saving-layer1 {
     }
 }
 
-@container style(--topTurnClockWise: true) {
-
+@container style(--leftTurnClockCounter: true) {
     body {
 
+        & cube:nth-of-type(1),
+        cube:nth-of-type(3),
+        cube:nth-of-type(5),
+        cube:nth-of-type(7) {
+            animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* top */
+
+@container style(--topTurnClockWise: true) {
+    body {
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(5),
@@ -1131,6 +1246,23 @@ saving-layer1 {
     }
 }
 
+@container style(--topTurnClockCounter: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(5),
+        cube:nth-of-type(6) {
+            animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* bottom */
 @container style(--bottomTurnClockWise: true) {
 
     body {
@@ -1148,15 +1280,44 @@ saving-layer1 {
     }
 }
 
-@container style(--frontTurnClockWise: true) {
-
+@container style(--bottomTurnClockCounter: true) {
     body {
+        & cube:nth-of-type(3),
+        cube:nth-of-type(4),
+        cube:nth-of-type(7),
+        cube:nth-of-type(8) {
+            animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
 
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* front */
+@container style(--frontTurnClockWise: true) {
+    body {
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(3),
         cube:nth-of-type(4) {
             animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--frontTurnClockCounter: true) {
+    body {
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(3),
+        cube:nth-of-type(4) {
+            animation: --turn-back var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
@@ -1248,31 +1409,6 @@ saving-layer2 {
         --babor-Sba-C: var(--fbor-Sbo-C2);
         --babor-Sbo-C: var(--fbor-Sf-C2);
         --babor-Sr-C: var(--fbor-Sr-C2);
-
-    }
-
-    /* MARK: links tegen de klok in */
-    @container style(--turnLeft: true) {
-
-        /* Front top right block */
-        --ltr-Sf-C: var(--fbol-Sbo-C2);
-        --ftl-St-C: var(--fbol-Sf-C2);
-        --ftl-Sl-C: var(--fbol-Sl-C2);
-
-        /* Front bottom right block */
-        --fbol-Sf-C: var(--babol-Sbo-C2);
-        --fbol-Sbo-C: var(--babol-Sba-C2);
-        --fbol-Sl-C: var(--babol-Sl-C2);
-
-        /* Back top right block */
-        --batl-Sba-C: var(--ftl-St-C2);
-        --batl-St-C: var(--ftl-Sf-C2);
-        --batl-Sl-C: var(--ftl-Sl-C2);
-
-        /* Back bottom right block */
-        --babol-Sba-C: var(--batl-St-C2);
-        --babol-Sbo-C: var(--batl-Sba-C2);
-        --babol-Sl-C: var(--batl-Sl-C2);
     }
 
     /* MARK: links met de klok mee */
@@ -1297,7 +1433,30 @@ saving-layer2 {
         --babol-Sba-C: var(--fbol-Sbo-C2);
         --babol-Sbo-C: var(--fbol-Sf-C2);
         --babol-Sl-C: var(--fbol-Sl-C2);
+    }
 
+    /* MARK: links tegen de klok in */
+    @container style(--leftTurnClockCounter2: true) {
+
+        /* Front top left block */
+        --ftl-Sf-C: var(--fbol-Sbo-C2);
+        --ftl-St-C: var(--fbol-Sf-C2);
+        --ftl-Sl-C: var(--fbol-Sl-C2);
+
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--babol-Sbo-C2);
+        --fbol-Sbo-C: var(--babol-Sba-C2);
+        --fbol-Sl-C: var(--babol-Sl-C2);
+
+        /* Back top left block */
+        --batl-Sba-C: var(--ftl-St-C2);
+        --batl-St-C: var(--ftl-Sf-C2);
+        --batl-Sl-C: var(--ftl-Sl-C2);
+
+        /* Back bottom left block */
+        --babol-Sba-C: var(--batl-St-C2);
+        --babol-Sbo-C: var(--batl-Sba-C2);
+        --babol-Sl-C: var(--batl-Sl-C2);
     }
 
     /* MARK: front met de klok mee */
@@ -1324,6 +1483,30 @@ saving-layer2 {
         --fbol-Sl-C: var(--fbor-Sbo-C2);
     }
 
+    /* MARK: front tegen de klok in */
+    @container style(--frontTurnClockCounter2: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--fbor-Sf-C2);
+        --ftr-St-C: var(--fbor-Sr-C2);
+        --ftr-Sr-C: var(--fbor-Sbo-C2);
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--fbol-Sf-C2);
+        --fbor-Sbo-C: var(--fbol-Sl-C2);
+        --fbor-Sr-C: var(--fbol-Sbo-C2);
+
+        /* Front top left block */
+        --ftl-Sf-C: var(--ftr-Sf-C2);
+        --ftl-St-C: var(--ftr-Sr-C2);
+        --ftl-Sl-C: var(--ftr-St-C2);
+
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--ftl-Sf-C2);
+        --fbol-Sbo-C: var(--ftl-Sl-C2);
+        --fbol-Sl-C: var(--ftl-St-C2);
+    }
+
     /* MARK: Top met de klok mee */
     @container style(--topTurnClockWise2: true) {
 
@@ -1348,6 +1531,30 @@ saving-layer2 {
         --batl-Sl-C: var(--ftl-Sf-C2);
     }
 
+    /* MARK: top tegen de klok in */
+    @container style(--topTurnClockCounter2: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C: var(--ftl-Sl-C2);
+        --ftr-St-C: var(--ftl-St-C2);
+        --ftr-Sr-C: var(--ftl-Sf-C2);
+
+        /* Back top right block */
+        --batr-Sba-C: var(--ftr-Sr-C2);
+        --batr-St-C: var(--ftr-St-C2);
+        --batr-Sr-C: var(--ftr-Sf-C2);
+
+        /* Front top left block */
+        --ftl-Sf-C: var(--batl-Sl-C2);
+        --ftl-St-C: var(--batl-St-C2);
+        --ftl-Sl-C: var(--batl-Sba-C2);
+
+        /* back top left block */
+        --batl-Sba-C: var(--batr-Sr-C2);
+        --batl-St-C: var(--batr-St-C2);
+        --batl-Sl-C: var(--batr-Sba-C2);
+    }
+
     /* MARK: Bottom met de klok mee */
     @container style(--bottomTurnClockWise2: true) {
 
@@ -1370,6 +1577,30 @@ saving-layer2 {
         --babol-Sba-C: var(--babor-Sr-C2);
         --babol-Sbo-C: var(--babor-Sbo-C2);
         --babol-Sl-C: var(--babor-Sba-C2);
+    }
+
+    /* MARK: Bottom tegen de klok in */
+    @container style(--bottomTurnClockCounter2: true) {
+
+        /* Front bottom right block */
+        --fbor-Sf-C: var(--babor-Sr-C2);
+        --fbor-Sbo-C: var(--babor-Sbo-C2);
+        --fbor-Sr-C: var(--babor-Sba-C2);
+
+        /* Back bottom right block */
+        --babor-Sba-C: var(--babol-Sl-C2);
+        --babor-Sbo-C: var(--babol-Sbo-C2);
+        --babor-Sr-C: var(--babol-Sba-C2);
+
+        /* Front bottom left block */
+        --fbol-Sf-C: var(--babor-Sr-C2);
+        --fbol-Sbo-C: var(--babor-Sbo-C2);
+        --fbol-Sl-C: var(--babor-Sf-C2);
+
+        /* back bottom left block */
+        --babol-Sba-C: var(--fbol-Sl-C2);
+        --babol-Sbo-C: var(--fbol-Sbo-C2);
+        --babol-Sl-C: var(--fbol-Sf-C2);
     }
 }
 
@@ -1507,8 +1738,8 @@ saving-layer2 {
 }
 
 /* MARK: invoke animation */
+/* right*/
 @container style(--rightTurnClockWise2: true) {
-
     body {
 
         & cube:nth-of-type(2),
@@ -1524,8 +1755,24 @@ saving-layer2 {
     }
 }
 
-@container style(--leftTurnClockWise2: true) {
+@container style(--rightTurnClockCounter2: true) {
+    body {
 
+        & cube:nth-of-type(2),
+        cube:nth-of-type(4),
+        cube:nth-of-type(6),
+        cube:nth-of-type(8) {
+            animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* left */
+@container style(--leftTurnClockWise2: true) {
     body {
 
         & cube:nth-of-type(1),
@@ -1541,10 +1788,26 @@ saving-layer2 {
     }
 }
 
-@container style(--topTurnClockWise2: true) {
-
+@container style(--leftTurnClockCounter2: true) {
     body {
 
+        & cube:nth-of-type(1),
+        cube:nth-of-type(3),
+        cube:nth-of-type(5),
+        cube:nth-of-type(7) {
+            animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* top */
+
+@container style(--topTurnClockWise2: true) {
+    body {
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(5),
@@ -1558,6 +1821,23 @@ saving-layer2 {
     }
 }
 
+@container style(--topTurnClockCounter2: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(5),
+        cube:nth-of-type(6) {
+            animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* bottom */
 @container style(--bottomTurnClockWise2: true) {
 
     body {
@@ -1575,15 +1855,44 @@ saving-layer2 {
     }
 }
 
-@container style(--frontTurnClockWise2: true) {
-
+@container style(--bottomTurnClockCounter2: true) {
     body {
+        & cube:nth-of-type(3),
+        cube:nth-of-type(4),
+        cube:nth-of-type(7),
+        cube:nth-of-type(8) {
+            animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
 
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* front */
+@container style(--frontTurnClockWise2: true) {
+    body {
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(3),
         cube:nth-of-type(4) {
             animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--frontTurnClockCounter2: true) {
+    body {
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(3),
+        cube:nth-of-type(4) {
+            animation: --turn-back var(--animation-duration) 1 var(--animation-easing);
 
             &>* {
                 transition: background-color 0s var(--animation-duration)
