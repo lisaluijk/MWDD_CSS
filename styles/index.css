@@ -256,6 +256,147 @@ html:has([value="pastel"]:checked) {
 } */
 
 
+html:has([value="standardRubiks"]:checked) {
+    --standaardCube: true;
+}
+
+@container style(--standaardCube: true) {
+    body {
+
+        --color-rubiks-front: #3057D9;
+        --color-rubiks-back: limegreen;
+        --color-rubiks-top: white;
+        --color-rubiks-bottom: yellow;
+        --color-rubiks-left: red;
+        --color-rubiks-right: orange;
+
+        & cube>* {
+            border: 0.3rem solid black;
+            border-radius: 0.3rem;
+        }
+
+    }
+}
+
+html:has([value="speedCube"]:checked) {
+    --speedCube: true;
+}
+
+@container style(--speedCube: true) {
+    body {
+
+        --color-rubiks-front: #05e2ff;
+        --color-rubiks-back: #4fff6c;
+        --color-rubiks-top: white;
+        --color-rubiks-bottom: #ebfe5d;
+        --color-rubiks-left: #ff3549;
+        --color-rubiks-right: #ffb432;
+
+        & front {
+            --color-rubiks-border: #39baed;
+        }
+
+        & back {
+            --color-rubiks-border: #29da47;
+        }
+
+        & top {
+            --color-rubiks-border: rgb(200, 191, 204);
+        }
+
+        & bottom {
+            --color-rubiks-border: #f7d128;
+        }
+
+        & left {
+            --color-rubiks-border: #e91a47;
+        }
+
+        & right {
+            --color-rubiks-border: #e27019;
+        }
+
+
+        & cube>* {
+            border: 0.1rem solid var(--color-rubiks-border);
+            border-radius: 0.5rem;
+        }
+
+    }
+}
+
+html:has([value="picasso"]:checked) {
+    --picasso: true;
+}
+
+@container style(--picasso: true) {
+    body {
+    --size-one-cube: calc(var(--size-full-cube) / 8);
+    
+        & cube>* {
+            border: 0.2rem solid black;
+            border-radius: 0.3rem;
+        }
+
+    }
+}
+
+html:has([value="proportions"]:checked) {
+    --proportions: true;
+}
+
+@container style(--proportions: true) {
+    body {
+    --size-one-cube: calc(var(--size-full-cube) / 2);
+    
+        & cube>* {
+            border: 0.2rem solid black;
+            border-radius: 0.3rem;
+        }
+
+    }
+}
+
+/* html:has([value="artsy"]:checked) {
+    --artsy: true;
+}
+
+@container style(--artsy: true) {
+    body {
+
+        & cube:nth-of-type(1){
+            --size-one-cube: calc(var(--size-full-cube) / 2);
+        }
+    
+        & cube>* {
+            border: 0.2rem solid black;
+            border-radius: 0.3rem;
+        }
+
+    }
+} */
+
+html:has([value="impossible"]:checked) {
+    --impossible: true;
+}
+
+@container style(--impossible: true) {
+    body {
+        --color-rubiks-front: #3057d918;
+        --color-rubiks-back: rgba(50, 205, 50, 0.056);
+        --color-rubiks-top: rgba(255, 255, 255, 0.082);
+        --color-rubiks-bottom: rgba(255, 255, 0, 0.059);
+        --color-rubiks-left: rgba(255, 0, 0, 0.058);
+        --color-rubiks-right: rgba(255, 166, 0, 0.04);
+
+        & cube>* {
+            border: 0.3rem solid black;
+            border-radius: 0.3rem;
+        }
+
+    }
+}
+
 
 /* MARK: cubes */
 
@@ -595,7 +736,7 @@ html:has([value="2turnBottomClockwise"]:checked) {
 /* Update variables */
 saving-layer1 {
 
-     /* Update all variables  */
+    /* Update all variables  */
     --ftl-Sf-C2: var(--ftl-Sf-C);
     --ftl-St-C2: var(--ftl-St-C);
     --ftl-Sl-C2: var(--ftl-Sl-C);
@@ -935,7 +1076,6 @@ saving-layer1 {
 @container style(--rightTurnClockWise: true) {
 
     body {
-
         & cube:nth-of-type(2),
         cube:nth-of-type(4),
         cube:nth-of-type(6),

@@ -56,12 +56,12 @@ Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door
 #### Wat heb ik vandaag gedaan?
 - **08:15–08:50** — Styling opzetten voor onze site  
 - **09:30–10:00** — Met groepje styling doornemen en mergen met onze main branch + werk van Senna daarbij mergen
--**10:00-12:00** — Luisteren naar uitleg van anderen en mijn eigen uitleg geven
--**12:00-13:00** - Pauze
--**13:00-14:00** - Kickoff eindopdracht
--**14:00-15:30** - Sanne's wiskunde opdracht maken en inlezen voor de rubikskubus opdracht
--**15:30-16:00** - Check-out
--**16:00-17:00** - Weekly nerd van Peter-Paul Koch 
+- **10:00-12:00** — Luisteren naar uitleg van anderen en mijn eigen uitleg geven
+- **12:00-13:00** - Pauze
+- **13:00-14:00** - Kickoff eindopdracht
+- **14:00-15:30** - Sanne's wiskunde opdracht maken en inlezen voor de rubikskubus opdracht
+- **15:30-16:00** - Check-out
+- **16:00-17:00** - Weekly nerd van Peter-Paul Koch 
 
 #### Wat heb ik geleerd?
 - nieuwe css concepten: Containers, Makeup, Scrollen, Anchors, Carrousel
@@ -100,12 +100,12 @@ Volgende week wil ik aan de volgende dingen gaan werken
 #### Start maken aan de opdracht
 - Ik wil volgende week de rubiks basis opzetten en hopelijk dus de vorm van de rubikskubus gemaakt hebben.
 
+## Dagelijkse check-out
 
 <details>
 <summary>Dag 3</summary>
 
 ### Woensdag 4 Maart | checkout met Eva
-<summary>Dag 2</summary>
 
 #### Wat heb ik vandaag gedaan?
 - **09:30–10:30** — Weekly Nerd  
@@ -166,6 +166,7 @@ Ik heb nog totaal niet bezig gehouden met styling en wil eerst het principe werk
 ### Wat wil ik volgende week doen
 De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 
+## Dagelijkse check-out
 
 <details>
 <summary>Dag 5</summary>
@@ -178,7 +179,7 @@ De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 - **10:45–11:30** — Workshop custom properties / theming / container style queries
 - **11:50–12:10** — README wat opgeschoond en wat bijgewerkt
 - **12:30–17:30** — Techniekbeurs (Technishow)  
-- **tijdens techniekbeurs** - Tijdens de techniekbeurs heb ik nagedacht over hoe ik mijn draaingen ga maken, ik denk dat container style queries hier wel een de oplossing voor kunnen zijn als ik mijn draaien wil baseren op kleuren ipv blokjes posities
+- **tijdens techniekbeurs** - Tijdens de techniekbeurs heb ik nagedacht over hoe ik mijn draaingen ga maken, ik denk dat container style queries hier wel eens de oplossing voor kunnen zijn als ik mijn draaien wil baseren op kleuren ipv blokjes posities
 
 #### Wat heb ik vandaag geleerd?
 - container style queries
@@ -240,7 +241,7 @@ De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 #### Wat heb ik vandaag gedaan?
 
 - **20:30–22:30** — Tweede draai uitgewerkt
-- **23:30–00:30** — Onderzocht waarom de container style querie werkt zoald die werkt
+- **23:30–00:30** — Onderzocht waarom de container style querie werkt zoals die werkt
 
 #### Wat heb ik geleerd?
 - Het is me gelukt het concept van de tweede draai uit te werken echter moet ik de custom properties dan op slaan op een andeer html element
@@ -249,30 +250,51 @@ De eerste draai werkend hebben en een principe bedacht voor de draaien daarna.
 
 </details>
 
+## Weekly check-out | week 3 
+Ik vind het jammer dat ik de custom properties niet opdezelfde elementen kan op slaan, hierdoor moet ik veel van mijn code copy pasten. Wel snap ik nu beter hoe style queries werken. Wel ben ik blij dat ik een oplossing heb kunnen bedenken zodat ik wel met mijn code door kan.
 
-maandag 
-1015 nog een keer doornemen met dat opslaan in de inspector. Ligt er dus aan dat het kund info moet opvragen aan de parent dus daarom kan je niet dingen vragen enzo.
-1100 erachter dat ik ook gewoon de kleur variables kan gebruiken wat media queries gaat schelen nu beginnen aan de eerste layer waarop ik alles kan gaan draaien
-1130 n0g meer stylequeries minderen en eerste volledige draai uitwerken
-1200 pauze
-1230 draai uitwerken
-1315 met sanne zitten
-1400 annimatie proberen-> inspo ophalen bij nienke
-1440 1500 staren naar het beetje code dat nu niet werkt
-1500 16600 kloten met teun en Mats
-1600 check out met mats
-1620 naar huis
-1730 1830 masterplan uitwerken -> wisselen tussne twee variables + made the animation 
-1945 tweede draai.... (werkt! semi mis een paar kantjes)
-2015 set up the dissapearing buttons -> first round done
-2040 think over my choices with some ice cream
-2100 eerste draai volledig uitwerken
-2130 overige kleuren toepassen
-2220-2240 bugs eruit halen (ik snap bottom turn niet helemaal wat er fout gaat)
+### Leerdoel 1 – CSS-animaties & micro-animaties
+Zeker mee geoefend in de workshop en weet nu ook hoe ik custom properties in animaties kan toevoegen.
 
+### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Op dit moment loopt alles nog een beetje door elkaar en is de structuur niet ultiem. Maar alles is wel goed gegroepeerd en ik kan makkelijk vinden wat ik zoek gelukkig.
 
+### Leerdoel 3 – Itereren binnen het ontwerpproces
+Nog steeds niet bezig geweest met vormgeving dus dat is een pro I guess al moet ik daar eerdaags wel aan gaan beginnen.
 
+### Wat wil ik volgende week doen
+In een rap tempo de code opschonen en zo efficient mogelijk krijgen zodat ik hem kan gaan copy/pasten voor de volgende draaien.
 
+## Dagelijkse check-out
+
+<details>
+<summary>Dag 9</summary>
+
+### Maandag 16 Maart | checkout met Mats
+
+#### Wat heb ik vandaag gedaan?
+- **10:15–11:00** — Nogmaals research gedaan naar container style queries -> Het kind moet de data opvragen aan de parent dus als je in dezelfde "layer" dat aanpast op basis van de variables gaat alles door elkaar lopen wat niet kan.
+- **11:00–11:30** — Mijn idee waar ik op kwam tijdens mijn checkout met Mitchell (ftl-Sf-c: color-front; ipv color-front: true;) Getest en begonnen met al mijn code omschrijven op deze manier
+- **11:30–12:00** — De rest van de custom properties omgezet en met de nieuwe custom properties de eerste draai opnieuw gedaan
+- **12:00–12:30** — Pauze  
+- **12:30–13:15** — Draai geprobeerd af te maken maar ik loop er tegen aan dat de kleuren nu op elkaar baseren en daardoor vast lopen
+- **13:15–14:00** — Idee aan Sanne voorgelegd in de hoop dat hij iets kon bedenken wat mijn code kan minderen en het probleem kon oplossen.
+- **14:00–14:40** — Begonnen aan de animatie maken 
+- **14:40–15:00** — Vastgelopen op code omdat de variabelen dus naar elkaar kijken maar tegelijk geupdate worden
+- **15:00–16:00** — Pauze  
+- **16:00–16:20** — Check-out met Mats  
+- **17:30–18:30** — Idee van Sanne uitgewerkt -> verschillende variabelen per rotatie -> Hier mijn eigen draai aan gegeven door te wisselen tussen 2 (oude draai en nieuwe draai) 
+- **19:45–20:15** — Tweede draai uitgewerkt! Een paar zijdes kloppen nog niet helemaal 
+- **20:15–20:40** — Disappearing buttons opgezet 
+- **21:00–21:30** — Eerste draai volledig uitgewerken voor alle kanten
+- **21:30–22:20** — Overige kleuren toegepast  
+- **22:20–22:40** — Foutjes eruit halen
+
+#### Wat heb ik geleerd?
+- Je kan variabelen die gebasseerd zijn opelkaar niet in een keer updaten
+- Volgorde is bij animatie erg belagrijk.
+
+</details>
 
 https://github.com/w3c/csswg-drafts/issues/6396
 https://github.com/w3c/csswg-drafts/issues/5624 grapje, ik kan het gewoon op het blokje opslaan -> of nee wacht toch niet want de andere blokjes hebben die data ook nodig om erachter te komen welke kleur ze moeten worden dus het moet overkoepelend zijn want anders kunnen ze er niet bij
@@ -300,117 +322,46 @@ Ik ben erachter gekomen dat wat ik had gehoopt met oplslaan van dat met twee med
 
 ik kwam erachter dat ik de properties nu op cube twee naar waar zet maar niet op cube 4
 
-woensdag 18 maart checkout et joost
-930 945 check in 
-1000 - 1120 read me opschonen tot aan vorige weeek -> we moeten nog maandag en vorige week de week checkout ding review
-1120 - github checken en met nienke stylesheet ref fixen
-1130 - Pauze 
-1230 - animatie fixen met transition en properties aanmaken voor de animaties
-1245 codepen van nienke doornemen en nienke vragen of ik het goed snap 
-1300 stickers uitzoeken van Nils
-1310 idee van nienke toepassen op die van mij
-1340-1415 vragen aan Nils waarom hij zo laggy is (op de laptop van Nils werkt het wel)
-1425 concept toepassen op alle blokjes -> animatie rechts werkt nu!
-1445 -1500branch mergen
-1510 css cleanen (1280 loines)
-    1535 probleem bottomturn gefixt!!
-1545 tot hier gecleaned en links animatie concept werkt!!!
-1545 nils talk
-1600-1615 checkout met joost
+<details>
+<summary>Dag 10</summary>
 
-1720 verder met de animaties (alles gemaakt behalve bottom besloten dat ik een animatie op de x y en z as doe en die dan aanwijs op de blokjes)
-1730 dat uitwerken^ -> grapje dat werkt toch niet dus moet ze wel allemaal uitwerken hihi
-1745 animations af nu nog een keer code opschonen...
-1755 1810 stylesheets opbreken in meerdere stylesheets
+### Woensdag 18 Maart | checkout met Joost
 
-dat werkt maar is wel beetje rommelig dus ik denk dat ik het voor nu zo laat hihi ga nu ff pauze en dan zo eten en vanavond verder en dan gaan we de tweede draai doen omg
+#### Wat heb ik vandaag gedaan?
+- **09:30–09:45** — Check-in  
+- **10:00–11:20** — README opgeschoond  
+- **11:20–11:30** — GitHub gecontroleerd en stylesheet ref gefixt met Nienke  
+- **11:30–12:30** — Pauze  
+- **12:30–12:45** — Animaties gefixt met transitions (de kleuren werden te vroeg geupdate) en begonnen met properties opzetten voor de placering van de blokjes  
+- **12:45–13:00** — CodePen van Nienke doorgenomen en met haar overlegd 
+- **13:10–13:40** — Idee van Nienke toegepast voor de animatie op 1 blokje  
+- **13:40–14:15** — Performance issue onderzocht met Nils (mijn laptop kon het niet zo goed aan waardoor de animatie laggy is)
+- **14:25–14:45** — Concept toegepast op alle blokjes (rechter animatie werkend gekregen op deze manier)  
+- **14:45–15:00** — Animatie branch gemerged  
+- **15:10–15:35** — CSS opgeschoond
+- **15:35–15:45** — Bug (bottom turn) gefixt en linker animatie ook werkend gekregen
+- **15:45–16:00** — Soort van agscheid van Nils
+- **16:00–16:15** — Check-out met Joost  
 
-22 45 code laatste keer cleanen
-2300 beginnen aan tweede draai
-2330 -> color swap werkt voor tweede draai nu animatie oke dat was echt tee minuten letterijk omg ik ben zo blij
+- **17:20–17:30** — Alle animaties uitgewerkt
+- **17:30–17:45** — Alternatieve aanpak geprobeerd (1 animatie voor x/y/z-assen → werkte niet, het is cleaner als ik voor elke draai 1 animatie maak)  
+- **17:45–17:55** — Animaties gecleaned
+- **17:55–18:10** — Geprobeerd stylesheets op te breken -> dit werkte maar ik wil dit pas op het laatste doen anders raak ik mijn eigen overzicht kwijt
 
-2340 denk code nog iets inkorten door de rest allemaal aan het begin om te zetten i hop
-2350 ^dat heeft gewerkt!
+- **22:45–23:00** — Css laatste keer opgeschoond  
+- **23:00–23:30** — Begonnen aan tweede draai  
+- **23:30–23:40** — Color swap werkend gekregen voor tweede draai!! (doorbraak 🎉)  
+- **23:40–23:50** — Code verder ingekort / geoptimaliseerd
+- **23:50–00:30** — Standaard cube en speedcube gemaakt
+- **00:30–00:50** — Nog meercube-varianten gemaakt
 
+#### Wat heb ik geleerd?
+- Hoe ik transition kan gebruiken om de kleur reset een delay te geven
 
+</details>
 
+19 maart
+1015 read me opsschonen
 
-
-
-Commented code:
-/* MARK: front top right -> top side */
-    & top {
-
-        /* Je kijkt naar het blokje eronder */
-        @container style(--fbor-Sf-Cf: true) {
-            --ftr-St-Cf: true;
-            --ftr-St-Cba: false;
-            --ftr-St-Ct: false;
-            --ftr-St-Cbo: false;
-            --ftr-St-Cl: false;
-            --ftr-St-Cr: false;
-
-            background: var(--color-rubiks-front);
-        }
-
-        @container style(--fbor-Sf-Cba: true) {
-            --ftr-St-Cf: false;
-            --ftr-St-Cba: true;
-            --ftr-St-Ct: false;
-            --ftr-St-Cbo: false;
-            --ftr-St-Cl: false;
-            --ftr-St-Cr: false;
-
-            background: var(--color-rubiks-back);
-
-        }
-
-        @container style(--fbor-Sf-Ct: true) {
-            --ftr-St-Cf: false;
-            --ftr-St-Cba: false;
-            --ftr-St-Ct: true;
-            --ftr-St-Cbo: false;
-            --ftr-St-Cl: false;
-            --ftr-St-Cr: false;
-
-            background: var(--color-rubiks-top);
-
-        }
-
-        @container style(--fbor-Sf-Cbo: true) {
-            --ftr-St-Cf: false;
-            --ftr-St-Cba: false;
-            --ftr-St-Ct: false;
-            --ftr-St-Cbo: true;
-            --ftr-St-Cl: false;
-            --ftr-St-Cr: false;
-
-            background: var(--color-rubiks-bottom);
-
-        }
-
-        @container style(--fbor-Sf-Cl: true) {
-            --ftr-St-Cf: false;
-            --ftr-St-Cba: false;
-            --ftr-St-Ct: false;
-            --ftr-St-Cbo: false;
-            --ftr-St-Cl: true;
-            --ftr-St-Cr: false;
-
-            background: var(--color-rubiks-left);
-        }
-
-        @container style(--fbor-Sf-Cr: true) {
-            --ftr--Cf: false;
-            --ftr--Cba: false;
-            --ftr--Ct: false;
-            --ftr--Cbo: false;
-            --ftr--Cl: false;
-            --ftr--Cr: true;
-
-            background: var(--color-rubiks-right);
-
-        }
-    }
 
 
