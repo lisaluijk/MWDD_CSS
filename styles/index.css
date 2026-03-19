@@ -241,28 +241,6 @@ main rubiks {
     transform: rotate3d(5, 10, 0, -30deg);
 }
 
-/* MARK: style */
-
-/* html:has([value="standaard"]:checked) {
-    --standaard: true;
-}
-
-html:has([value="pastel"]:checked) {
-    --pastel: true;
-}
-
-
-@container style(--pastel:true) {
-    body {
-        --color-rubiks-front: rgb(165, 236, 236);
-        --color-rubiks-back: rgb(146, 231, 146);
-        --color-rubiks-top: rgb(245, 229, 243);
-        --color-rubiks-bottom: rgb(237, 237, 172);
-        --color-rubiks-left: rgb(236, 188, 188);
-        --color-rubiks-right: rgb(230, 202, 150);
-    }
-} */
-
 /* source: Sanne: https://codepen.io/lisa_luijk/pen/vEXxmzP */
 html:has([value="standardRubiks"]:checked) {
     --standaardCube: true;
@@ -641,113 +619,531 @@ rubiks:hover {
 /* MARK: LOGIC */
 
 /* Buttons */
-#turn2 {
+Section:nth-of-type(2) article:nth-of-type(1) fieldset+fieldset {
     display: none;
 }
 
 /* Turn 1 */
 html:has([value="1turnRightClockwise"]:checked) {
     --rightTurnClockWise: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnRightCounterwise"]:checked) {
     --rightTurnClockCounter: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnFrontClockwise"]:checked) {
     --frontTurnClockWise: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnFrontCounterwise"]:checked) {
     --frontTurnClockCounter: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnLeftClockwise"]:checked) {
     --leftTurnClockWise: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnLeftCounterwise"]:checked) {
     --leftTurnClockCounter: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnTopClockwise"]:checked) {
     --topTurnClockWise: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnTopCounterwise"]:checked) {
     --topTurnClockCounter: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnBottomClockwise"]:checked) {
     --bottomTurnClockWise: true;
-    --turn1: true;
+    --turn: 1;
 }
 
 html:has([value="1turnBottomCounterwise"]:checked) {
     --bottomTurnClockCounter: true;
-    --turn1: true;
+    --turn: 1;
 }
 
-/* ---------------- */
 /* MARK: turn 2 */
 html:has([value="2turnRightClockwise"]:checked) {
     --rightTurnClockWise2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnRightCounterwise"]:checked) {
     --rightTurnClockCounter2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnFrontClockwise"]:checked) {
     --frontTurnClockWise2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnFrontCounterwise"]:checked) {
     --frontTurnClockCounter2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnLeftClockwise"]:checked) {
     --leftTurnClockWise2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnLeftCounterwise"]:checked) {
     --leftTurnClockCounter2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnTopClockwise"]:checked) {
     --topTurnClockWise2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnTopCounterwise"]:checked) {
     --topTurnClockCounter2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnBottomClockwise"]:checked) {
     --bottomTurnClockWise2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
 html:has([value="2turnBottomCounterwise"]:checked) {
     --bottomTurnClockCounter2: true;
-    --turn2: true;
+    --turn: 2;
 }
 
+/* MARK: Turn 3 */
+
+html:has([value="3turnRightClockwise"]:checked) {
+    --rightTurnClockWise3: true;
+    --turn: 3;
+}
+
+html:has([value="3turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnFrontClockwise"]:checked) {
+    --frontTurnClockWise3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnLeftClockwise"]:checked) {
+    --leftTurnClockWise3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnTopClockwise"]:checked) {
+    --topTurnClockWise3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnTopCounterwise"]:checked) {
+    --topTurnClockCounter3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise3: true;
+    --turn: 3;
+
+}
+
+html:has([value="3turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter3: true;
+    --turn: 3;
+
+}
+
+html:has([value="4turnRightClockwise"]:checked) {
+    --rightTurnClockWise4: true;
+    --turn: 4;
+}
+
+html:has([value="4turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnFrontClockwise"]:checked) {
+    --frontTurnClockWise4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnLeftClockwise"]:checked) {
+    --leftTurnClockWise4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnTopClockwise"]:checked) {
+    --topTurnClockWise4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnTopCounterwise"]:checked) {
+    --topTurnClockCounter4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise4: true;
+    --turn: 4;
+
+}
+
+html:has([value="4turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter4: true;
+    --turn: 4;
+
+}
+
+html:has([value="5turnRightClockwise"]:checked) {
+    --rightTurnClockWise5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnFrontClockwise"]:checked) {
+    --frontTurnClockWise5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnLeftClockwise"]:checked) {
+    --leftTurnClockWise5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnTopClockwise"]:checked) {
+    --topTurnClockWise5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnTopCounterwise"]:checked) {
+    --topTurnClockCounter5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise5: true;
+    --turn: 5;
+}
+
+html:has([value="5turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter5: true;
+    --turn: 5;
+}
+
+html:has([value="6turnRightClockwise"]:checked) {
+    --rightTurnClockWise6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnFrontClockwise"]:checked) {
+    --frontTurnClockWise6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnLeftClockwise"]:checked) {
+    --leftTurnClockWise6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnTopClockwise"]:checked) {
+    --topTurnClockWise6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnTopCounterwise"]:checked) {
+    --topTurnClockCounter6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise6: true;
+    --turn: 6;
+}
+
+html:has([value="6turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter6: true;
+    --turn: 6;
+}
+
+html:has([value="7turnRightClockwise"]:checked) {
+    --rightTurnClockWise7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnFrontClockwise"]:checked) {
+    --frontTurnClockWise7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnLeftClockwise"]:checked) {
+    --leftTurnClockWise7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnTopClockwise"]:checked) {
+    --topTurnClockWise7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnTopCounterwise"]:checked) {
+    --topTurnClockCounter7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise7: true;
+    --turn: 7;
+}
+
+html:has([value="7turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter7: true;
+    --turn: 7;
+}
+
+html:has([value="8turnRightClockwise"]:checked) {
+    --rightTurnClockWise8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnFrontClockwise"]:checked) {
+    --frontTurnClockWise8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnLeftClockwise"]:checked) {
+    --leftTurnClockWise8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnTopClockwise"]:checked) {
+    --topTurnClockWise8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnTopCounterwise"]:checked) {
+    --topTurnClockCounter8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise8: true;
+    --turn: 8;
+}
+
+html:has([value="8turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter8: true;
+    --turn: 8;
+}
+
+html:has([value="9turnRightClockwise"]:checked) {
+    --rightTurnClockWise9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnFrontClockwise"]:checked) {
+    --frontTurnClockWise9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnLeftClockwise"]:checked) {
+    --leftTurnClockWise9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnTopClockwise"]:checked) {
+    --topTurnClockWise9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnTopCounterwise"]:checked) {
+    --topTurnClockCounter9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise9: true;
+    --turn: 9;
+}
+
+html:has([value="9turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter9: true;
+    --turn: 9;
+}
+
+html:has([value="10turnRightClockwise"]:checked) {
+    --rightTurnClockWise10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnRightCounterwise"]:checked) {
+    --rightTurnClockCounter10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnFrontClockwise"]:checked) {
+    --frontTurnClockWise10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnFrontCounterwise"]:checked) {
+    --frontTurnClockCounter10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnLeftClockwise"]:checked) {
+    --leftTurnClockWise10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnLeftCounterwise"]:checked) {
+    --leftTurnClockCounter10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnTopClockwise"]:checked) {
+    --topTurnClockWise10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnTopCounterwise"]:checked) {
+    --topTurnClockCounter10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnBottomClockwise"]:checked) {
+    --bottomTurnClockWise10: true;
+    --turn: 10;
+}
+
+html:has([value="10turnBottomCounterwise"]:checked) {
+    --bottomTurnClockCounter10: true;
+    --turn: 10;
+}
 
 /* MARK: Color-changing */
 
@@ -1031,15 +1427,16 @@ saving-layer1 {
 }
 
 /* update scene */
-@container style(--turn1: true) {
+@container style(--turn: 1) {
 
-    #turn1 {
+    Section:nth-of-type(2) article:nth-of-type(1) fieldset {
         display: none;
     }
 
-    #turn2 {
+    section:nth-of-type(2) article:nth-of-type(1) fieldset:nth-of-type(2) {
         display: grid;
     }
+
 
     /* reset all of the colors */
     body cube:nth-of-type(1) {
@@ -1236,6 +1633,7 @@ saving-layer1 {
 
 @container style(--topTurnClockWise: true) {
     body {
+
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(5),
@@ -1285,6 +1683,7 @@ saving-layer1 {
 
 @container style(--bottomTurnClockCounter: true) {
     body {
+
         & cube:nth-of-type(3),
         cube:nth-of-type(4),
         cube:nth-of-type(7),
@@ -1301,6 +1700,7 @@ saving-layer1 {
 /* front */
 @container style(--frontTurnClockWise: true) {
     body {
+
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(3),
@@ -1316,6 +1716,7 @@ saving-layer1 {
 
 @container style(--frontTurnClockCounter: true) {
     body {
+
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(3),
@@ -1608,15 +2009,16 @@ saving-layer2 {
 }
 
 /* update scene */
-@container style(--turn2: true) {
+@container style(--turn: 2) {
 
-    /* #turn1 {
+    Section:nth-of-type(2) article:nth-of-type(1) fieldset {
         display: none;
     }
 
-    #turn2 {
+    section:nth-of-type(2) article:nth-of-type(1) fieldset:nth-of-type(3) {
         display: grid;
-    } */
+    }
+
 
     /* reset all of the colors */
     body cube:nth-of-type(1) {
@@ -1811,6 +2213,7 @@ saving-layer2 {
 
 @container style(--topTurnClockWise2: true) {
     body {
+
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(5),
@@ -1860,6 +2263,7 @@ saving-layer2 {
 
 @container style(--bottomTurnClockCounter2: true) {
     body {
+
         & cube:nth-of-type(3),
         cube:nth-of-type(4),
         cube:nth-of-type(7),
@@ -1876,6 +2280,7 @@ saving-layer2 {
 /* front */
 @container style(--frontTurnClockWise2: true) {
     body {
+
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(3),
@@ -1891,6 +2296,595 @@ saving-layer2 {
 
 @container style(--frontTurnClockCounter2: true) {
     body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(3),
+        cube:nth-of-type(4) {
+            animation: --turn-back var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+
+
+
+/* MARK: Color-changing */
+
+/* MARK: turn 3 */
+/* Update variables */
+/* Idee om 2 custom properties aan te maken: Sanne */
+saving-layer3 {
+
+    /* Update all variables  */
+    --ftl-Sf-C2: var(--ftl-Sf-C);
+    --ftl-St-C2: var(--ftl-St-C);
+    --ftl-Sl-C2: var(--ftl-Sl-C);
+
+    --ftr-Sf-C2: var(--ftr-Sf-C);
+    --ftr-St-C2: var(--ftr-St-C);
+    --ftr-Sr-C2: var(--ftr-Sr-C);
+
+    --fbol-Sf-C2: var(--fbol-Sf-C);
+    --fbol-Sbo-C2: var(--fbol-Sbo-C);
+    --fbol-Sl-C2: var(--fbol-Sl-C);
+
+    --fbor-Sf-C2: var(--fbor-Sf-C);
+    --fbor-Sbo-C2: var(--fbor-Sbo-C);
+    --fbor-Sr-C2: var(--fbor-Sr-C);
+
+    --batl-Sba-C2: var(--batl-Sba-C);
+    --batl-St-C2: var(--batl-St-C);
+    --batl-Sl-C2: var(--batl-Sl-C);
+
+    --batr-Sba-C2: var(--batr-Sba-C);
+    --batr-St-C2: var(--batr-St-C);
+    --batr-Sr-C2: var(--batr-Sr-C);
+
+    --babol-Sba-C2: var(--babol-Sba-C);
+    --babol-Sbo-C2: var(--babol-Sbo-C);
+    --babol-Sl-C2: var(--babol-Sl-C);
+
+    --babor-Sba-C2: var(--babor-Sba-C);
+    --babor-Sbo-C2: var(--babor-Sbo-C);
+    --babor-Sr-C2: var(--babor-Sr-C);
+
+    /* rechts met de klok mee */
+    @container style(--rightTurnClockWise3: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--fbor-Sbo-C);
+        --ftr-St-C2: var(--fbor-Sf-C);
+        --ftr-Sr-C2: var(--fbor-Sr-C);
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--babor-Sbo-C);
+        --fbor-Sbo-C2: var(--babor-Sba-C);
+        --fbor-Sr-C2: var(--babor-Sr-C);
+
+        /* Back top right block */
+        --batr-Sba-C2: var(--ftr-St-C);
+        --batr-St-C2: var(--ftr-Sf-C);
+        --batr-Sr-C2: var(--ftr-Sr-C);
+
+        /* Back bottom right block */
+        --babor-Sba-C2: var(--batr-St-C);
+        --babor-Sbo-C2: var(--batr-Sba-C);
+        --babor-Sr-C2: var(--batr-Sr-C);
+    }
+
+    /* rechts tegen de klok in */
+    @container style(--rightTurnClockCounter3: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--batr-St-C);
+        --ftr-St-C2: var(--batr-Sba-C);
+        --ftr-Sr-C2: var(--batr-Sr-C);
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--ftr-St-C);
+        --fbor-Sbo-C2: var(--ftr-Sf-C);
+        --fbor-Sr-C2: var(--ftr-Sr-C);
+
+        /* Back top right block */
+        --batr-Sba-C2: var(--babor-Sbo-C);
+        --batr-St-C2: var(--babor-Sba-C);
+        --batr-Sr-C2: var(--babor-Sr-C);
+
+        /* Back bottom right block */
+        --babor-Sba-C2: var(--fbor-Sbo-C);
+        --babor-Sbo-C2: var(--fbor-Sf-C);
+        --babor-Sr-C2: var(--fbor-Sr-C);
+    }
+
+    /* MARK: links met de klok mee */
+    @container style(--leftTurnClockWise3: true) {
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--batl-St-C);
+        --ftl-St-C2: var(--batl-Sba-C);
+        --ftl-Sl-C2: var(--batl-Sl-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--ftl-St-C);
+        --fbol-Sbo-C2: var(--ftl-Sf-C);
+        --fbol-Sl-C2: var(--ftl-Sl-C);
+
+        /* Back top left block */
+        --batl-Sba-C2: var(--babol-Sbo-C);
+        --batl-St-C2: var(--babol-Sba-C);
+        --batl-Sl-C2: var(--babol-Sl-C);
+
+        /* Back bottom left block */
+        --babol-Sba-C2: var(--fbol-Sbo-C);
+        --babol-Sbo-C2: var(--fbol-Sf-C);
+        --babol-Sl-C2: var(--fbol-Sl-C);
+    }
+
+    /* MARK: links tegen de klok in */
+    @container style(--leftTurnClockCounter3: true) {
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--fbol-Sbo-C);
+        --ftl-St-C2: var(--fbol-Sf-C);
+        --ftl-Sl-C2: var(--fbol-Sl-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--babol-Sbo-C);
+        --fbol-Sbo-C2: var(--babol-Sba-C);
+        --fbol-Sl-C2: var(--babol-Sl-C);
+
+        /* Back top left block */
+        --batl-Sba-C2: var(--ftl-St-C);
+        --batl-St-C2: var(--ftl-Sf-C);
+        --batl-Sl-C2: var(--ftl-Sl-C);
+
+        /* Back bottom left block */
+        --babol-Sba-C2: var(--batl-St-C);
+        --babol-Sbo-C2: var(--batl-Sba-C);
+        --babol-Sl-C2: var(--batl-Sl-C);
+    }
+
+    /* MARK: front met de klok mee */
+    @container style(--frontTurnClockWise3: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--ftl-Sf-C);
+        --ftr-St-C2: var(--ftl-Sl-C);
+        --ftr-Sr-C2: var(--ftl-St-C);
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--ftr-Sf-C);
+        --fbor-Sbo-C2: var(--ftr-Sr-C);
+        --fbor-Sr-C2: var(--ftr-St-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--fbol-Sf-C);
+        --ftl-St-C2: var(--fbol-Sl-C);
+        --ftl-Sl-C2: var(--fbol-Sbo-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--fbor-Sf-C);
+        --fbol-Sbo-C2: var(--fbor-Sr-C);
+        --fbol-Sl-C2: var(--fbor-Sbo-C);
+    }
+
+    /* MARK: front tegen de klok in */
+    @container style(--frontTurnClockCounter3: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--fbor-Sf-C);
+        --ftr-St-C2: var(--fbor-Sr-C);
+        --ftr-Sr-C2: var(--fbor-Sbo-C);
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--fbol-Sf-C);
+        --fbor-Sbo-C2: var(--fbol-Sl-C);
+        --fbor-Sr-C2: var(--fbol-Sbo-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--ftr-Sf-C);
+        --ftl-St-C2: var(--ftr-Sr-C);
+        --ftl-Sl-C2: var(--ftr-St-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--ftl-Sf-C);
+        --fbol-Sbo-C2: var(--ftl-Sl-C);
+        --fbol-Sl-C2: var(--ftl-St-C);
+    }
+
+    /* MARK: Top met de klok mee */
+    @container style(--topTurnClockWise3: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--batr-Sr-C);
+        --ftr-St-C2: var(--batr-St-C);
+        --ftr-Sr-C2: var(--batr-Sba-C);
+
+        /* Back top right block */
+        --batr-Sba-C2: var(--batl-Sl-C);
+        --batr-St-C2: var(--batl-St-C);
+        --batr-Sr-C2: var(--batl-Sba-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--ftr-Sr-C);
+        --ftl-St-C2: var(--ftr-St-C);
+        --ftl-Sl-C2: var(--ftr-Sf-C);
+
+        /* back top left block */
+        --batl-Sba-C2: var(--ftl-Sl-C);
+        --batl-St-C2: var(--ftl-St-C);
+        --batl-Sl-C2: var(--ftl-Sf-C);
+    }
+
+    /* MARK: top tegen de klok in */
+    @container style(--topTurnClockCounter3: true) {
+
+        /* Front top right block */
+        --ftr-Sf-C2: var(--ftl-Sl-C);
+        --ftr-St-C2: var(--ftl-St-C);
+        --ftr-Sr-C2: var(--ftl-Sf-C);
+
+        /* Back top right block */
+        --batr-Sba-C2: var(--ftr-Sr-C);
+        --batr-St-C2: var(--ftr-St-C);
+        --batr-Sr-C2: var(--ftr-Sf-C);
+
+        /* Front top left block */
+        --ftl-Sf-C2: var(--batl-Sl-C);
+        --ftl-St-C2: var(--batl-St-C);
+        --ftl-Sl-C2: var(--batl-Sba-C);
+
+        /* back top left block */
+        --batl-Sba-C2: var(--batr-Sr-C);
+        --batl-St-C2: var(--batr-St-C);
+        --batl-Sl-C2: var(--batr-Sba-C);
+    }
+
+    /* MARK: Bottom met de klok mee */
+    @container style(--bottomTurnClockWise3: true) {
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--fbol-Sl-C);
+        --fbor-Sbo-C2: var(--fbol-Sbo-C);
+        --fbor-Sr-C2: var(--fbol-Sf-C);
+
+        /* Back bottom right block */
+        --babor-Sba-C2: var(--fbor-Sr-C);
+        --babor-Sbo-C2: var(--fbor-Sbo-C);
+        --babor-Sr-C2: var(--fbor-Sf-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--babol-Sl-C);
+        --fbol-Sbo-C2: var(--babol-Sbo-C);
+        --fbol-Sl-C2: var(--babol-Sba-C);
+
+        /* back bottom left block */
+        --babol-Sba-C2: var(--babor-Sr-C);
+        --babol-Sbo-C2: var(--babor-Sbo-C);
+        --babol-Sl-C2: var(--babor-Sba-C);
+    }
+
+    /* MARK: Bottom tegen de klok in */
+    @container style(--bottomTurnClockCounter3: true) {
+
+        /* Front bottom right block */
+        --fbor-Sf-C2: var(--babor-Sr-C);
+        --fbor-Sbo-C2: var(--babor-Sbo-C);
+        --fbor-Sr-C2: var(--babor-Sba-C);
+
+        /* Back bottom right block */
+        --babor-Sba-C2: var(--babol-Sl-C);
+        --babor-Sbo-C2: var(--babol-Sbo-C);
+        --babor-Sr-C2: var(--babol-Sba-C);
+
+        /* Front bottom left block */
+        --fbol-Sf-C2: var(--babor-Sr-C);
+        --fbol-Sbo-C2: var(--babor-Sbo-C);
+        --fbol-Sl-C2: var(--babor-Sf-C);
+
+        /* back bottom left block */
+        --babol-Sba-C2: var(--fbol-Sl-C);
+        --babol-Sbo-C2: var(--fbol-Sbo-C);
+        --babol-Sl-C2: var(--fbol-Sf-C);
+    }
+}
+
+/* update scene */
+@container style(--turn: 3) {
+
+     Section:nth-of-type(2) article:nth-of-type(1) fieldset {
+        display: none;
+    }
+
+    section:nth-of-type(2) article:nth-of-type(1) fieldset:nth-of-type(4) {
+        display: grid;
+    }
+
+
+    /* reset all of the colors */
+    body cube:nth-of-type(1) {
+
+        & front {
+            background: var(--ftl-Sf-C2);
+        }
+
+        & top {
+            background: var(--ftl-St-C2);
+        }
+
+        & left {
+            background: var(--ftl-Sl-C2);
+        }
+    }
+
+    body cube:nth-of-type(2) {
+
+        & front {
+            background: var(--ftr-Sf-C2);
+        }
+
+        & top {
+            background: var(--ftr-St-C2);
+        }
+
+        & right {
+            background: var(--ftr-Sr-C2);
+        }
+    }
+
+    body cube:nth-of-type(3) {
+
+        & front {
+            background: var(--fbol-Sf-C2);
+        }
+
+        & bottom {
+            background: var(--fbol-Sbo-C2);
+        }
+
+        & left {
+            background: var(--fbol-Sl-C2);
+        }
+    }
+
+    body cube:nth-of-type(4) {
+
+        & front {
+            background: var(--fbor-Sf-C2);
+        }
+
+        & bottom {
+            background: var(--fbor-Sbo-C2);
+        }
+
+        & right {
+            background: var(--fbor-Sr-C2);
+        }
+    }
+
+    body cube:nth-of-type(5) {
+
+        & back {
+            background: var(--batl-Sba-C2);
+        }
+
+        & top {
+            background: var(--batl-St-C2);
+        }
+
+        & left {
+            background: var(--batl-Sl-C2);
+        }
+    }
+
+    body cube:nth-of-type(6) {
+
+        & back {
+            background: var(--batr-Sba-C2);
+        }
+
+        & top {
+            background: var(--batr-St-C2);
+        }
+
+        & right {
+            background: var(--batr-Sr-C2);
+        }
+    }
+
+    body cube:nth-of-type(7) {
+
+        & back {
+            background: var(--babol-Sba-C2);
+        }
+
+        & bottom {
+            background: var(--babol-Sbo-C2);
+        }
+
+        & left {
+            background: var(--babol-Sl-C2);
+        }
+    }
+
+    body cube:nth-of-type(8) {
+
+        & back {
+            background: var(--babor-Sba-C2);
+        }
+
+        & bottom {
+            background: var(--babor-Sbo-C2);
+        }
+
+        & right {
+            background: var(--babor-Sr-C2);
+        }
+    }
+}
+
+/* MARK: invoke animation */
+/* Source: delay for the colors using transition -> Nienke */
+
+/* right*/
+@container style(--rightTurnClockWise3: true) {
+    body {
+
+        & cube:nth-of-type(2),
+        cube:nth-of-type(4),
+        cube:nth-of-type(6),
+        cube:nth-of-type(8) {
+            animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--rightTurnClockCounter3: true) {
+    body {
+
+        & cube:nth-of-type(2),
+        cube:nth-of-type(4),
+        cube:nth-of-type(6),
+        cube:nth-of-type(8) {
+            animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* left */
+@container style(--leftTurnClockWise3: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(3),
+        cube:nth-of-type(5),
+        cube:nth-of-type(7) {
+            animation: --turn-left var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--leftTurnClockCounter3: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(3),
+        cube:nth-of-type(5),
+        cube:nth-of-type(7) {
+            animation: --turn-right var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* top */
+
+@container style(--topTurnClockWise3: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(5),
+        cube:nth-of-type(6) {
+            animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--topTurnClockCounter3: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(5),
+        cube:nth-of-type(6) {
+            animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* bottom */
+@container style(--bottomTurnClockWise3: true) {
+
+    body {
+
+        & cube:nth-of-type(3),
+        cube:nth-of-type(4),
+        cube:nth-of-type(7),
+        cube:nth-of-type(8) {
+            animation: --turn-bottom var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--bottomTurnClockCounter3: true) {
+    body {
+
+        & cube:nth-of-type(3),
+        cube:nth-of-type(4),
+        cube:nth-of-type(7),
+        cube:nth-of-type(8) {
+            animation: --turn-top var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+/* front */
+@container style(--frontTurnClockWise3: true) {
+    body {
+
+        & cube:nth-of-type(1),
+        cube:nth-of-type(2),
+        cube:nth-of-type(3),
+        cube:nth-of-type(4) {
+            animation: --turn-front var(--animation-duration) 1 var(--animation-easing);
+
+            &>* {
+                transition: background-color 0s var(--animation-duration)
+            }
+        }
+    }
+}
+
+@container style(--frontTurnClockCounter3: true) {
+    body {
+
         & cube:nth-of-type(1),
         cube:nth-of-type(2),
         cube:nth-of-type(3),
