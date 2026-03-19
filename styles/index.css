@@ -22,7 +22,6 @@
 
 
     /* Translate positions */
-    /* Source: Nienke */
     --translate-one-cube-left: calc(var(--translate-one-cube)* -1);
     --translate-one-cube-right: var(--translate-one-cube);
     --translate-one-cube-up: calc(var(--translate-one-cube) * -1);
@@ -215,6 +214,12 @@
 }
 
 /* MARK: scene */
+/* Sources: 
+- https://css-tricks.com/how-css-perspective-works/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/perspective
+- https://css-tricks.com/almanac/properties/t/transform-style/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform-style
+ */
 main {
     perspective: 30rem;
 }
@@ -228,8 +233,8 @@ main rubiks {
 
     padding: 5rem;
 
-    /* Source Nienke */
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate3d */
+    /* Source Nienke: https://codepen.io/Nienke-the-styleful/pen/WbGjKKp 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate3d */
     transform: rotate3d(5, 10, 0, -30deg);
 }
 
@@ -255,7 +260,7 @@ html:has([value="pastel"]:checked) {
     }
 } */
 
-
+/* source: Sanne: https://codepen.io/lisa_luijk/pen/vEXxmzP */
 html:has([value="standardRubiks"]:checked) {
     --standaardCube: true;
 }
@@ -400,6 +405,7 @@ html:has([value="impossible"]:checked) {
 
 /* MARK: cubes */
 
+/* source: concept om blokjes te plaatsen met custom properties afgekeken van Nienke: https://codepen.io/Nienke-the-styleful/pen/WbGjKKp */
 /* front top left */
 cube:nth-of-type(1) {
     --translate-x: var(--translate-one-cube-left);
@@ -734,6 +740,7 @@ html:has([value="2turnBottomClockwise"]:checked) {
 
 /* MARK: turn 1 */
 /* Update variables */
+/* Idee om 2 custom properties aan te maken: Sanne */
 saving-layer1 {
 
     /* Update all variables  */
@@ -1073,6 +1080,7 @@ saving-layer1 {
 }
 
 /* MARK: invoke animation */
+/* Source: delay for the colors using transition -> Nienke */
 @container style(--rightTurnClockWise: true) {
 
     body {

@@ -355,7 +355,31 @@ In een rap tempo de code opschonen en zo efficient mogelijk krijgen zodat ik hem
 
 19 maart
 1015 - read me opsschonen
-1115
+1115-1135 - sources toevoegen
+
+
+## Bronnenlijst
+
+### 3D & Perspective
+- [perspective - css](https://css-tricks.com/how-css-perspective-works/)
+- [perspective - mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/perspective)
+- [transform style - css tricks](https://css-tricks.com/almanac/properties/t/transform-style/)
+- [transform style - mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform-style)
+
+### 3D Transform & Rotation
+- [rotate3d (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate3d)
+- [Idea to use rotate 3d :Nienke](https://codepen.io/Nienke-the-styleful/pen/WbGjKKp)
+
+### Container Style Queries & Checkboxes
+- [Sanne](https://codepen.io/lisa_luijk/pen/vEXxmzP)
+
+### Concept & Implementation Inspiration
+- [Cube positioning using custom properties (Nienke)](https://codepen.io/Nienke-the-styleful/pen/WbGjKKp)  
+- Idea for using two custom properties to store the colors (Sanne)  
+- [Color transition delays (Nienke)](https://codepen.io/Nienke-the-styleful/pen/WbGjKKp)
+
+
+
 
 
 
