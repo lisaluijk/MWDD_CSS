@@ -362,7 +362,10 @@ In een rap tempo de code opschonen en zo efficient mogelijk krijgen zodat ik hem
 1240 1250 tegen de kklok in tweede draai
 pauze
 1340 animatie tegen de klok in voor beide draaiingen
-
+1355 schetsen en onderzoek doen voor vormgeving en layout
+1405 1220 beginnen aan layout custom properties opzetten
+1420 1505 styling ipv layout lol
+1535 verder met layout
 
 
 

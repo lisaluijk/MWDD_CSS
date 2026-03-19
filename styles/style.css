@@ -1,26 +1,247 @@
-* {
+/* =========================
+   RESET / BASE
+========================= */
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-* {
+:root {
+    /* ===== Theme ===== */
+    --colors-dark: #222A2A;
+    --colors-secondary: #f39005;
+    --colors-primary: #ED4319;
+    --colors-light: #6D7A79;
+    --colors-white: #E1D9C1;
 
-    color: #d52122;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    /* ===== Content colors ===== */
+    --color-content-default: var(--colors-primary);
+    --color-content-hover: var(--colors-secondary);
+    --color-content-active: var(--colors-dark);
+
+    --color-text: var(--colors-dark);
+    --color-background: var(--colors-light);
+
+    /* ===== Typography ===== */
+    --font-size: 1rem;
+    --title-size: clamp(3rem, 3.3rem + 0.9vi, 5rem);
+    --heading-size: clamp(1.25rem, 1.0833rem + 0.5556vi, 1.5rem);
+
+    /* ===== Layout ===== */
+    --border-radius-l: 0.3rem;
+    --border-radius-s: 0;
+    --border-width: 2px;
+
+    --spacing-s: 0.5rem;
+    --spacing-m: 1rem;
+    --spacing-l: 2rem;
+
+    /* ===== Feature flags ===== */
+    --standard-styling: 1;
+
+    /* Enable container queries */
+    container-type: style;
 }
+
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 body {
     display: grid;
-     background: #FFF7E5;
+    background: var(--colors-dark);
+    color: var(--color-content-default);
+    font-size: var(--font-size);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
 }
 
+/* =========================
+   TYPOGRAPHY
+========================= */
 
 h1 {
     justify-self: center;
     text-transform: uppercase;
+    font-size: var(--title-size);
+    color: var(--colors-white);
 }
 
-.stylingButtons {
+/* =========================
+   FIELDSET (CONTAINER)
+========================= */
+
+fieldset {
+    position: relative;
     display: grid;
-    grid-template-columns: 15rem 8fr 8fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    margin: 2rem auto;
+    padding: 2rem;
+
+    max-width: 500px;
+
+    border: 1px solid rgba(225, 217, 193, 0.2);
+    border-radius: 1rem;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.02),
+        rgba(0,0,0,0.25)
+    );
+
+    backdrop-filter: blur(6px);
+}
+
+/* subtle glowing top border accent */
+fieldset::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    width: 6rem;
+    height: 2px;
+    background: var(--colors-primary);
+}
+
+/* =========================
+   LEGEND
+========================= */
+
+fieldset legend {
+    position: absolute;
+    top: -0.8rem;
+    left: 1.5rem;
+
+    padding: 0 0.75rem;
+
+    font-size: var(--heading-size);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--colors-primary);
+    background: var(--colors-dark);
+}
+
+/* =========================
+   RADIO INPUT (HIDDEN)
+========================= */
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* =========================
+   BUTTON STYLE
+========================= */
+
+label:has(input[type="radio"]) {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    border-radius: 0.6rem;
+
+    cursor: pointer;
+
+    color: var(--colors-white);
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: all 0.25s ease;
+}
+
+/* subtle inner glow */
+label:has(input[type="radio"])::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+
+    opacity: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(243,144,5,0.25),
+        transparent 70%
+    );
+
+    transition: opacity 0.25s ease;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+label:has(input[type="radio"]):hover {
+    border-color: var(--colors-secondary);
+    transform: translateY(-2px);
+}
+
+label:has(input[type="radio"]):hover::after {
+    opacity: 1;
+}
+
+/* =========================
+   ACTIVE (CHECKED)
+========================= */
+
+label:has(input[type="radio"]:checked) {
+    border-color: var(--colors-primary);
+
+    background: linear-gradient(
+        135deg,
+        rgba(237,67,25,0.15),
+        rgba(243,144,5,0.15)
+    );
+
+    box-shadow:
+        0 0 0 1px rgba(237,67,25,0.4),
+        0 4px 20px rgba(237,67,25,0.2);
+}
+
+/* glowing edge */
+label:has(input[type="radio"]:checked)::after {
+    opacity: 1;
+    background: radial-gradient(
+        circle at center,
+        rgba(237,67,25,0.35),
+        transparent 70%
+    );
+}
+
+/* =========================
+   CLICK FEEDBACK
+========================= */
+
+label:has(input[type="radio"]):active {
+    transform: scale(0.97);
+}
+
+/* =========================
+   RUBIK'S CUBE THEME
+========================= */
+
+@container style(--standard-styling: 1) {
+    body {
+        --color-rubiks-front: var(--colors-primary);
+        --color-rubiks-back: #697724;
+        --color-rubiks-top: var(--colors-light);
+        --color-rubiks-bottom: #a5ab83;
+        --color-rubiks-left: var(--colors-dark);
+        --color-rubiks-right: var(--colors-secondary);
+    }
+
+    cube > * {
+        border-radius: 0.8rem;
+    }
 }
