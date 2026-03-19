@@ -365,7 +365,8 @@ pauze
 1355 schetsen en onderzoek doen voor vormgeving en layout
 1405 1220 beginnen aan layout custom properties opzetten
 1420 1505 styling ipv layout lol
-1535 verder met layout
+1535 -1730verder met layout
+
 
 
 

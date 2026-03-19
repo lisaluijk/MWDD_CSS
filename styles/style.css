@@ -69,9 +69,17 @@ h1 {
     color: var(--colors-white);
 }
 
+
 /* =========================
    FIELDSET (CONTAINER)
 ========================= */
+section:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;            
+    justify-content: center;     
+    align-items: flex-start;      
+    gap: var(--spacing-l);
+}
 
 fieldset {
     position: relative;
@@ -83,6 +91,7 @@ fieldset {
     padding: 2rem;
 
     max-width: 500px;
+    min-width: 400px;
 
     border: 1px solid rgba(225, 217, 193, 0.2);
     border-radius: 1rem;
@@ -234,10 +243,10 @@ label:has(input[type="radio"]):active {
 @container style(--standard-styling: 1) {
     body {
         --color-rubiks-front: var(--colors-primary);
-        --color-rubiks-back: #697724;
-        --color-rubiks-top: var(--colors-light);
-        --color-rubiks-bottom: #a5ab83;
-        --color-rubiks-left: var(--colors-dark);
+        --color-rubiks-back: #7586bc;
+        --color-rubiks-top: #f4f5c1;
+        --color-rubiks-bottom: #d3e374;
+        --color-rubiks-left: #dd4040;
         --color-rubiks-right: var(--colors-secondary);
     }
 
