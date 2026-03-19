@@ -353,24 +353,76 @@ In een rap tempo de code opschonen en zo efficient mogelijk krijgen zodat ik hem
 
 </details>
 
-19 maart
-1015 - read me opsschonen
-1115-1135 - sources toevoegen
-1145 randvoorwaarden nog een keer doornemen
-1200 controleren of alles goed op github staat
-1205 tegen de klok in draaien eerste laag
-1240 1250 tegen de kklok in tweede draai
-pauze
-1340 animatie tegen de klok in voor beide draaiingen
-1355 schetsen en onderzoek doen voor vormgeving en layout
-1405 1220 beginnen aan layout custom properties opzetten
-1420 1505 styling ipv layout lol
-1535 -1730verder met layout
+</details>
+
+<details>
+<summary>Dag 11</summary>
+
+### Donderdag 19 Maart 
+
+#### Wat heb ik vandaag gedaan?
+
+- **10:15–11:15** — Cleaned up README  
+- **11:15–11:35** — Bronnenlijst toegevoegd  
+- **11:45–12:00** — Randvoorwaarden nog een keer doorgenomen  
+- **12:00–12:05** — Checken of alles goed op github staat
+- **12:05–12:40** — Tegen de klok in draaien uitgewerkt voor eerste draai
+- **12:40–12:50** — Tegen de klok in draaien uitgewerkt voor tweede draai
+- **12:50–13:40** — Pauze  
+- **13:40–13:55** — Animatie toegevoegd voor tegen de klok in draaien
+- **13:55–14:05** — Schetsen en onderzoek doen naar vormgeving en layout die ik wil
+- **14:05–14:20** — Custom properties opgezet voorlayout
+- **14:20–15:05** — Aan styling gewerkt
+- **15:05–15:35** — Vastgelopen
+- **15:35–17:30** — Layout en styling met Chat gpt gedaan
+- **17:30–18:00** — Reflectie geschreven
+
+</details>
 
 
+# Weekly check-out | week 4
+Ik ben best wel trots op wat ik heb gemaakt. Ik merkte wel dat ik aardig in tijdnood ben gekomen op het einde. Ik zat er de afgelopen dagen pas echt lekker in en had graag nog veel meer willen doen. Ik ben blij dat mijn idee is gelukt om uit te werken. Maar had het graag nog toegepast op een 3x3 kubus. Ook had ik graag de styling zelf gedaan ipv met vibe coding. Ik heb wel echt mega veel geleerd en heb het gevoel dat ik eindelijk lekker in de code sferen zit. Ik heb de hele minor tot nu toe het gevoel gehad dat ik er niet lekker inzat en veel princinpiele kennis misste. Sinds deze week heb ik dat gevoel gelukkig niet meer en zat ik er volledig in. Ik kijk daarom erg uit naar de volgende opdrachten.
 
+## Leerdoelen
+
+### Leerdoel 1 – CSS-animaties & micro-animaties
+Ik heb animaties toegevoegd voor de rotaties maar deze zijn vrij simpel. Ik hoop dat ik in de komende opdrachten hier meer mee kan gaan spelen.
+
+### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Ik moest mijn code wel gestructureerd houden omdat anders alles door elkaar zou gaan lopen. Wel denk ik dat hier zeker nog stappen in te halen zijn.
+
+### Leerdoel 3 – Itereren binnen het ontwerpproces
+Hoewel het goed is dat ik me eerst heb gefocusd op het principe had ik wel wat eerder mogen beginnen met de styling. Ik heb mezelf echt veel stress op de hals gehaald en het uiteindelijk dus met vibe coding gedaan waar ik echt niet trots op ben. Ik hoop dat ik er steeds beter in ga worden om een goede balans te vinden.
+
+
+## Eindreflectie
+
+### Eindproduct
+Ik ben nogmaals erg trots op het mechanisme. Ik vind het jammer van de styling want daar ben ik niet helemaal tevreden mee.
+
+### Challenges
+Het volledige principe uitdenken vond ik een uidaging. Ik heb het echt stapje voor stapje moeten doen en liep steeds weer tegen een nieuwe uitdaging aan (zoals dat nou eenmaal gaat tijdens het coderen). Wel is het me uiteindelijk gelukt waar ik super trots op ben.
+Dingen waar ik tegen aan liep
+- Ik kon alles niet op hetzelfde element op slaan
+- De custom properties voor de draaiingen konden niet allemaal tegelijk geupdate worden waardoor ik nu afwissel tussen twee
+
+### Meest trots
+- Het eindprincipe waarbij ik meerdere draaien kan uitwerken door mijn code te kopieren en te plakken
+
+### Gefaalde experimenten
+- Het opslaan van data door een tweede container querie achter de eerste te plakken die de waarde zou moeten onthouden
+- Het opslaan op dezelfde "parent"
+
+### New insights
+Ik heb zeker nieuwe inzichten gekregen in de kracht van CSS er kan echt veel meer dan ik dacht. Ook heb ik een soort van javascript concept kunnen uitwerken met style queries wat ik erg gaaf vind.
+
+### In de toekomst
+Wil ik me graag verdiepen in functions in CSS. En of ik deze code missschien nog efficienter kan schrijven op een bepaalde manier
 
 ## Bronnenlijst
+
+### Idea to base the rotations on colors instead of positons
+- Nils Binder
 
 ### 3D & Perspective
 - [perspective - css](https://css-tricks.com/how-css-perspective-works/)
@@ -390,8 +442,8 @@ pauze
 - Idea for using two custom properties to store the colors (Sanne)  
 - [Color transition delays (Nienke)](https://codepen.io/Nienke-the-styleful/pen/WbGjKKp)
 
-
-
+### Styling
+ All of the styling was done with vibecoding using chat gpt
 
 
 
